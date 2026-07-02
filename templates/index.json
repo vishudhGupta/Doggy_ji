@@ -164,100 +164,57 @@
         "color_swatches_m": "rgba(0,0,0,0)"
       }
     },
-    "1649689563303f67a7": {
-      "type": "text-columns-with-images",
+    "usp_WhB9ej": {
+      "type": "usp",
       "blocks": {
-        "blurb_icon_YKY9RH": {
-          "type": "blurb_icon",
+        "item_4wKHCf": {
+          "type": "item",
           "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/smartphone_1304136.png",
-            "icon_name": "check",
-            "url": "",
+            "icon": "shopify://shop_images/smartphone_1304136.png",
             "heading": "Ask Expert",
-            "description": "<p>Get the help of Expert to find best</p>"
+            "description": "Get the help of Expert to find best"
           }
         },
-        "1649689563328d37cd-0": {
-          "type": "blurb_icon",
+        "item_tFAP86": {
+          "type": "item",
           "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/virtual-assistant_17617144.png",
-            "icon_name": "Chat",
-            "url": "",
+            "icon": "shopify://shop_images/virtual-assistant_17617144.png",
             "heading": "Chat With Us",
-            "description": "<p>We Offer 24-hour chat Support</p>"
+            "description": "We offer 24-hour chat support"
           }
         },
-        "1649689563328d37cd-1": {
-          "type": "blurb_icon",
+        "item_BbYRNh": {
+          "type": "item",
           "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/express-delivery_11153357.png",
-            "icon_name": "cat_care",
-            "url": "",
+            "icon": "shopify://shop_images/express-delivery_11153357.png",
             "heading": "Fast Delivery",
-            "description": "<p>Get Fast & Free Delivery</p>"
+            "description": "Get Fast & Free Delivery"
           }
         },
-        "1649689563328d37cd-2": {
-          "type": "blurb_icon",
+        "item_iwPn3H": {
+          "type": "item",
           "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/best-product_17235077.png",
-            "icon_name": "box_cat",
-            "url": "",
+            "icon": "shopify://shop_images/best-product_17235077.png",
             "heading": "Best Packaging",
-            "description": "<p>Best Quality Packaging</p>"
+            "description": "Best Quality Packaging"
           }
         }
       },
       "block_order": [
-        "blurb_icon_YKY9RH",
-        "1649689563328d37cd-0",
-        "1649689563328d37cd-1",
-        "1649689563328d37cd-2"
+        "item_4wKHCf",
+        "item_tFAP86",
+        "item_BbYRNh",
+        "item_iwPn3H"
       ],
-      "custom_css": [
-        "#minion-section-template--22496930136317__1649689563303f67a7 {padding-bottom: 15px !important; margin-top: 0px !important;}",
-        ".text-columns-img__heading {font-size: 1rem !important;}"
-      ],
+      "name": "USP",
       "settings": {
-        "subheading": "",
-        "heading": "",
-        "heading_aligment": "text-center",
-        "button_name": "",
-        "button_url": "",
         "top_spacing": "none",
-        "width": "page-width",
-        "grid": "col-md-6 col-3",
-        "swipe_on_mobile": false,
-        "image_ratio": "auto",
-        "image_zoom_internal": false,
-        "texts_aligment": "text-center",
-        "icon_alignment": "center",
-        "heading_tag": "h4",
-        "description_size": "body2",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_swipe_buttons": "rgba(0,0,0,0)",
-        "color_heading_blurb": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#febb4a",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "none",
-        "remove_bottom_spacing": true
+        "width": "default",
+        "border_radius": 0,
+        "border_radius_mobile": 0,
+        "background_color": "#f4d215",
+        "heading_color": "#0f0f0f",
+        "text_color": "#333333"
       }
     },
     "shop_by_pet_h7Cd6x": {
@@ -267,8 +224,8 @@
           "type": "pet_card",
           "settings": {
             "title": "Shop For Dogs",
-            "link": "",
-            "image": "shopify://shop_images/Why_doggyji-1.png",
+            "link": "shopify://collections/doggy-ji-biscuits",
+            "image": "shopify://shop_images/Dog1.png",
             "show_arrow": true,
             "card_bg": "#edf3ea",
             "text_color": "#1f1f1f",
@@ -280,8 +237,8 @@
           "type": "pet_card",
           "settings": {
             "title": "Shop For Cats",
-            "link": "",
-            "image": "shopify://shop_images/Why_doggyji-4.png",
+            "link": "shopify://collections/catty-ji-dry-food",
+            "image": "shopify://shop_images/Cat2.png",
             "show_arrow": true,
             "card_bg": "#f6ece5",
             "text_color": "#1f1f1f",
@@ -299,7 +256,7 @@
         "subheading": "Find their favorites",
         "heading": "Shop By Pet",
         "heading_alignment": "text-center",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default",
         "card_gap": 20,
         "card_radius": 16,
@@ -316,112 +273,90 @@
         "icon_group_opacity": 35
       }
     },
-    "collection_list_RxUqJr": {
-      "type": "collection-list",
+    "category_slider_NxtmUa": {
+      "type": "category-slider",
       "blocks": {
-        "featured_collection_XdCTRk": {
-          "type": "featured_collection",
+        "category_k9hwVC": {
+          "type": "category",
           "settings": {
-            "collection": "doggy-ji-biscuits",
             "image": "shopify://shop_images/Shop_by_Categories-Vegan.png",
-            "collection_name": "Vegan Biscuits",
-            "custom_link": ""
+            "label": "Vegan Biscuits",
+            "link": "shopify://collections/doggy-ji-biscuits"
           }
         },
-        "featured_collection_6kqtmX": {
-          "type": "featured_collection",
+        "category_F3zRNp": {
+          "type": "category",
           "settings": {
-            "collection": "combos",
             "image": "shopify://shop_images/Shop_by_Categories-Combo.png",
-            "collection_name": "",
-            "custom_link": ""
+            "label": "Combos",
+            "link": "shopify://collections/combos"
           }
         },
-        "featured_collection_Vkwqif": {
-          "type": "featured_collection",
+        "category_HmHmN4": {
+          "type": "category",
           "settings": {
-            "collection": "ragi-shots-limited-time-offer",
             "image": "shopify://shop_images/Shop_by_Categories-Ragi_Treats.png",
-            "collection_name": "Ragi shots",
-            "custom_link": ""
+            "label": "Ragi Shots",
+            "link": "shopify://collections/ragi-shots-limited-time-offer"
           }
         },
-        "featured_collection_7mHLMF": {
-          "type": "featured_collection",
+        "category_K638qp": {
+          "type": "category",
           "settings": {
-            "collection": "doggy-ji-wet-food",
             "image": "shopify://shop_images/Shop_by_Categories-Broth.png",
-            "collection_name": "Dog Wet Food",
-            "custom_link": ""
+            "label": "Dog Wet Food",
+            "link": "shopify://collections/doggy-ji-wet-food"
           }
         },
-        "featured_collection_rJ6aL4": {
-          "type": "featured_collection",
+        "category_3CtRUk": {
+          "type": "category",
           "settings": {
-            "collection": "doggy-ji-biscuits",
             "image": "shopify://shop_images/Shop_by_Categories-Biscuits_95244591-faba-48b3-bad9-ae93a48dec3a.png",
-            "collection_name": "Dog Biscuits",
-            "custom_link": ""
+            "label": "Dog Biscuits",
+            "link": "shopify://collections/doggy-ji-biscuits"
           }
         },
-        "featured_collection_YAhn6D": {
-          "type": "featured_collection",
+        "category_P3CKpd": {
+          "type": "category",
           "settings": {
-            "collection": "dog-accessories",
             "image": "shopify://shop_images/Shop_by_Categories-Accessories.png",
-            "collection_name": "",
-            "custom_link": ""
+            "label": "Dog Accessories",
+            "link": "shopify://collections/dog-accessories"
           }
         }
       },
       "block_order": [
-        "featured_collection_XdCTRk",
-        "featured_collection_6kqtmX",
-        "featured_collection_Vkwqif",
-        "featured_collection_7mHLMF",
-        "featured_collection_rJ6aL4",
-        "featured_collection_YAhn6D"
+        "category_k9hwVC",
+        "category_F3zRNp",
+        "category_HmHmN4",
+        "category_K638qp",
+        "category_3CtRUk",
+        "category_P3CKpd"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "Category slider",
       "settings": {
-        "subheading": "",
         "heading": "Shop By Category",
-        "heading_aligment": "text-center",
-        "link_name": "Shop all",
-        "link_url": "",
         "top_spacing": "none",
         "width": "default",
-        "grid": "col-md-4 col-2",
-        "mobile_grid": "6",
-        "swipe_on_mobile": true,
-        "design_type": "text-below-image",
-        "image_ratio": "auto",
-        "texts_aligment": "text-center",
-        "hover_underline": false,
-        "show_products_count": false,
-        "texts_aligment_mobile": "text-center-mobile",
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_link": "rgba(0,0,0,0)",
-        "color_swipe_buttons": "rgba(0,0,0,0)",
-        "color_item_bg": "rgba(0,0,0,0)",
-        "color_texts_type1": "rgba(0,0,0,0)",
-        "color_texts": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_button_hover": "rgba(0,0,0,0)",
-        "color_texts_mobile": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
+        "columns_desktop": 6,
+        "columns_mobile": 3,
+        "card_size_desktop": 106,
+        "card_size_mobile": 72,
+        "gap_desktop": 18,
+        "gap_mobile": 10,
+        "vertical_padding": 16,
+        "horizontal_padding": 12,
+        "border_radius": 0,
+        "heading_size_desktop": 36,
+        "heading_size_mobile": 20,
+        "label_size_desktop": 15,
+        "label_size_mobile": 12,
+        "background_color": "#ffffff",
+        "image_bg": "#f8f2e9",
+        "heading_color": "#1f1f1f",
+        "label_color": "#2b2b2b",
+        "arrow_bg": "#ffffff",
+        "arrow_icon": "#8f8f8f"
       }
     },
     "featured_collection_FMeRwU": {
@@ -433,7 +368,7 @@
         "heading": "Best Sellers",
         "heading_aligment": "text-center",
         "button_name": "Show All",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default",
         "grid": "col-md-4 col-2",
         "desktop_slider": "show_mask",
@@ -489,7 +424,7 @@
           "settings": {
             "stat_value": "65M+",
             "stat_label": "Happy Pet Owners",
-            "card_bg": "#FEBB4A",
+            "card_bg": "#febb4a",
             "card_text_color": "#000000"
           }
         },
@@ -498,7 +433,7 @@
           "settings": {
             "stat_value": "99%",
             "stat_label": "Pincodes Covered",
-            "card_bg": "#FEBB4A",
+            "card_bg": "#febb4a",
             "card_text_color": "#000000"
           }
         },
@@ -507,7 +442,7 @@
           "settings": {
             "stat_value": "42+",
             "stat_label": "Years of Experience",
-            "card_bg": "#FEBB4A",
+            "card_bg": "#febb4a",
             "card_text_color": "#000000"
           }
         }
@@ -525,7 +460,7 @@
         "subheading": "WHY doggy ji?",
         "heading": "Know Why Pet Owners Trust Drools",
         "text_alignment": "center",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "page-width",
         "content_max_width": 1260,
         "columns_desktop": 3,
@@ -535,17 +470,17 @@
         "card_padding": 20,
         "card_radius": 14,
         "card_min_height": 170,
-        "bg_image": "shopify://shop_images/Why_doggyji-2.png",
+        "bg_image": "shopify://shop_images/Dog4.png",
         "bg_image_size": 420,
         "bg_image_position_x": 0,
-        "bg_image_position_y": 0,
+        "bg_image_position_y": 25,
         "bg_image_size_mobile": 260,
         "bg_image_position_x_mobile": 12,
         "bg_image_position_y_mobile": 84,
         "bg_image_opacity": 100,
         "hide_bg_image_mobile": false,
-        "section_bg": "#ececef",
-        "subheading_color": "#FEBB4A",
+        "section_bg": "#ffffff",
+        "subheading_color": "#febb4a",
         "heading_color": "#0b0d12"
       }
     },
@@ -649,9 +584,9 @@
   },
   "order": [
     "slideshow_xBnHwW",
-    "1649689563303f67a7",
+    "usp_WhB9ej",
     "shop_by_pet_h7Cd6x",
-    "collection_list_RxUqJr",
+    "category_slider_NxtmUa",
     "featured_collection_FMeRwU",
     "why_us_3HX6Nw",
     "text_columns_with_images_HXGGhe"

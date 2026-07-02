@@ -355,8 +355,8 @@
         "image_bg": "#f8f2e9",
         "heading_color": "#1f1f1f",
         "label_color": "#000000",
-        "arrow_bg": "#23C1C3",
-        "arrow_icon": "#FFFFFF"
+        "arrow_bg": "#23c1c3",
+        "arrow_icon": "#ffffff"
       }
     },
     "featured_collection_FMeRwU": {
@@ -487,6 +487,41 @@
         "subheading_color": "#febb4a",
         "heading_color": "#0b0d12"
       }
+    },
+    "banner_with_text_t4MfBd": {
+      "type": "banner_with_text",
+      "name": "Banner with text",
+      "settings": {
+        "subheading": "",
+        "heading": "Never Run Out Of Treats!",
+        "description": "<p>Save 15% on every order and enjoy reliable delivery.</p>",
+        "bullet_points": "Save 15% on every order\nFree shipping\nFlexible delivery\nCancel anytime",
+        "button_label": "Start Subscription",
+        "button_link": "",
+        "image": "shopify://shop_images/Never_Run_out_of_Treats.jpg",
+        "top_spacing": "normal",
+        "width": "default",
+        "banner_height_desktop": 360,
+        "banner_height_mobile": 280,
+        "border_radius": 14,
+        "text_alignment": "left",
+        "content_x": 53,
+        "content_y": 52,
+        "content_width": 42,
+        "content_x_mobile": 50,
+        "content_y_mobile": 52,
+        "content_width_mobile": 86,
+        "heading_size": 30,
+        "heading_size_mobile": 20,
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_color": "#ffffff",
+        "bullet_color": "#ffc84a",
+        "button_bg": "#ffffff",
+        "button_color": "#1f1f1f",
+        "overlay_bg": "#000000",
+        "overlay_opacity": 12
+      }
     }
   },
   "order": [
@@ -495,6 +530,7 @@
     "shop_by_pet_h7Cd6x",
     "category_slider_NxtmUa",
     "featured_collection_FMeRwU",
-    "why_us_3HX6Nw"
+    "why_us_3HX6Nw",
+    "banner_with_text_t4MfBd"
   ]
 }

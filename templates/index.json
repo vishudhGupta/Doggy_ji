@@ -354,7 +354,7 @@
         "background_color": "#ffffff",
         "image_bg": "#f8f2e9",
         "heading_color": "#1f1f1f",
-        "label_color": "#2b2b2b",
+        "label_color": "#000000",
         "arrow_bg": "#ffffff",
         "arrow_icon": "#8f8f8f"
       }
@@ -363,7 +363,7 @@
       "type": "featured-collection",
       "custom_css": [
         "h2 {font-weight: 700;}",
-        "@media (max-width: 767px) {h2{font-size: 20px; }}"
+        "@media (max-width: 767px) {h2 {font-size: 20px; }}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {

@@ -362,7 +362,8 @@
     "featured_collection_FMeRwU": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {font-weight: 700;}"
+        "h2 {font-weight: 700;}",
+        "@media (max-width: 767px) {h2{font-size: 20px; }}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {

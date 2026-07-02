@@ -1,0 +1,388 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "1f5e6d17-7cef-4e03-b13d-b19240ced047": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2"
+          }
+        },
+        "36032345-aea2-4f92-821a-d5ca441bfc03": {
+          "type": "price",
+          "settings": {
+            "show_tax": false,
+            "show_shipping": false,
+            "price_size": 30
+          }
+        },
+        "ae34e2b1-9301-41fa-90ba-334a896aea64": {
+          "type": "inventory",
+          "settings": {
+            "inventory": 10
+          }
+        },
+        "474c52ec-9315-4a99-a528-767a2d2e55c7": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "variant_name_1": "Available sizes",
+            "content_1": "",
+            "page_1": "copy-of-include_feeding-guidelines_popup",
+            "variant_name_2": "",
+            "content_2": "",
+            "page_2": "",
+            "variant_name_3": "",
+            "content_3": "",
+            "page_3": "",
+            "variant_name_4": "",
+            "content_4": "",
+            "page_4": "",
+            "variant_name_5": "",
+            "content_5": "",
+            "page_5": "",
+            "variant_name_6": "",
+            "content_6": "",
+            "page_6": ""
+          }
+        },
+        "1b8b6108-97d1-4af6-bfc4-13bdc10f6046": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "button_type_product": "show",
+            "enable_sticky_addtocart": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "ab5ab2dc-3efb-4d96-82c2-068a730c0fe3": {
+          "type": "message",
+          "settings": {
+            "show_icon": true,
+            "text": "Ask a question"
+          }
+        },
+        "03273730-7345-42ca-900c-d5d4b561aa65": {
+          "type": "share",
+          "settings": {
+            "show_icon": true,
+            "share_label": "Share"
+          }
+        },
+        "ac2db628-888a-4658-bc4e-07bb8a99cb6f": {
+          "type": "text",
+          "settings": {
+            "text_size": "small",
+            "icon_name_1": "",
+            "content_1": "{{ product.description }}",
+            "icon_name_2": "",
+            "content_2": "",
+            "icon_name_3": "",
+            "content_3": "",
+            "icon_name_4": "",
+            "content_4": "",
+            "icon_name_5": "",
+            "content_5": ""
+          }
+        },
+        "gallery_bx3fwe": {
+          "type": "gallery",
+          "settings": {
+            "heading": "Guaranteed safe checkout",
+            "icon_name": "secure_sm",
+            "grid": "col-2",
+            "image_ratio": "auto",
+            "image_fit": "image-fit-contain"
+          }
+        },
+        "1e7e994a-ed88-406e-9a98-eaaf5a624851": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Description",
+            "icon_name": "new_sm",
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "page": "include_additional_features"
+          }
+        }
+      },
+      "block_order": [
+        "1f5e6d17-7cef-4e03-b13d-b19240ced047",
+        "36032345-aea2-4f92-821a-d5ca441bfc03",
+        "ae34e2b1-9301-41fa-90ba-334a896aea64",
+        "474c52ec-9315-4a99-a528-767a2d2e55c7",
+        "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
+        "ab5ab2dc-3efb-4d96-82c2-068a730c0fe3",
+        "03273730-7345-42ca-900c-d5d4b561aa65",
+        "ac2db628-888a-4658-bc4e-07bb8a99cb6f",
+        "gallery_bx3fwe",
+        "1e7e994a-ed88-406e-9a98-eaaf5a624851"
+      ],
+      "settings": {
+        "top_spacing": "none",
+        "width": "default",
+        "media_size": "large",
+        "gallery_position": "to left",
+        "heading_aligment": "mobile-text-left",
+        "use_accordion": true,
+        "enable_badges": true,
+        "mobile_thumbnails": "thumbnails_images",
+        "mobile_thumbnails_aligment": "justify-content-center",
+        "enable_sticky_info": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "color_media_bg": "#ffffff",
+        "color_media_bg_hover": "#ffffff",
+        "color_zoom": "rgba(0,0,0,0)"
+      }
+    },
+    "1648018242bd6448c3": {
+      "type": "apps",
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width"
+      }
+    },
+    "1650710350b2667c74": {
+      "type": "image-with-text",
+      "blocks": {
+        "1650710350304edb96-0": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify://shop_images/Untitled_Artwork-7-1536x1536.webp",
+            "image_ratio": "1.333333",
+            "video_url": "",
+            "description": ""
+          }
+        },
+        "1650710350304edb96-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Why we are collecting shipping charges?"
+          }
+        },
+        "1650710350304edb96-2": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "text": "<ul><li>Our biscuits are sold in bulk, making parcels heavy and increasing shipping costs.</li><li>We charge only a small portion of the shipping fee to keep it fair.</li><li>Most of the shipping cost is covered by us to keep prices affordable.</li><li>This helps us maintain high-quality products at the best value.</li><li>Your support allows us to continue providing the best for your pets.</li></ul><p><strong>Thank you for being a part of the Doggyji family!</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "1650710350304edb96-0",
+        "1650710350304edb96-1",
+        "1650710350304edb96-2"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "image_zoom_internal": false,
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#fff3b3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1650281560803e681b": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "subheading": "",
+        "heading": "😻 You may also like",
+        "heading_aligment": "text-center",
+        "button_name": "Show All",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-st-6 col-3",
+        "desktop_slider": "none",
+        "desktop_slider_scroll_one": false,
+        "mobile_grid": "6",
+        "swipe_on_mobile": true,
+        "product_limit": 8,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "show_secondary_image": true,
+        "texts_aligment": "text-center",
+        "product_name_size": "normal",
+        "show_vendor": false,
+        "show_type": false,
+        "show_price": true,
+        "truncate_product_name": false,
+        "hover_underline": false,
+        "button_type_product": "hide",
+        "show_button_quickview": true,
+        "show_badge_on_sale": true,
+        "show_badge_sold_out": true,
+        "show_badge_feature": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_meta": "rgba(0,0,0,0)",
+        "color_all_elements": "rgba(0,0,0,0)",
+        "color_price": "rgba(0,0,0,0)",
+        "color_save_price": "rgba(0,0,0,0)",
+        "color_button_quickview": "rgba(0,0,0,0)",
+        "color_button_product": "rgba(0,0,0,0)",
+        "color_border_1": "rgba(0,0,0,0)",
+        "color_border_2": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1650710704068f9172": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "165071070424f33a27-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "Free same-day delivery",
+            "description": "<p>Free shipping - no code needed, just head for checkout!</p>"
+          }
+        },
+        "165071070424f33a27-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "calendar",
+            "url": "",
+            "heading": "Repeat delivery",
+            "description": "<p>Repeat delivery with <strong>5% OFF</strong> every order.</p>"
+          }
+        },
+        "165071070424f33a27-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "parking",
+            "url": "",
+            "heading": "Curbside pickup",
+            "description": "<p>Order online, drive up, check in & pick up.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "165071070424f33a27-0",
+        "165071070424f33a27-1",
+        "165071070424f33a27-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "What your pet needs, when they need it",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": true,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1650277671aaffcdb0": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "none",
+        "ticker_time": 20,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>Let's aeed your feline friends with hearty and healthy meals!</strong></p>",
+        "show_icon": "svg",
+        "icon_name": "cat_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ffffff",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1648018242bd6448c3",
+    "1650710350b2667c74",
+    "1650281560803e681b",
+    "1650710704068f9172",
+    "1650277671aaffcdb0"
+  ]
+}

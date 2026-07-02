@@ -1,0 +1,599 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "16438247647e270702": {
+      "type": "slideshow",
+      "blocks": {
+        "6651029e-a6e6-4f06-8123-1d48c4df8843": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "GROOMING",
+            "heading": "😺 The grooming destination that puts your pet's health first",
+            "description": "",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "Find a salon",
+            "url": "",
+            "button_secondary_name": "",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-start justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": false,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "#142c73",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "6651029e-a6e6-4f06-8123-1d48c4df8843"
+      ],
+      "settings": {
+        "top_spacing": "none",
+        "bottom_spacing": "normal",
+        "width": "page-fullwidth",
+        "image_size": "fullscreen",
+        "desktop_image_height": 440,
+        "texts_aligment_mobile": "text-center-mobile",
+        "box_roundness": 3,
+        "design_type": "image-banner__default",
+        "slider_animation": true,
+        "desktop_navigation": "dots_arrows",
+        "mobile_navigation": "dots_arrows",
+        "dots_desktop_position": "center",
+        "autoplay_enabled": true,
+        "autoplay_time": 5,
+        "video_slide_mode": "autoplay_muted",
+        "play_button_enabled": true,
+        "color_media_bg": "rgba(0,0,0,0)",
+        "color_media_bg_hover": "rgba(0,0,0,0)",
+        "color_swatches": "rgba(0,0,0,0)",
+        "color_swatches_m": "rgba(0,0,0,0)"
+      }
+    },
+    "164382588716bbb839": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1643825887c4b541b7-0": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Breed-specific haircuts",
+            "description": "<p>Regular grooming is essential to your pet's health as it helps prevent skin issues such as matting.</p>"
+          }
+        },
+        "1643825887c4b541b7-1": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Baths for every breed",
+            "description": "<p>We’ll suds away dirt, oil and debris to help skin & coats of all types look and feel great.</p>"
+          }
+        },
+        "1643825887c4b541b7-2": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Customized packages",
+            "description": "<p>Upgrade their visit with packages designed to target specific needs such as de-shedding, dry and sensitive skin care and more.</p>"
+          }
+        },
+        "bd5bccdb-21c3-408b-ac77-31cdc7bdb65d": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Walk-In services",
+            "description": "<p>Help care for your pet with essential services such as nail trimming, teeth-brushing and gland expressions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1643825887c4b541b7-0",
+        "1643825887c4b541b7-1",
+        "1643825887c4b541b7-2",
+        "bd5bccdb-21c3-408b-ac77-31cdc7bdb65d"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Customize your cat’s grooming ✂️ with solutions to help keep them feeling great",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-md-6 col-3",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1649865436cffd0444": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1649865436cfa00fa6-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_1",
+            "url": "",
+            "heading": "Repeat delivery  from $85",
+            "description": "<p>• Breed/Styled Body Trim - longer length<br/>• Tidy up - face, feet, hygiene area<br/>• Scissor Finish<br/>• Shampoo & Conditioner Bath<br/>• Blow Dry<br/>• Towel Dry<br/>• Nail Trimming<br/>• Ear Cleaning<br/>• Tear Stain Treatment<br/>• Undercoat Removal<br/>• Full Body Brush</p>"
+          }
+        },
+        "1649865436cfa00fa6-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_2",
+            "url": "",
+            "heading": "Full groom — from $75",
+            "description": "<p>• Full Body Clip - Shorter Length<br/>• Tidy up - face, feet, hygiene area<br/>• Scissor Finish<br/>• Full Body Brush<br/>• Shampoo & Conditioner Bath<br/>• Blow Dry<br/>• Towel Dry<br/>• Nail Trimming<br/>• Ear Cleaning<br/>• Undercoat Removal</p>"
+          }
+        },
+        "1649865436cfa00fa6-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_3",
+            "url": "",
+            "heading": "Hygiene tidy groom — from $59",
+            "description": "<p>• Tidy up - face, feet, hygiene area<br/>• Scissor Finish<br/>• Full Body Brush<br/>• Undercoat Removal<br/>• Towel Dry<br/>• Blow Dry<br/>• Nail Trimming<br/>• Ear Cleaning<br/>• Shampoo and Conditioner Bath</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1649865436cfa00fa6-0",
+        "1649865436cfa00fa6-1",
+        "1649865436cfa00fa6-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "🛁 Our grooming services and packages",
+        "heading_aligment": "text-center",
+        "button_name": "Contact us",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643830707ee874a4d": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1643830707a74036c7-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "grooming",
+            "url": "",
+            "heading": "Beauty treatment <br>$10",
+            "description": "<p>Pamper your dog with our beauty package where we will moisturise your dog’s paw pads, remove tear stain and finish off with a spritz of cologne and nail file. Perfect for pooches that want that extra touch.</p>"
+          }
+        },
+        "1643830707a74036c7-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "jaws",
+            "url": "",
+            "heading": "Fresh breath treatment <br>$5",
+            "description": "<p>Unique blend of powerful, natural ingredients in a gel will be applied to teeth that removes and defends against plaque and tartar, leaving their breath fresh ready for snuggles and smooches.</p>"
+          }
+        },
+        "1643830707a74036c7-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "coat",
+            "url": "",
+            "heading": "Coat repair treatment <br>$5",
+            "description": "<p>Relaxing PH balanced skin treatment with extracts of Aloe Vera and Oatmeal, the perfect combination to help repair dry skin and coats.</p>"
+          }
+        },
+        "e5f5e5d1-3801-451d-84cb-6c89c537935d": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "vet_clinic",
+            "url": "",
+            "heading": "Sensitive skin treatment <br>$5",
+            "description": "<p>Soothing and nourishing shampoo and conditioner treatment ideal for dogs with sensitive skin prone to flaking.</p>"
+          }
+        },
+        "8fc27eec-2d48-4ebc-971e-382a56de3b3c": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "de-shedding",
+            "url": "",
+            "heading": "De-shedding treatment<br> $5",
+            "description": "<p>This natural based treatment is great for dogs with double coats, using specialised shampoo and spray formulated to help release the hair during the moulting process.</p>"
+          }
+        },
+        "f9cadc17-c846-446e-aca4-184cafa87c4c": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "flea",
+            "url": "",
+            "heading": "Flea and tick treatment <br>$5",
+            "description": "<p>An effective two part process that targets and kills fleas and ticks on the dog’s body. Please note this is not a preventative.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1643830707a74036c7-0",
+        "1643830707a74036c7-1",
+        "1643830707a74036c7-2",
+        "e5f5e5d1-3801-451d-84cb-6c89c537935d",
+        "8fc27eec-2d48-4ebc-971e-382a56de3b3c",
+        "f9cadc17-c846-446e-aca4-184cafa87c4c"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Additional treatments",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "content_width",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643831135d669e580": {
+      "type": "reviews",
+      "blocks": {
+        "16438311352c2a80fa-0": {
+          "type": "review",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Shiny coat!",
+            "description": "<p>⭐️⭐️⭐️⭐️⭐️ I always knew he was meant to be a star, so I loved seeing his fur get so shiny. He’s also started drinking way less water and is much more active and lively than before. Such a convenient option!</p>",
+            "author": "— Kirstyn C."
+          }
+        },
+        "16438311352c2a80fa-1": {
+          "type": "review",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "She LOVES it 💛",
+            "description": "<p>⭐️⭐️⭐️⭐️⭐️ She was always so-so with her usual food, but she is VERY enthusiastic about Smalls. Her breath is MUCH better and she poops much less frequently and it does not smell disgusting as it used to.</p>",
+            "author": "— Buddy"
+          }
+        },
+        "16438311352c2a80fa-2": {
+          "type": "review",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "He is absolutely OBSESSED!",
+            "description": "<p>⭐️⭐️⭐️⭐️⭐️ I always knew he was meant to be a star, so I loved seeing his fur get so shiny.</p>",
+            "author": "— Baxter"
+          }
+        },
+        "16438311352c2a80fa-3": {
+          "type": "review",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Fantastic service!!!",
+            "description": "<p>⭐️⭐️⭐️⭐️⭐️ Fantastic service, polite, friendly and professional. Best cat groomer by far! Would highly reccomend!</p>",
+            "author": "— Harley"
+          }
+        }
+      },
+      "block_order": [
+        "16438311352c2a80fa-0",
+        "16438311352c2a80fa-1",
+        "16438311352c2a80fa-2",
+        "16438311352c2a80fa-3"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Positive purrs 😻",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-md-6 col-3",
+        "swipe_on_mobile": false,
+        "image_ratio": "1, round-image",
+        "texts_aligment": "text-center",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_author": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ddf1f0",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643831355c229cfe5": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "news",
+        "subheading": "",
+        "heading": "Tips and tricks for maintaining your pet's health between salon visits",
+        "heading_aligment": "text-center",
+        "link_name": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "post_limit": 3,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "excerpt_size": "normal",
+        "show_image": true,
+        "truncate_post_heading": false,
+        "hover_underline": false,
+        "showtags": false,
+        "show_date": true,
+        "show_author": false,
+        "show_comment_count": false,
+        "excerpt": "hide",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_link": "#142c73",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_author_date_comments": "rgba(0,0,0,0)",
+        "color_heading_post": "rgba(0,0,0,0)",
+        "color_excerpt": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "16438314992c9f9321": {
+      "type": "accordion",
+      "blocks": {
+        "164383149952b74e7a-0": {
+          "type": "text",
+          "settings": {
+            "heading": "How long does a pet grooming service take?",
+            "description": "<p>The amount of time a grooming service takes depends on your pet's size and the type of service requested. Your stylist will be able to provide an estimated time of completion at check-in or over the phone.<br/><br/>Minor services, such as nail trimmings, approximately take 5 minutes and, depending on salon availability, no appointment is necessary. However, we recommend calling your local salon to confirm availability.</p>"
+          }
+        },
+        "164383149952b74e7a-1": {
+          "type": "text",
+          "settings": {
+            "heading": "How do I get my pet started with a grooming service?",
+            "description": "<p>For dogs, we offer online booking on Minion. If you'd like to chat with a stylist about your pet's specific needs, call your local salon.</p>"
+          }
+        },
+        "164383149952b74e7a-2": {
+          "type": "text",
+          "settings": {
+            "heading": "How do I change or cancel an appointment?",
+            "description": "<p>Please call your salon to cancel or make changes to your appointment.</p>"
+          }
+        },
+        "3147fc3b-05fb-4a1f-93dd-0c157f542e91": {
+          "type": "text",
+          "settings": {
+            "heading": "How is safety ensured for all pet grooming services?",
+            "description": "<p>We are committed to maintaining the highest standards of animal care and safety in the industry, as developed under the supervision of our Director of Veterinary Medicine, with counsel from several independent experts in animal care, behavior and ethics.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "164383149952b74e7a-0",
+        "164383149952b74e7a-1",
+        "164383149952b74e7a-2",
+        "3147fc3b-05fb-4a1f-93dd-0c157f542e91"
+      ],
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Frequently asked questions",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "16438315576efd3182": {
+      "type": "slideshow",
+      "blocks": {
+        "63bf2508-dc39-4a7f-9882-a3829bd655d2": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "GROOMING",
+            "heading": "Book a grooming treatment at your local Minion 🚿",
+            "description": "",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "Find a salon",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": false,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "63bf2508-dc39-4a7f-9882-a3829bd655d2"
+      ],
+      "settings": {
+        "top_spacing": "none",
+        "bottom_spacing": "normal",
+        "width": "page-fullwidth",
+        "image_size": "fullscreen",
+        "desktop_image_height": 440,
+        "texts_aligment_mobile": "text-center-mobile",
+        "box_roundness": 3,
+        "design_type": "image-banner__default",
+        "slider_animation": true,
+        "desktop_navigation": "dots_arrows",
+        "mobile_navigation": "dots_arrows",
+        "dots_desktop_position": "center",
+        "autoplay_enabled": true,
+        "autoplay_time": 5,
+        "video_slide_mode": "autoplay_muted",
+        "play_button_enabled": true,
+        "color_media_bg": "rgba(0,0,0,0)",
+        "color_media_bg_hover": "rgba(0,0,0,0)",
+        "color_swatches": "rgba(0,0,0,0)",
+        "color_swatches_m": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16438247647e270702",
+    "164382588716bbb839",
+    "1649865436cffd0444",
+    "1643830707ee874a4d",
+    "1643831135d669e580",
+    "1643831355c229cfe5",
+    "16438314992c9f9321",
+    "16438315576efd3182"
+  ]
+}

@@ -1,0 +1,108 @@
+#FacetsWrapperDesktop .chm-toggle[open].toggle-opening .chm-toggle__button {
+  margin-bottom: 14px;
+}
+#FacetsWrapperDesktop .chm-toggle[open].toggle-opening .chm-toggle__button.chm-toggle__button--mb20 {
+  margin-bottom: 20px;
+}
+#FacetsWrapperDesktop .chm-toggle:first-child {
+  padding-top: 1px;
+  position: relative;
+}
+#FacetsWrapperDesktop .chm-toggle:first-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--color-lines-borders);
+}
+#FacetsWrapperDesktop{
+  padding-bottom: 0;
+  display: block;
+  border-bottom: 1px solid var(--color-lines-borders);
+}
+#FacetsWrapperDesktop .chm-toggle:first-child .chm-toggle__button {
+  padding-top: 30px;
+}
+.facets__header{
+  display: flex;
+  justify-content: space-between;
+}
+.facets__display__content{
+  margin-top: calc(20px - var(--facets-padding));
+}
+.facets__price{
+  padding: 20px 0 0;
+}
+show-all-facets{
+  padding-top: calc(20px - var(--facets-padding));
+  margin-bottom: 2px;
+}
+show-all-facets:after{
+  content: attr(data-show);
+}
+.show-all-items show-all-facets:after{
+  content: attr(data-hide);
+}
+.facets__selected{
+  padding-right: 20px;
+}
+.facets__header__filter_and_operator .operator-visual-display{
+  padding-bottom:6px;
+}
+@media (min-width: 1025px) and (max-width: 1439px){
+  .facets__price{
+    flex-wrap: wrap;
+  }
+  .facets__price .facets__price__item{
+    width: 100%;
+  }
+  .facets__price .field{
+    width: 100%;
+  }
+}
+@media (min-width: 1025px){
+  .facets__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .facets__form .chm-toggle[open] .chm-toggle__content {
+    padding: 20px;
+    margin: -20px -20px 10px -20px;
+  }
+}
+#FacetFiltersForm #FacetsWrapperDesktop>.chm-toggle:last-child .chm-toggle__button{
+  padding-bottom: 30px;
+}
+#FacetFiltersForm #FacetsWrapperDesktop>.chm-toggle[open]:last-child .chm-toggle__button{
+  padding-bottom: 0px;
+}
+#FacetFiltersForm #FacetsWrapperDesktop>.chm-toggle[open]:last-child .chm-toggle__content{
+  margin-bottom: 10px;
+}
+#FacetsWrapperDesktop.admin-panel--no-js .chm-toggle[open] .chm-toggle__content,
+.no-js #FacetsWrapperDesktop .chm-toggle[open] .chm-toggle__content{
+  margin-top:-20px;
+  margin-bottom:10px;
+}
+/*.facets__items--show-first li:nth-child(n+var(--show-first-count)):not(:last-child){*/
+html:not(.no-js) .facets__display__content:not(.show-all-items) .facets__items--hide-latest~*:not(:last-child){
+  display: none;
+}
+.no-js .facets__button-show-all{
+  display: none;
+}
+.facets__disclosure-no-js .btn{
+  margin-top: var(--padding2);
+}
+.no-js .chm-toggle[open] .chm-toggle__content {
+  overflow: unset;
+}
+.no-js .facets__disclosure-no-js__container{
+  padding: 30px 0;
+  display: block;
+  border-top: 1px solid var(--color-lines-borders);
+}

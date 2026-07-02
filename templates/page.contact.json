@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "1643620706e63535d6": {
+      "type": "text",
+      "settings": {
+        "subheading": "CONTACT US",
+        "heading": "We're here for you",
+        "description": "<p>📞<strong> Tel: (123) 456-7890</strong><br/><br/>7895 Piermont Dr NE Albuquerque, NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "none",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "subheading": "",
+        "heading": "Let's chat 💬",
+        "text": "Got a question or just want to chat?",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_input_bg": "rgba(0,0,0,0)",
+        "color_input_bg_active": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "164362679434260775": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 20,
+        "text_size": "normal",
+        "text": "<p><strong>A NOTE ON CORONAVIRUS</strong>: Shipping in compliance with social distancing measures and current U.S. government regulations.</p>",
+        "show_icon": "svg",
+        "icon_name": "virus_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#fff3b3",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643620706e63535d6",
+    "form",
+    "164362679434260775"
+  ]
+}

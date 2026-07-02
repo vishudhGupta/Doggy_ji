@@ -1,0 +1,22 @@
+.price{
+  color: var(--color-price);
+}
+.price__main-color{
+  color: var(--color-price);
+} 
+.price__regular{
+  text-decoration-line: line-through;
+}
+.price__sale{
+  color: var(--color-old-price);
+}
+.product-card .unit-price{
+  display: inline-flex;
+  margin-top: 3px;
+}
+.unit-price{
+  color: var(--color-base);
+}
+.product-page-section .unit-price{
+  margin-top:5px;
+}

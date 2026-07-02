@@ -1,0 +1,75 @@
+{%- capture section_styles -%}
+{%- if section.settings.background != 'hide' -%}
+{%- if section.settings.background_width == "content_width" and long == true -%}
+@media (min-width: 1025px){
+ #minion-section-{{ section.id }} .section-background{
+   padding-left: 0;
+   padding-right: 0;
+  }
+}
+{%- endif -%}
+{%- liquid
+	capture color
+	if section.settings.background == 'color'
+    echo section.settings.color_background
+    else
+    echo section.settings.gradient
+    endif
+    endcapture
+-%}
+{%- if color != "rgba(0,0,0,0)" and color != blank and section.settings.background != 'image' -%}
+#minion-section-{{ section.id }}{
+  --color-section-background: {{ color }};
+}
+{% comment %}
+{%- elsif section.settings.background == 'image' -%}
+#minion-section-{{ section.id }}{
+  --color-section-background:transparent;
+}
+{% endcomment %}
+{%- endif -%}
+{%- if section.settings.remove_bottom_spacing -%}
+#minion-section-{{ section.id }}.section-background,
+#minion-section-{{ section.id }} .section-background{
+  padding-bottom: 0;
+}
+{%- endif -%}
+{%- assign image = section.settings.background_image -%}
+{%- assign image_mobile = section.settings.background_image_mobile -%}
+{%- if section.settings.background == 'image' and image != blank -%}
+#minion-section-{{ section.id }}.section-background,
+#minion-section-{{ section.id }} .section-background{
+  {%- assign opacity = section.settings.image_overlay_opacity | divided_by: 100.00 -%}
+  {%- if section.settings.image_overlay_color != "rgba(0,0,0,0)" -%}
+  --color-image-overlay:{{ section.settings.image_overlay_color }};
+  {%- else -%}
+  --color-image-overlay:var(--color-base);
+  {%- endif -%}
+  background-image:linear-gradient(rgb(from var(--color-image-overlay) r g b / {{ opacity }}), rgb(from var(--color-image-overlay) r g b / {{ opacity }})), url("{{ image | image_url: width: image.width }}");
+  background-position: {{ section.settings.imagealign }};
+  background-repeat: no-repeat;
+  background-size: {{ section.settings.imagesize }};
+}
+{%- endif -%}
+{%- if section.settings.background == 'image' and image_mobile != blank -%}
+@media (max-width:576px){
+  #minion-section-{{ section.id }}.section-background,
+  #minion-section-{{ section.id }} .section-background{
+    {%- assign opacity = section.settings.image_overlay_opacity_mobile | divided_by: 100.00 -%}
+    {%- if section.settings.image_overlay_color_mobile != "rgba(0,0,0,0)" -%}
+    --color-image-overlay:{{ section.settings.image_overlay_color_mobile }};
+    {%- else -%}
+    --color-image-overlay:var(--color-base);
+    {%- endif -%}
+    background-image:linear-gradient(rgb(from var(--color-image-overlay) r g b / {{ opacity }}),rgb(from var(--color-image-overlay) r g b / {{ opacity }})), url("{{ image_mobile | image_url: width: image_mobile.width }}");
+    background-position: {{ section.settings.imagealign }};
+    background-repeat: no-repeat;
+    background-size: {{ section.settings.imagesize }};
+  }
+}
+{%- endif -%}
+{%- endif -%}
+{%- endcapture -%}
+{%- if section_styles != blank -%}
+<style>{{ section_styles }}</style>
+{%- endif -%}

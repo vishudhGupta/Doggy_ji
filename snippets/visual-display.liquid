@@ -1,0 +1,62 @@
+{% comment %}
+  Renders a visual display element, currently just a swatch. If wrapped in "visual-display-parent" and "visual-display-parent--swatch" classes, this will receive hover and focus states.
+
+  Add a class of "active" or "disabled" to the parent element to change the state of the visual display.
+
+  Accepts:
+  - type: {String} Can be "colors" or "image", or nothing to represent an empty state.
+  - value: {Object} Will be an array of color drops, or image drop, depending on the "type"
+  - value_main: {Object} main object
+  - presentation: {String} Can only be "swatch"
+  - enable_products_count: {Boolean}
+
+  Usage:
+  {% render 'visual-display', type: value.display.type, value: value.display.value, value_main: value, presentation: filter.presentation, enable_products_count:true %}
+{% endcomment %}
+<div class="visual-display{% unless type == "colors" or type == "image" %} empty btn--secondary{% endunless %}">
+  {%- case type -%}
+    {%- when 'colors' -%}
+    <div class="visual-display__color{% if settings.color_background == value[0] %} visual-display__color-background{% endif %}" style="--color-swatch-background:{{ value[0] }};">
+      <span class="hidden">{{- value_main.label | escape }} ({{ value_main.count }})</span>
+      {%- liquid
+        assign color_style_inverse = false
+        assign accent_brightness = value[0] | color_extract: 'lightness'
+        if accent_brightness < 50
+        assign color_style = '#ffffff'
+        assign color_style_inverse = true
+        else
+        assign accent_brightness = settings.color_base | color_extract: 'lightness'
+        if accent_brightness < 50
+        assign color_style = settings.color_base
+        else
+        assign color_style = '#000000'
+        assign color_style_inverse = true
+        endif
+        endif
+      -%}
+      <div class="visual-display-line{% if color_style_inverse %} visual-display-line--inverse{% endif %}" style="--color-base:{{ color_style }};">
+        <div class="visual-display-line-item"></div>
+      </div>
+    </div>
+    {%- when 'image' -%}
+    <div class="visual-display-container" style="--f-aspect-ration:{{ value.aspect_ratio }}">
+      <div class="visual-display__image">
+        <div class="visual-display__image__content">
+          {{
+            value
+            | image_url: width: 300
+            | image_tag: class: 'visual-display__child visual-display__image', alt: value.alt
+          }}
+        </div>
+        <div class="visual-display-line">
+          <div class="visual-display-line-item"></div>
+        </div>
+      </div>
+      {%- if value_main.label != blank -%}
+        <span class="{% if settings.filter_image == "show-center" %}text-center w-full{% endif %}{% unless settings.filter_image contains "show" %}hidden{% endunless %}">{{- value_main.label | escape }}{% if enable_products_count %} ({{ value_main.count }}){% endif %}</span>
+      {%- endif -%}
+    </div>
+    {%- else -%}
+    <span>{{- value_main.label | escape }}{% if enable_products_count %} ({{ value_main.count }}){% endif %}</span>
+  {%- endcase -%}
+</div>

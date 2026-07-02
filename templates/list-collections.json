@@ -1,0 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "heading": "Collections",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "mobile_grid": "12",
+        "design_type": "text-below-image",
+        "sort": "alphabetical",
+        "image_ratio": "1.333333",
+        "texts_aligment": "text-center",
+        "hover_underline": false,
+        "show_products_count": true,
+        "texts_aligment_mobile": "text-center-mobile",
+        "color_texts": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_button_hover": "rgba(0,0,0,0)"
+      }
+    },
+    "1657614352375cfe25": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 20,
+        "text_size": "normal",
+        "text": "<p><strong>Let's aeed your feline friends with hearty and healthy meals!</strong></p>",
+        "show_icon": "svg",
+        "icon_name": "cat_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ffffff",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657614352375cfe25"
+  ]
+}

@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "medium",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "1643624234e4f43fc4": {
+      "type": "map",
+      "blocks": {
+        "1643624233e9486f46-0": {
+          "type": "image",
+          "settings": {
+            "api_key": "",
+            "map_address": "",
+            "show_pin": true,
+            "map_zoom_level": 14,
+            "image": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643624233e9486f46-0"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "page-fullwidth",
+        "desktop_content_height": 600,
+        "row_reverse": false,
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
+    },
+    "1643826796bec97bc8": {
+      "type": "text",
+      "disabled": true,
+      "settings": {
+        "subheading": "LOCATION",
+        "heading": "Minion",
+        "description": "<p>📞<strong> Tel: (123) 456-7890</strong><br/><br/>7895 Piermont Dr NE Albuquerque, NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p><p>Email: <a href=\"/pages/contact\" title=\"Contact\"><strong>customers@youremail.com</strong></a></p>",
+        "button_name": "Get in touch",
+        "button_url": "",
+        "top_spacing": "none",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h2",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ddf1f0",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1649864177d50325d1": {
+      "type": "image-with-text-bg",
+      "blocks": {
+        "c5a5ae20-dbfc-4e43-ba2c-efdcff7dd621": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image_ratio": "1.333333",
+            "image": "",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "58f5bb88-d26d-4218-8465-09789010723b": {
+          "type": "heading",
+          "settings": {
+            "subheading": "LOCATION",
+            "heading": "Minion"
+          }
+        },
+        "13a53a46-9015-467c-a53c-438b40f0050e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>📞<strong> Tel: (123) 456-7890</strong><br/><br/>7895 Piermont Dr NE Albuquerque, NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p><p>Email: <a href=\"/pages/contact\" title=\"Contact\"><strong>customers@youremail.com</strong></a></p>"
+          }
+        },
+        "2037f8d8-4293-4e95-8b76-c7ddb990cee8": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get in touch"
+          }
+        }
+      },
+      "block_order": [
+        "c5a5ae20-dbfc-4e43-ba2c-efdcff7dd621",
+        "58f5bb88-d26d-4218-8465-09789010723b",
+        "13a53a46-9015-467c-a53c-438b40f0050e",
+        "2037f8d8-4293-4e95-8b76-c7ddb990cee8"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "page-width",
+        "column_reverse": true,
+        "texts_aligment": "text-center",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "play_background": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ddf1f0",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "background_bp": 70
+      }
+    },
+    "164362441060da37a7": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 20,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>A NOTE ON CORONAVIRUS: </strong>Shipping in compliance with social distancing measures and current U.S. government regulations.</p>",
+        "show_icon": "svg",
+        "icon_name": "virus_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#fff3b3",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643624234e4f43fc4",
+    "1643826796bec97bc8",
+    "1649864177d50325d1",
+    "164362441060da37a7"
+  ]
+}

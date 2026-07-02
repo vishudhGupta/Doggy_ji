@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "heading_aligment": "heading-left",
+        "top_spacing": "medium",
+        "width": "default",
+        "image_ratio": "auto",
+        "show_vendor": true
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "settings": {
+        "top_spacing": "small",
+        "width": "default"
+      }
+    },
+    "featured-products": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "subheading": "",
+        "heading": "🐶 Top products of this week",
+        "heading_aligment": "text-center",
+        "button_name": "Show All",
+        "top_spacing": "normal",
+        "width": "default",
+        "grid": "col-md-4 col-one_fifth",
+        "desktop_slider": "show_mask",
+        "desktop_slider_scroll_one": false,
+        "mobile_grid": "6",
+        "swipe_on_mobile": true,
+        "product_limit": 15,
+        "image_ratio": "1",
+        "image_zoom_internal": false,
+        "show_secondary_image": true,
+        "texts_aligment": "text-left",
+        "product_name_size": "normal",
+        "show_vendor": false,
+        "show_type": false,
+        "show_price": true,
+        "truncate_product_name": false,
+        "hover_underline": false,
+        "button_type_product": "hide",
+        "show_button_quickview": true,
+        "show_badge_on_sale": true,
+        "show_badge_sold_out": true,
+        "show_badge_feature": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_meta": "rgba(0,0,0,0)",
+        "color_all_elements": "rgba(0,0,0,0)",
+        "color_price": "rgba(0,0,0,0)",
+        "color_save_price": "rgba(0,0,0,0)",
+        "color_button_quickview": "rgba(0,0,0,0)",
+        "color_button_product": "rgba(0,0,0,0)",
+        "color_border_1": "rgba(0,0,0,0)",
+        "color_border_2": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1644400981ee91b2c5": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 10,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>FREE SHIPPING</strong> - no code needed, just head for checkout!</p>",
+        "show_icon": "svg",
+        "icon_name": "truck_sm",
+        "color_svg": "#142c73",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "featured-products",
+    "1644400981ee91b2c5"
+  ]
+}

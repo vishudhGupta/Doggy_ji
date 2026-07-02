@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header.name",
+  "sections": {
+    "41675861-c1d6-4647-a14b-ed11c1ba75a6": {
+      "type": "announcement-bar-header",
+      "blocks": {
+        "sections--16680045281521__41675861-c1d6-4647-a14b-ed11c1ba75a6-1675421434a26bd80c-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "😺🥩 FREE SHIPPING - no code needed, just head for checkout!",
+            "link_name": "Learn more",
+            "link_url": "",
+            "color_background": "#142c73",
+            "color_text": "#ffffff",
+            "color_link": "#4ac3b7"
+          }
+        },
+        "1edf1644-d32d-4b72-8173-39f11e6e3e29": {
+          "type": "announcement",
+          "settings": {
+            "text": "💰 100% MONEY BACK guarantee if your pet doesn't like it.",
+            "link_name": "",
+            "link_url": "",
+            "color_background": "#fff3b3",
+            "color_text": "rgba(0,0,0,0)",
+            "color_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16680045281521__41675861-c1d6-4647-a14b-ed11c1ba75a6-1675421434a26bd80c-0",
+        "1edf1644-d32d-4b72-8173-39f11e6e3e29"
+      ],
+      "settings": {
+        "width": "page-fullwidth",
+        "text_size": "announcement-text-5",
+        "slider_mode": true,
+        "bar_time": 3
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "header_layout": "header-layout-classic",
+        "menu": "main-menu",
+        "secondary_menu": "",
+        "width": "page-wide",
+        "show_search": false,
+        "open_search": false,
+        "enable_sticky_header": true,
+        "show_color_line": false,
+        "menu_font_weight": "strong",
+        "icons_color": "rgba(0,0,0,0)",
+        "logo": "shopify://shop_images/DOggyji-new-logo-1.webp",
+        "logo_svg": "",
+        "logo_max_width": 80,
+        "logo_position": "left",
+        "logo_mobile": "shopify://shop_images/DOggyji-new-logo-1.webp",
+        "logo_svg_mobile": "",
+        "logo_max_width_mobile": 50,
+        "logo_position_mobile": "left",
+        "show_menu_animation_tiles": true,
+        "visible_items_count": 10,
+        "icons_size": 20,
+        "color_tile_base": "rgba(0,0,0,0)",
+        "color_tile_active": "rgba(0,0,0,0)",
+        "menu_classic_position": "center",
+        "show_menu_animation_vertical": true,
+        "vertical_menu_item_padding": 15,
+        "color_button": "rgba(0,0,0,0)",
+        "sections_count": "1"
+      }
+    }
+  },
+  "order": [
+    "41675861-c1d6-4647-a14b-ed11c1ba75a6",
+    "header"
+  ]
+}

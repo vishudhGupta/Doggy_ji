@@ -1,0 +1,162 @@
+{% comment %}
+options[0] - texts_aligment: text-left, text-center
+options[1] - swipe_on_mobile: true / false
+options[2] - page_width: page-width / page-wide
+options[3] - grid: string
+options[4] - mobile_grid: 12 / 6
+options[5] - image_ratio: string
+options[6] - show_button_quickview: true / false
+options[7] - show_badge_sold_out: true / false
+options[8] - show_badge_on_sale: true / false
+options[9] - show_badge_feature: true / false
+options[10] - show_secondary_image: true / false
+options[11] - show_vendor: true / false
+options[12] - product_name_size: body2 / normal
+options[13] - hover_underline: true / false
+options[14] - truncate_product_name: true / false
+options[15] - show_price: true / false
+options[16] - section_id: section.id
+options[17] - heading_aligment: text-left, text-center
+options[18] - product_limit: Number
+options[19] - empty
+options[20] - button_type_product: String
+options[21] - show_type: true / false
+options[22] - button_name: String
+options[23] - slider: String
+options[24] - slider scroll: true / false
+options[25] - image_zoom_internal: true / false
+options[26] - placeholder: true / false
+{% endcomment %}
+
+{% layout none %}
+{%- assign options = collection.sort_by | split: "___" -%}
+
+{%- assign page_grid = options[3] | replace: "--", " " -%}
+{%- assign image_ratio = options[5] | replace: "--", ", " -%}
+{%- assign product_limit = options[18] | plus: "0" -%}
+{%- if options[1] == "true" -%}{%- assign swipe_on_mobile = true -%}{%- else -%}{%- assign swipe_on_mobile = false -%}{%- endif -%}
+{%- if options[6] == "true" -%}{%- assign show_button_quickview = true -%}{%- else -%}{%- assign show_button_quickview = false -%}{%- endif -%}
+{%- if options[7] == "true" -%}{%- assign show_badge_sold_out = true -%}{%- else -%}{%- assign show_badge_sold_out = false -%}{%- endif -%}
+{%- if options[8] == "true" -%}{%- assign show_badge_on_sale = true -%}{%- else -%}{%- assign show_badge_on_sale = false -%}{%- endif -%}
+{%- if options[9] == "true" -%}{%- assign show_badge_feature = true -%}{%- else -%}{%- assign show_badge_feature = false -%}{%- endif -%}
+{%- if options[10] == "true" -%}{%- assign show_secondary_image = true -%}{%- else -%}{%- assign show_secondary_image = false -%}{%- endif -%}
+{%- if options[11] == "true" -%}{%- assign show_vendor = true -%}{%- else -%}{%- assign show_vendor = false -%}{%- endif -%}
+{%- if options[13] == "true" -%}{%- assign hover_underline = true -%}{%- else -%}{%- assign hover_underline = false -%}{%- endif -%}
+{%- if options[14] == "true" -%}{%- assign truncate_product_name = true -%}{%- else -%}{%- assign truncate_product_name = false -%}{%- endif -%}
+{%- if options[15] == "true" -%}{%- assign show_price = true -%}{%- else -%}{%- assign show_price = false -%}{%- endif -%}
+{%- if options[21] == "true" -%}{%- assign show_type= true -%}{%- else -%}{%- assign show_type = false -%}{%- endif -%}
+{%- if options[24] == "true" -%}{%- assign desktop_slider_scroll= true -%}{%- else -%}{%- assign desktop_slider_scroll = false -%}{%- endif -%}
+{%- if options[25] == "true" -%}{%- assign image_zoom_internal = true -%}{%- else -%}{%- assign image_zoom_internal = false -%}{%- endif -%}
+{%- comment -%}the placeholder should always come last{%- endcomment -%}
+{%- if options[26] == "true" -%}{%- assign placeholder = true -%}{%- else -%}{%- assign placeholder = false -%}{%- endif -%}
+{%- assign desktop_slider = options[23] -%}
+
+{%- if placeholder -%}
+{%- assign handles_size = product_limit -%}
+{%- else -%}
+{%- assign handles_size = collection.products.size -%}
+{%- endif -%}
+
+<div class="featured-collection-items{% if desktop_slider == "show_mask" %} slider-desktop__mask{% endif %}">
+  {%- if desktop_slider contains "show" -%}
+  <div class="slider-desktop__buttons__prev slider-desktop__buttons__hide">
+    <div class="btn btn_zoom">{%- render "icon-arrow-left" -%}</div>
+  </div>
+  <div class="slider-desktop__buttons__next slider-desktop__buttons__hide">
+    <div class="btn btn_zoom">{%- render "icon-arrow-right" -%}</div>
+  </div>
+  {%- endif -%}
+  <slider-component class="grid el_mt_40 {{ options[0] }}{% if desktop_slider contains "show" %} slider-desktop slider-desktop--hide-items{% if desktop_slider_scroll %} slider-desktop--scroll-one{% endif %}{% endif %}{% if swipe_on_mobile %} slider slider--phone{% endif %}{% if options[17] == "text-center" %} justify-content-center--no-phone{% endif %}">
+    {%- if placeholder == false -%}
+    {%- for product in collection.products limit: product_limit -%}
+    <div class="col-sp-{{ options[4] }} {{ page_grid }}{% if swipe_on_mobile %} slider__slide{% endif %}">
+      {%- liquid
+          if options[2] == "page-wide"
+          assign page_is_wide = true
+          else
+          assign page_is_wide = false
+          endif
+      -%}
+      {%- render "product-card",
+          product_card_product: product,
+          settings_image_ratio: image_ratio,
+          show_button_quickview: show_button_quickview,
+          show_badge_sold_out: show_badge_sold_out,
+          show_badge_on_sale: show_badge_on_sale,
+          show_badge_feature: show_badge_feature,
+          show_secondary_image: show_secondary_image,
+          show_vendor: show_vendor,
+          show_type: show_type,
+          product_name_size: options[12],
+          hover_underline: hover_underline,
+          truncate_product_name: truncate_product_name,
+          show_price: show_price,
+          button_type_product: options[20],
+          page_is_wide: page_is_wide,
+          section_id: options[16],
+            force_uniform_layout_card: true,
+          image_zoom_internal:image_zoom_internal
+      -%}
+    </div>
+    {%- endfor -%}
+    {%- else -%}
+    {%- for i in (1..product_limit) -%}
+    <div class="col-sp-{{ options[4] }} {{ page_grid }}{% if swipe_on_mobile %} slider__slide{% endif %}">
+      {%- capture placeholder_name -%}
+      {%- cycle 'product-1', 'product-2', 'product-3', 'product-4', 'product-5', 'product-6' -%}
+      {%- endcapture -%}
+      {%- render "product-card-placeholder",
+          settings_image_ratio: image_ratio,
+          show_vendor: show_vendor,
+          show_type: show_type,
+          product_name_size: options[12],
+          hover_underline: hover_underline,
+          truncate_product_name: truncate_product_name,
+          show_price: show_price,
+          button_type_product: options[20],
+          placeholder_name: placeholder_name,
+          image_zoom_internal:image_zoom_internal
+      -%}
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+  </slider-component>
+</div>
+
+{%- assign at_most = handles_size | at_most: product_limit -%}
+{%- liquid
+    if options[4] == "6"
+    assign devider = 2.0
+    else
+    assign devider = 1.0
+    endif
+-%}
+{%- assign length = at_most | divided_by: devider | ceil -%}
+{%- if swipe_on_mobile and length > 1 -%}
+<div class="mt40 grid slider__buttons slider--phone">
+  <div class="col-12">
+    {%- liquid
+        capture alignment
+        if options[17] == "text-center"
+        echo "justify-content-center"
+        endif
+        endcapture
+        render "slider-buttons", alignment:alignment, length:length
+    -%}
+  </div>
+</div>
+{%- endif -%}
+
+{%- if options[22] != blank -%}
+{%- if collection.products.size > product_limit -%}
+<div class="grid self_mt_60 {{ options[17] }}">
+  <div class="col-12">
+    <a href="{{ collection.url }}"
+       class="btn btn_zoom btn--secondary w-full-sp{% if settings.enable_btn_with_arrow %} btn__animation-arrow{% endif %}"
+       >
+      <span>{{ options[22] }}</span>
+    </a>
+  </div>
+</div>
+{%- endif -%}
+{%- endif -%}

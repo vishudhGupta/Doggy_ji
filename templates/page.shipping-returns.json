@@ -1,0 +1,210 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1642517885e89622c3": {
+      "type": "text",
+      "settings": {
+        "subheading": "",
+        "heading": "🚀 Shipping & returns",
+        "description": "<p>Hopefully you can find what you need below.<br/>If not, then please check our  <a href=\"/pages/help\" title=\"Help\"><strong>Help</strong></a> or <a href=\"/pages/contact\" title=\"Contact\"><strong>Get in touch</strong></a>. </p>",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_width": "content_width",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643815454abfe4572": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "164381545445b59ad6-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "free",
+            "heading": "Free US shipping",
+            "description": ""
+          }
+        },
+        "164381545445b59ad6-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "box",
+            "heading": "Next day delivery <br> available",
+            "description": "<p>If ordered before 2pm on weekdays.</p>"
+          }
+        },
+        "164381545445b59ad6-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "money_back",
+            "heading": "100% money back <br>guarantee",
+            "description": "<p>If your pet doesn't like it.</p>"
+          }
+        },
+        "b076184c-43dd-4a9b-8172-844ad0b97c95": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "truck",
+            "heading": "Delivered anywhere <br> in the US",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "164381545445b59ad6-0",
+        "164381545445b59ad6-1",
+        "164381545445b59ad6-2",
+        "b076184c-43dd-4a9b-8172-844ad0b97c95"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "medium",
+        "width": "page-width",
+        "grid": "col-md-6 col-3",
+        "swipe_on_mobile": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "#ffd701",
+        "gradient": "",
+        "background_width": "content_width",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "164986294919cf641c": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "164986294906fab17b-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_1",
+            "heading": "Standard delivery",
+            "description": "<p>3-5 working days<br/> <strong>FREE</strong></p>"
+          }
+        },
+        "164986294906fab17b-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_2",
+            "heading": "Special Delivery",
+            "description": "<p>Next day tracked<br/><strong>$7.99</strong></p>"
+          }
+        },
+        "164986294906fab17b-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_3",
+            "heading": "Repeat delivery",
+            "description": "<p><strong>5% OFF</strong> + <strong>FREE</strong> delivery<br/> (with Standard Delivery)</p>"
+          }
+        }
+      },
+      "block_order": [
+        "164986294906fab17b-0",
+        "164986294906fab17b-1",
+        "164986294906fab17b-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Shipping costs",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": false,
+        "heading_aligment": "text-center"
+      }
+    },
+    "1643817196d56209aa": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 20,
+        "text_size": "normal",
+        "text": "<p><strong>A NOTE ON CORONAVIRUS: </strong>Shipping in compliance with social distancing measures and current U.S. government regulations.</p>",
+        "show_icon": "svg",
+        "icon_name": "virus_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ddf1f0",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "1642517885e89622c3",
+    "1643815454abfe4572",
+    "164986294919cf641c",
+    "main",
+    "1643817196d56209aa"
+  ]
+}

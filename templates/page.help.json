@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "164362737874e7231d": {
+      "type": "text",
+      "settings": {
+        "subheading": "",
+        "heading": "How can we help?",
+        "description": "",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643623428baf94b31": {
+      "type": "accordion",
+      "blocks": {
+        "16436234270e3356e0-0": {
+          "type": "text",
+          "settings": {
+            "heading": "How long will you hold my item(s) at the store?",
+            "description": "<p>We will hold your items for 5 days, starting at the time that we notify you that your order is ready for pickup. If you do not pick up your order in that time frame, we will initiate your refund 5-1/2 days from the time your order was ready for pickup.</p>"
+          }
+        },
+        "16436234270e3356e0-1": {
+          "type": "text",
+          "settings": {
+            "heading": "When can I pick up my order?",
+            "description": "<p>As soon as your order is ready, we will send you a \"Ready for Pickup\" email to let you know. If you place an order while the store is open, it will typically be ready for pickup within a few hours. If you place an order after your selected store has closed, your order will typically be ready for pickup shortly after the store opens the next morning. Store hours may vary by location, so be sure to check the hours before placing your order. Remember, don't head to the store until you have received a \"Ready for Pickup\" email!</p>"
+          }
+        },
+        "16436234270e3356e0-2": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I change or cancel my order?",
+            "description": "<p>You can always call the “Company name” at 📞<strong>(123) 456-7890</strong> if you want to cancel your order. If you want to change the order, you can call ahead or do it when you arrive. Please note that, depending on the change requested, we may need to cancel the original order and place a new one.</p>"
+          }
+        },
+        "e95ff872-c915-4c51-9fd3-908a1e8241ca": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I have someone else pick up my order?",
+            "description": "<p>You can designate an alternate person to pick up your order when you are placing the order. You will need to provide that person's name and email address. We will then send the \"Ready for Pickup\" notification to the designated person, who will need to show a valid I.D. and order number at the store.</p>"
+          }
+        },
+        "580bb33d-ce48-4858-b1c7-43eb6a879410": {
+          "type": "text",
+          "settings": {
+            "heading": "What do I need to bring to the store when I pick up my order?",
+            "description": "<p>Please bring your order number (found in your \"Order Confirmation\" and \"Ready for Pickup\" emails) and a valid photo I.D. You do NOT need to bring the credit card used for the transaction.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16436234270e3356e0-0",
+        "16436234270e3356e0-1",
+        "16436234270e3356e0-2",
+        "e95ff872-c915-4c51-9fd3-908a1e8241ca",
+        "580bb33d-ce48-4858-b1c7-43eb6a879410"
+      ],
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Buy online, pickup in store",
+        "heading_aligment": "text-center",
+        "top_spacing": "medium",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643623434867f098c": {
+      "type": "accordion",
+      "blocks": {
+        "16436234342ee419df-0": {
+          "type": "text",
+          "settings": {
+            "heading": "Payment options",
+            "description": "<p>At “Company name”, we accept all major forms of credit cards, as well as several other forms of payment: 💳<br/><br/>• American Express<br/>• Discover<br/>• MasterCard<br/>• Visa<br/>• PayPal<br/>• Gift Card<br/><br/>We do not accept the following forms of payment:<br/><br/>• CODs<br/>• Layaway plans<br/>• Merchandise Return Cards<br/><br/>Important Payment Information:<br/><br/>• Credit cards are not charged until order products are shipped.<br/>• Some debit and bank check cards may reflect deduction of funds immediately upon order. This is an authorization only. Funds will be collected by “Company name” upon shipment of products.<br/>• For your security, your billing name and address must match that of the credit card used for payment. We reserve the right to cancel any order that does not match these criteria.<br/>• Merchandise Return Cards are valid for in-store purchases only.</p>"
+          }
+        },
+        "e262f4a7-2dfa-4726-93ea-f5997d7bdc5b": {
+          "type": "text",
+          "settings": {
+            "heading": "Do you offer discounts?",
+            "description": "<p>Unfortunately, we do not offer discounts on our products at this time.</p>"
+          }
+        },
+        "16436234342ee419df-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Gift cards 🎁",
+            "description": "<p>Let's Get Started<br/><br/>• Shop online at “Company name” and add products to your shopping cart.<br/>• When you're ready to check out, go to your shopping cart and proceed to checkout.<br/>• Enter your gift card number and unique PIN (codes are case sensitive) in section 4: payment details.<br/>• Please save your gift card for future use if it covers the full amount of the transaction. If your gift card only covers a portion of the transaction, an additional form of payment is required.<br/>• If you have a gift card that does not have a PIN, it cannot be redeemed online and can only be redeemed at a “Company name” retail store. In order to use your gift card online, your remaining balance can be transferred to a new gift card at your local “Company name”.<br/>• When making a purchase online at “Company name”, you may redeem up to 5 gift cards per order.<br/>• Gift cards are not accepted for auto ship orders.<br/>• Purchases of gift cards are not eligible for Treats points.<br/>• Merchandise Return cards are valid in-store only and cannot be used to purchase items online.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16436234342ee419df-0",
+        "e262f4a7-2dfa-4726-93ea-f5997d7bdc5b",
+        "16436234342ee419df-1"
+      ],
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Payment",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643623889c6d0c699": {
+      "type": "accordion",
+      "blocks": {
+        "164362388910ff9bcb-0": {
+          "type": "text",
+          "settings": {
+            "heading": "Where do you ship?",
+            "description": "<p>Since “Company name” is still growing, we're currently only able to ship within the continental United States. (Sorry Alaska and Hawaii!) Because our wet food is shipped with enough dry ice to last for just 2-3 days, it would be hard for us to guarantee freshness outside of this area-- for now.</p>"
+          }
+        },
+        "164362388910ff9bcb-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Is your packaging recyclable?",
+            "description": "<p>We're proud to say that all of our packaging is 100% recyclable. The insulators we use to keep everything nice and cold are actually made of a corn-based styrofoam that is completely biodegradable. In fact, you can wash it right down your sink! Simply remove the insulators from their green plastic bags and place them in the sink-- we recommend just one or two pieces at a time. Turn the water on and watch the foam melt away!<br/><br/>The green bags that held the insulators can go out, along with all the cardboard, to your regular recycling receptacle. </p>"
+          }
+        },
+        "164362388910ff9bcb-2": {
+          "type": "text",
+          "settings": {
+            "heading": "I opened my package and the dry ice is all gone! Is the food still safe to serve?",
+            "description": "<p>One of the more fun features of dry ice is how it sublimates (i.e., it goes straight from being frozen solid to a gas, without \"melting\" or turning into a liquid.) That said, if you open your box and there's no dry ice left, it's not the end of the world. As long as the packets of wet food are either still frozen or at a temperature of 40ºF or lower, they're perfectly safe to refreeze and serve as normal.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "164362388910ff9bcb-0",
+        "164362388910ff9bcb-1",
+        "164362388910ff9bcb-2"
+      ],
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Shipping & delivery",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643629554096362f7": {
+      "type": "text",
+      "settings": {
+        "subheading": "",
+        "heading": "Still have questions?",
+        "description": "<p>Send us an email at <a href=\"/pages/contact\" title=\"Contact\"><strong>customers@youremail.com</strong></a></p>",
+        "button_name": "Contact us",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h2",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#fff3b3",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643629853c336989d": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "none",
+        "ticker_time": 20,
+        "text_size": "normal",
+        "text": "<p><strong>A NOTE ON CORONAVIRUS</strong>: Shipping in compliance with social distancing measures and current U.S. government regulations.</p>",
+        "show_icon": "svg",
+        "icon_name": "virus_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164362737874e7231d",
+    "1643623428baf94b31",
+    "1643623434867f098c",
+    "1643623889c6d0c699",
+    "1643629554096362f7",
+    "1643629853c336989d"
+  ]
+}

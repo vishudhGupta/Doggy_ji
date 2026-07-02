@@ -1,0 +1,560 @@
+{{ 'template-search.css' | asset_url | stylesheet_tag }}
+{{ 'component-inputs.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{%- render "section-background" section:section, long:true -%}
+
+{%- capture section_styles -%}
+{%- if section.settings.color_input_bg != "rgba(0,0,0,0)" -%}
+{%- assign accent_brightness = section.settings.color_input_bg | color_extract: 'lightness' -%}
+#minion-section-{{ section.id }} .field{
+  --color-input-background:{{section.settings.color_input_bg}};
+  {%- if accent_brightness < 50 -%}
+  --component-color-input-text: var(--auto-text-color-input-light);
+  --component-color-input-text-active: var(--auto-text-color-input-light);
+  {%- else -%}
+  --component-color-input-text: var(--auto-text-color-input-dark);
+  --component-color-input-text-active: var(--auto-text-color-input-dark);
+  {%- endif -%}
+}
+#minion-section-{{ section.id }} .field .field__button__type2 {
+    opacity:1;
+    {%- if accent_brightness < 50 -%}
+    --component-color-input-text-active: var(--auto-text-color-input-light);
+  {%- else -%}
+    --component-color-input-text-active: var(--auto-text-color-input-dark);
+  {%- endif -%}
+}
+{%- endif -%}
+{%- if section.settings.color_input_bg_active != "rgba(0,0,0,0)" or section.settings.color_input_bg != "rgba(0,0,0,0)" -%}
+{%- if section.settings.color_input_bg_active != "rgba(0,0,0,0)" -%}
+{%- assign accent_brightness = section.settings.color_input_bg_active | color_extract: 'lightness' -%}
+{%- else -%}
+{%- assign accent_brightness = settings.color_background | color_extract: 'lightness' -%}
+{%- endif -%}
+#minion-section-{{ section.id }} .field{
+  {%- if section.settings.color_input_bg_active != "rgba(0,0,0,0)" -%}
+  --color-input-background-active:{{section.settings.color_input_bg_active}};
+  {%- endif -%}
+  {%- if accent_brightness < 50 -%}
+  --component-color-lines-borders: var(--auto-input-color-active-border-light);
+  --component-color-input-text-active: var(--auto-text-color-input-light);
+  {%- else -%}
+  --component-color-lines-borders: var(--auto-input-color-active-border-dark);
+  --component-color-input-text-active: var(--auto-text-color-input-dark);
+  {%- endif -%}
+}
+#minion-section-{{ section.id }} .field:hover .field__button__type2 {
+  {%- if accent_brightness < 50 -%}
+    --component-color-input-text-active: var(--auto-text-color-input-light);
+  {%- else -%}
+    --component-color-input-text-active: var(--auto-text-color-input-dark);
+  {%- endif -%}
+}
+{%- endif -%}
+{%- if section.settings.color_button != "rgba(0,0,0,0)" -%}
+{%- assign accent_brightness = section.settings.color_button | color_extract: 'lightness' -%}
+#minion-section-{{ section.id }} .btn{
+  --background: {{ section.settings.color_button }};
+  {%- if accent_brightness < 50 -%}
+  --color: var(--auto-text-color-button-light);
+  --fill: var(--auto-text-color-button-light);
+  {%- else -%}
+  --color: var(--auto-text-color-button-dark);
+  --fill: var(--auto-text-color-button-dark);
+  {%- endif -%}
+}
+{%- endif -%}
+{%- if section.settings.color_pred_bg != "rgba(0,0,0,0)" -%}
+#minion-section-{{ section.id }} .predictive-search{
+  --color-simple-dropdown: {{ section.settings.color_pred_bg }};
+}
+{%- endif -%}
+{%- if section.settings.color_pred_text != "rgba(0,0,0,0)" -%}
+#minion-section-{{ section.id }} .predictive-search{
+  --color-base: {{ section.settings.color_pred_text }};
+}
+{%- endif -%}
+{%- if section.settings.color_pred_price != "rgba(0,0,0,0)" -%}
+#minion-section-{{ section.id }} .predictive-search{
+  --color-price: {{ section.settings.color_pred_price }};
+}
+{%- endif -%}
+{%- if section.settings.color_pred_price_old != "rgba(0,0,0,0)" -%}
+#minion-section-{{ section.id }} .predictive-search{
+  --color-old-price: {{ section.settings.color_pred_price_old }};
+}
+{%- endif -%}
+{%- endcapture -%}
+<style>
+  {{ section_styles }}
+</style>
+
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
+<div id="minion-section-{{ section.id }}" class="section-tags top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
+     data-section-name="search">
+    <div class="{{ page_width }} mb--last-child-0">
+        {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius mb--last-child-0">{%- endif -%}
+        <div class="grid justify-content-center">
+            <div class="col-st-12 col-6 mt--first-child-0">
+
+                {%- liquid
+                    if section.settings.color_subheading != "rgba(0,0,0,0)"
+                    assign color_subheading = ' style="--color-subheading:' | append: section.settings.color_subheading | append: ';"'
+                    endif
+                    if section.settings.color_heading != "rgba(0,0,0,0)"
+                    assign color_heading = ' style="color:' | append: section.settings.color_heading | append: ';"'
+                    endif
+                    if section.settings.color_text != "rgba(0,0,0,0)"
+                    assign color_text = ' style="color:' | append: section.settings.color_text | append: ';"'
+                    endif
+                -%}
+                {%- if section.settings.subheading != blank or section.settings.heading != blank -%}
+                <div class="mb--last-child-0 text-center">
+                    {%- if section.settings.subheading != blank -%}<div class="subheading h5"{{ color_subheading }}>{{ section.settings.subheading }}</div>{%- endif -%}
+                    {%- if section.settings.heading != blank -%}<h2{{ color_heading }} class="mt0">{{ section.settings.heading }}</h2>{%- endif -%}
+                </div>
+                {%- endif -%}
+
+                {%- if section.settings.description != blank -%}<p{{ color_text }} class="mt15 mb0 text-center">{{ section.settings.description }}</p>{%- endif -%}
+
+                <div class="mt30 predictive-search__two-columns predictive-search__two-columns__tablet text-center">
+                {%- if settings.predictive_search_enabled -%}
+                <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
+                {%- endif -%} 
+                    <form action="{{ routes.search_url }}" method="get" role="search" class="search header__icons__only-space w-full field__form-with-button button-down-sp">
+                        <div class="field{% if section.settings.field_icon %} field-with-icon{% endif %}">
+                            <input class="field__input"
+                                    id="Search-In-Template"
+                                    type="search"
+                                    name="q"
+                                    value="{{ search.terms | escape }}"
+                                    placeholder="{{ section.settings.input_text }}"
+                                    {%- if settings.predictive_search_enabled -%}
+                                    role="combobox"
+                                    aria-expanded="false"
+                                    aria-owns="predictive-search-results-list"
+                                    aria-controls="predictive-search-results-list"
+                                    aria-haspopup="listbox"
+                                    aria-autocomplete="list"
+                                    autocorrect="off"
+                                    autocomplete="off"
+                                    autocapitalize="off"
+                                    spellcheck="false"
+                                    {%- endif -%}
+                                    >
+                            <label class="field__label" for="Search-In-Template">{{ section.settings.input_text }}</label>
+                            <input type="hidden" name="options[prefix]" value="last">
+                            
+                            {%- if settings.predictive_search_enabled -%}
+                            <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
+                            <div class="predictive-search__loading-state">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="loading-overlay__spinner spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                </svg>
+                            </div>
+                            </div>
+
+                            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+                            {%- endif -%}
+                            
+                            {% if section.settings.field_icon %}<button type="submit" class="search__button field__button field__button__type2" aria-label="{{ 'general.search.search' | t }}">
+                            {% render "icon-search" %}
+                            </button>{% endif %}
+                        </div>
+                        {%- if section.settings.button != "hide" -%}
+                        <button type="submit" class="btn btn_zoom w-full-sp" aria-label="{{ section.settings.button_text }}">
+                            {%- if section.settings.button != "only_text" -%}{% render "icon-search" %}{%- endif -%}
+                            {%- if section.settings.button != "only_icon" -%}<span>{{ section.settings.button_text }}</span>{%- endif -%}
+                        </button>
+                        {%- endif -%}
+                    </form>
+
+                {%- if settings.predictive_search_enabled -%}
+                </predictive-search>
+                {%- endif -%} 
+            </div>
+        </div>
+        {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}</div>{%- endif -%}
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.search.name",
+    "limit": 1,
+  	"tag": "section",
+    "settings": [
+	  {
+		"type": "text",
+		"id": "subheading",
+		"default": "SUBHEADING",
+		"label": "t:sections.general.settings.subheading.label"
+	  },
+	  {
+		"type": "text",
+		"id": "heading",
+		"default": "Search",
+		"label": "t:sections.general.settings.heading.label"
+	  },
+	  {
+		"type": "text",
+		"id": "description",
+		"default": "Use our smart search to quickly discover the products you need.",
+		"label": "t:sections.general.settings.description.label"
+	  },
+      {
+        "type": "header",
+        "content": "t:sections.general.settings.header_layout.content"
+      },
+      {
+        "type": "select",
+        "id": "top_spacing",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.general.settings.top_spacing.options__none.label"
+          },
+          {
+            "value": "small",
+            "label": "t:sections.general.settings.top_spacing.options__small.label"
+          },
+          {
+            "value": "medium",
+            "label": "t:sections.general.settings.top_spacing.options__medium.label"
+          },
+          {
+            "value": "normal",
+            "label": "t:sections.general.settings.top_spacing.options__normal.label"
+          }
+        ],
+        "default": "normal",
+		"label": "t:sections.general.settings.top_spacing.label"
+      },
+      {
+        "type": "select",
+        "id": "width",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
+            "value": "page-width",
+            "label": "t:sections.general.settings.width.options__boxed.label"
+          },
+          {
+            "value": "page-wide",
+            "label": "t:sections.general.settings.width.options__wide.label"
+          }
+        ],
+        "default": "default",
+        "label": "t:sections.general.settings.width.label",
+		"info": "t:sections.general.settings.width.info"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.search.settings.header_name.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "field_icon",
+        "default": true,
+        "label": "t:sections.search.settings.field_icon.label"
+      },
+      {
+        "type": "select",
+        "id": "button",
+        "options": [
+          {
+            "value": "hide",
+            "label": "t:sections.search.settings.button.option__1.label"
+          },
+          {
+            "value": "show",
+            "label": "t:sections.search.settings.button.option__2.label"
+          },
+          {
+            "value": "only_text",
+            "label": "t:sections.search.settings.button.option__3.label"
+          },
+          {
+            "value": "only_icon",
+            "label": "t:sections.search.settings.button.option__4.label"
+          }
+        ],
+        "default": "show",
+        "label": "t:sections.search.settings.button.label"
+      },
+	  {
+        "visible_if": "{{ section.settings.button != 'hide' and section.settings.button != 'only_icon' }}",
+		"type": "text",
+		"id": "button_text",
+		"default": "Search",
+		"label": "t:sections.search.settings.button_text.label"
+	  },
+	  {
+		"type": "text",
+		"id": "input_text",
+		"default": "Search products, services & deals…",
+		"label": "t:sections.search.settings.input_text.label"
+	  },
+      {
+        "type": "header",
+        "content": "t:sections.general.settings.header_colors.content"
+      },
+      {
+        "type": "color",
+        "id": "color_subheading",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.general.settings.subheading.label"
+      },
+      {
+        "type": "color",
+        "id": "color_heading",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.general.settings.heading.label"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.contact-form.settings.text.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.contact-form.settings.header_form_colors.content"
+      },
+      {
+        "type": "color",
+        "id": "color_input_bg",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.contact-form.settings.color_input_bg.label"
+      },
+      {
+        "type": "color",
+        "id": "color_input_bg_active",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.contact-form.settings.color_input_bg_active.label"
+      },
+      {
+        "type": "color",
+        "id": "color_button",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.contact-form.settings.color_button.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.search.settings.predictive_search.content"
+      },
+      {
+        "type": "color",
+        "id": "color_pred_bg",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.search.settings.color_pred_bg.label"
+      },
+      {
+        "type": "color",
+        "id": "color_pred_text",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.search.settings.color_pred_text.label"
+      },
+      {
+        "type": "color",
+        "id": "color_pred_price",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.search.settings.color_pred_price.label"
+      },
+      {
+        "type": "color",
+        "id": "color_pred_price_old",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.search.settings.color_pred_price_old.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.general.settings.header_background.content"
+      },
+      {
+        "type": "select",
+        "id": "background",
+        "options": [
+          {
+            "value": "hide",
+            "label": "t:sections.general.settings.background.options__hide.label"
+          },
+          {
+            "value": "color",
+            "label": "t:sections.general.settings.background.options__color.label"
+          },
+          {
+            "value": "gradient",
+            "label": "t:sections.general.settings.background.options__gradient.label"
+          },
+          {
+            "value": "image",
+            "label": "t:sections.general.settings.background.options__image.label"
+          }
+        ],
+        "default": "hide",
+        "label": "t:sections.general.settings.background.label"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'color' }}",
+        "type": "color",
+        "id": "color_background",
+        "default": "rgba(0,0,0,0)",
+        "label": "t:sections.general.settings.color_background.label"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'gradient' }}",
+	      "type": "color_background",
+        "id": "gradient",
+	      "label": "t:sections.general.settings.gradient.label"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' }}",
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "t:sections.general.settings.background_image"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' and section.settings.background_image != blank }}",
+        "type": "range",
+        "id": "image_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "t:sections.general.settings.image_overlay_opacity",
+        "default": 0
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' and section.settings.background_image != blank and section.settings.image_overlay_opacity > 0 }}",
+        "type": "color",
+        "id": "image_overlay_color",
+        "default":"rgba(0,0,0,0)",
+        "label": "t:sections.general.settings.image_overlay_color"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' }}",
+        "type": "image_picker",
+        "id": "background_image_mobile",
+        "label": "t:sections.general.settings.background_image_mobile"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' and section.settings.background_image_mobile != blank }}",
+        "type": "range",
+        "id": "image_overlay_opacity_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "t:sections.general.settings.image_overlay_opacity_mobile",
+        "default": 0
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' and section.settings.background_image_mobile != blank and section.settings.image_overlay_opacity_mobile > 0 }}",
+        "type": "color",
+        "id": "image_overlay_color_mobile",
+        "default":"rgba(0,0,0,0)",
+        "label": "t:sections.general.settings.image_overlay_color_mobile"
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' }}",
+        "type": "select",
+        "id": "imagealign",
+        "label": "t:sections.general.settings.imagealign.label",
+        "info": "t:sections.general.settings.imagealign.info",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "t:sections.general.settings.imagealign.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:sections.general.settings.imagealign.options__2.label"
+          },
+          {
+            "value": "bottom",
+            "label": "t:sections.general.settings.imagealign.options__3.label"
+          }
+        ]
+      },
+      {
+        "visible_if": "{{ section.settings.background == 'image' }}",
+        "type": "select",
+        "id": "imagesize",
+        "label": "t:sections.general.settings.imagesize.label",
+        "info": "t:sections.general.settings.imagesize.info",
+        "default": "cover",
+        "options": [
+          {
+            "value": "cover",
+            "label": "t:sections.general.settings.imagesize.options__1.label"
+          },
+          {
+            "value": "contain",
+            "label": "t:sections.general.settings.imagesize.options__2.label"
+          }
+        ]
+      },
+      {
+        "visible_if": "{{ section.settings.background != 'hide' }}",
+        "type": "select",
+        "id": "background_width",
+        "options": [
+          {
+            "value": "fullwidth",
+            "label": "t:sections.general.settings.background_width.options__1.label"
+          },
+          {
+            "value": "content_width",
+            "label": "t:sections.general.settings.background_width.options__2.label"
+          }
+        ],
+        "default": "fullwidth",
+        "label": "t:sections.general.settings.background_width.label"
+      },
+      {
+        "visible_if": "{{ section.settings.background != 'hide' }}",
+        "type": "select",
+        "id": "background_spacing",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.general.settings.background_spacing.options__none.label"
+          },
+          {
+            "value": "small",
+            "label": "t:sections.general.settings.background_spacing.options__small.label"
+          },
+          {
+            "value": "medium",
+            "label": "t:sections.general.settings.background_spacing.options__medium.label"
+          },
+          {
+            "value": "normal",
+            "label": "t:sections.general.settings.background_spacing.options__normal.label"
+          }
+        ],
+        "default": "normal",
+        "label": "t:sections.general.settings.background_spacing.label"
+      },
+      {
+        "visible_if": "{{ section.settings.background != 'hide' }}",
+        "type": "checkbox",
+        "id": "remove_bottom_spacing",
+        "default": false,
+        "label": "t:sections.general.settings.remove_bottom_spacing.label"
+      }
+	],
+    "presets": [
+      {
+      	"name": "t:sections.search.presets.name",
+        "category": "t:categories.forms"
+      }
+    ]
+  }
+{% endschema %}

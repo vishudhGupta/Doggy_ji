@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "645b3ef8-625f-4882-b4ec-0099eac178ff": {
+          "type": "link_list",
+          "settings": {
+            "heading": "CORPORATE",
+            "menu": "main-menu"
+          }
+        },
+        "c103923d-e013-41a1-b43e-151a87948e30": {
+          "type": "link_list",
+          "settings": {
+            "heading": "THEME",
+            "menu": "main-menu"
+          }
+        },
+        "a02006d6-62ca-4b97-83cf-132b52a8a539": {
+          "type": "text",
+          "settings": {
+            "heading": "NEED ASSISTANCE?",
+            "show_image": "hide",
+            "image_ratio": "1.333333",
+            "logo_svg": "",
+            "logo_max_width": 50,
+            "subtext": "<p><strong>📞 Tel: (123) 456-7890</strong></p><p>7895 Piermont Dr NE Albuquerque,<br/>NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>",
+            "button_name": "",
+            "url": ""
+          }
+        },
+        "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
+          "type": "newsletter",
+          "settings": {
+            "show_newsletter": true,
+            "heading": "NEWSLETTER SIGNUP",
+            "subtext": "<p>Sign up for our e-mail and be the first who knows our special offers!</p>",
+            "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+            "show_social": true,
+            "enable_follow_on_shop": true,
+            "heading_social": "FOLLOW US:"
+          }
+        }
+      },
+      "block_order": [
+        "645b3ef8-625f-4882-b4ec-0099eac178ff",
+        "c103923d-e013-41a1-b43e-151a87948e30",
+        "a02006d6-62ca-4b97-83cf-132b52a8a539",
+        "359796ef-2c18-41e5-baf4-b897ea8ba40b"
+      ],
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_top_line": false,
+        "heading_tag": "h5",
+        "description_size": "normal",
+        "show_all_text_in_admin": true,
+        "enable_accordion": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "color_heading": "#009688",
+        "color_text": "#ffffff",
+        "color_links": "#ffffff",
+        "color_input_bg": "rgba(0,0,0,0)",
+        "color_input_bg_active": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#142c73",
+        "gradient": ""
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

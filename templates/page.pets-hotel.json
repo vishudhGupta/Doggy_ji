@@ -1,0 +1,522 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "16438336500847f058": {
+      "type": "slideshow",
+      "blocks": {
+        "7ade15ac-e34c-4496-816c-ce604b8a888b": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "PETS HOTEL",
+            "heading": "Create a safe and loving environment for your pet while you are away 🛎",
+            "description": "",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "Find a hotel",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-left",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": false,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "7ade15ac-e34c-4496-816c-ce604b8a888b"
+      ],
+      "settings": {
+        "top_spacing": "none",
+        "bottom_spacing": "normal",
+        "width": "page-fullwidth",
+        "image_size": "fullscreen",
+        "desktop_image_height": 440,
+        "texts_aligment_mobile": "text-center-mobile",
+        "box_roundness": 3,
+        "design_type": "image-banner__default",
+        "slider_animation": true,
+        "desktop_navigation": "dots_arrows",
+        "mobile_navigation": "dots_arrows",
+        "dots_desktop_position": "center",
+        "autoplay_enabled": true,
+        "autoplay_time": 5,
+        "video_slide_mode": "autoplay_muted",
+        "play_button_enabled": true,
+        "color_media_bg": "rgba(0,0,0,0)",
+        "color_media_bg_hover": "rgba(0,0,0,0)",
+        "color_swatches": "rgba(0,0,0,0)",
+        "color_swatches_m": "rgba(0,0,0,0)"
+      }
+    },
+    "16498435255c840a63": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "none",
+        "ticker_time": 20,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>Our staff provide consistent supervision from playtime to feeding so you can rest assured that your pet is being well cared for by experienced pet loving staff</strong></p>",
+        "show_icon": "svg",
+        "icon_name": "cat_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#fff3b3",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643833757c13d5bfa": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16438337574d586bd9-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "hotel",
+            "url": "",
+            "heading": "Pet boarding experiences",
+            "description": "<p>Classic, luxury, aged care & unique pet boarding experiences.</p>"
+          }
+        },
+        "16438337574d586bd9-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "cat_fur",
+            "url": "",
+            "heading": "Grooming",
+            "description": "<p>Our stylists help support your pet’s health with personalized care.</p>"
+          }
+        },
+        "16438337574d586bd9-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "certified",
+            "url": "",
+            "heading": "Voted #1",
+            "description": "<p>By the public in the local business awards.</p>"
+          }
+        },
+        "3802788e-548f-474c-ae07-7b8887f703d3": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "cat_care",
+            "url": "",
+            "heading": "Consistent supervision",
+            "description": "<p>Experienced staff supervising your pet from feeding to playtime.</p>"
+          }
+        },
+        "893d6264-c434-4d20-8f30-b361f8afb5f0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "camera",
+            "url": "",
+            "heading": "Stay connected",
+            "description": "<p>A wide range of boarding options including single play time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438337574d586bd9-0",
+        "16438337574d586bd9-1",
+        "16438337574d586bd9-2",
+        "3802788e-548f-474c-ae07-7b8887f703d3",
+        "893d6264-c434-4d20-8f30-b361f8afb5f0"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-md-4 col-one_fifth",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "16438341163c673027": {
+      "type": "image-with-text-type2",
+      "blocks": {
+        "1643834116ab966ac7-0": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "1643834116ab966ac7-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "ABOUT US",
+            "heading": "The best cat boarding kennels 👍"
+          }
+        },
+        "1643834116ab966ac7-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With over 10 years experience Pet Hotels is your pet’s home away from home. The lead up to going away can be a stressful experience for both you and your pets. Finding the best dog and cat boarding facility is essential in taking the worry out of leaving your pet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1643834116ab966ac7-0",
+        "1643834116ab966ac7-1",
+        "1643834116ab966ac7-2"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "normal",
+        "width": "page-fullwidth",
+        "content_size": "auto",
+        "desktop_content_height": 440,
+        "row_reverse": false,
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "play_background": "rgba(0,0,0,0)",
+        "color_background": "#ddf1f0"
+      }
+    },
+    "1643834210fea2be3f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1643834209916bf233-0": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_1",
+            "url": "",
+            "heading": "",
+            "description": "<p>Book your pet's accommodation online or call us</p>"
+          }
+        },
+        "1643834209916bf233-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_2",
+            "url": "",
+            "heading": "",
+            "description": "<p>Once you have selected your pet location, simply drop your pet off before 12am</p>"
+          }
+        },
+        "1643834209916bf233-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_3",
+            "url": "",
+            "heading": "",
+            "description": "<p>Our staff will care for your pet in safe</p>"
+          }
+        },
+        "a4f800f1-9088-4190-9235-131f9088eb68": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_4",
+            "url": "",
+            "heading": "",
+            "description": "<p>Your pet will travel from comfort to their pet hotel</p>"
+          }
+        },
+        "fd852778-c6d9-41a4-b694-528cf9da70d5": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "number_5",
+            "url": "",
+            "heading": "",
+            "description": "<p>Your pet is transferred by shuttle and available for pick up after 2pm from your drop off location</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1643834209916bf233-0",
+        "1643834209916bf233-1",
+        "1643834209916bf233-2",
+        "a4f800f1-9088-4190-9235-131f9088eb68",
+        "fd852778-c6d9-41a4-b694-528cf9da70d5"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "How it works",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "none",
+        "width": "page-width",
+        "grid": "col-md-4 col-one_fifth",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#ffcfdb",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643834352e4c32240": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "164383435263631fa1-0": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "164383435263631fa1-1": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "164383435263631fa1-2": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "8e9fdb7d-45c7-4c63-a652-36217016ffeb": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "4dc13fcc-123f-4a22-8852-0b7d4e728211": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "d68cbd92-f6bd-4bb0-9b3a-38398f5c38c3": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "164383435263631fa1-0",
+        "164383435263631fa1-1",
+        "164383435263631fa1-2",
+        "8e9fdb7d-45c7-4c63-a652-36217016ffeb",
+        "4dc13fcc-123f-4a22-8852-0b7d4e728211",
+        "d68cbd92-f6bd-4bb0-9b3a-38398f5c38c3"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "😽 Happy cats",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643834388f35aecc3": {
+      "type": "slideshow",
+      "blocks": {
+        "57df42d5-582b-4b8a-84df-c4da330518d2": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "",
+            "heading": "🛏 Book a pet hotel at your local Minion",
+            "description": "",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "Contact us",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-left",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": false,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "57df42d5-582b-4b8a-84df-c4da330518d2"
+      ],
+      "settings": {
+        "top_spacing": "normal",
+        "bottom_spacing": "normal",
+        "width": "page-fullwidth",
+        "image_size": "fullscreen",
+        "desktop_image_height": 440,
+        "texts_aligment_mobile": "text-center-mobile",
+        "box_roundness": 3,
+        "design_type": "image-banner__default",
+        "slider_animation": true,
+        "desktop_navigation": "dots_arrows",
+        "mobile_navigation": "dots_arrows",
+        "dots_desktop_position": "center",
+        "autoplay_enabled": true,
+        "autoplay_time": 5,
+        "video_slide_mode": "autoplay_muted",
+        "play_button_enabled": true,
+        "color_media_bg": "rgba(0,0,0,0)",
+        "color_media_bg_hover": "rgba(0,0,0,0)",
+        "color_swatches": "rgba(0,0,0,0)",
+        "color_swatches_m": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16438336500847f058",
+    "16498435255c840a63",
+    "1643833757c13d5bfa",
+    "16438341163c673027",
+    "1643834210fea2be3f",
+    "1643834352e4c32240",
+    "1643834388f35aecc3"
+  ]
+}

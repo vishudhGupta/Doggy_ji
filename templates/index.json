@@ -361,6 +361,9 @@
     },
     "featured_collection_FMeRwU": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-weight: 700;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "doggy-ji-biscuits",
@@ -372,7 +375,7 @@
         "width": "default",
         "grid": "col-md-4 col-2",
         "desktop_slider": "show_mask",
-        "desktop_slider_scroll_one": false,
+        "desktop_slider_scroll_one": true,
         "mobile_grid": "6",
         "swipe_on_mobile": true,
         "product_limit": 10,
@@ -384,7 +387,7 @@
         "show_vendor": false,
         "show_type": false,
         "show_price": true,
-        "truncate_product_name": false,
+        "truncate_product_name": true,
         "hover_underline": false,
         "button_type_product": "show",
         "show_button_quickview": true,
@@ -458,7 +461,7 @@
       "name": "Why Us",
       "settings": {
         "subheading": "WHY doggy ji?",
-        "heading": "Know Why Pet Owners Trust Drools",
+        "heading": "Know Why Pet Owners Trust Doggy Ji",
         "text_alignment": "center",
         "top_spacing": "none",
         "width": "page-width",

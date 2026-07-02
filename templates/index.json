@@ -487,103 +487,6 @@
         "subheading_color": "#febb4a",
         "heading_color": "#0b0d12"
       }
-    },
-    "text_columns_with_images_HXGGhe": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "blurb_icon_nNnnCe": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/How_it_works-Choose_Pdts.png",
-            "icon_name": "check",
-            "url": "",
-            "heading": "",
-            "description": ""
-          }
-        },
-        "blurb_icon_GCjxAQ": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/virtual-assistant_17617144.png",
-            "icon_name": "Chat",
-            "url": "",
-            "heading": "Chat With Us",
-            "description": "<p>We Offer 24-hour chat Support</p>"
-          }
-        },
-        "blurb_icon_hUkncq": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/express-delivery_11153357.png",
-            "icon_name": "cat_care",
-            "url": "",
-            "heading": "Fast Delivery",
-            "description": "<p>Get Fast & Free Delivery</p>"
-          }
-        },
-        "blurb_icon_WnmdWy": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "image",
-            "image": "shopify://shop_images/best-product_17235077.png",
-            "icon_name": "box_cat",
-            "url": "",
-            "heading": "Best Packaging",
-            "description": "<p>Best Quality Packaging</p>"
-          }
-        }
-      },
-      "block_order": [
-        "blurb_icon_nNnnCe",
-        "blurb_icon_GCjxAQ",
-        "blurb_icon_hUkncq",
-        "blurb_icon_WnmdWy"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "#minion-section-template--22496930136317__1649689563303f67a7 {padding-bottom: 15px !important; margin-top: 0px !important;}",
-        ".text-columns-img__heading {font-size: 1rem !important;}"
-      ],
-      "settings": {
-        "subheading": "",
-        "heading": "",
-        "heading_aligment": "text-center",
-        "button_name": "",
-        "button_url": "",
-        "top_spacing": "none",
-        "width": "page-width",
-        "grid": "col-md-6 col-3",
-        "swipe_on_mobile": false,
-        "image_ratio": "1, round-image",
-        "image_zoom_internal": false,
-        "texts_aligment": "text-center",
-        "icon_alignment": "center",
-        "heading_tag": "h4",
-        "description_size": "body2",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_swipe_buttons": "rgba(0,0,0,0)",
-        "color_heading_blurb": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#febb4a",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "none",
-        "remove_bottom_spacing": true
-      }
     }
   },
   "order": [
@@ -592,7 +495,6 @@
     "shop_by_pet_h7Cd6x",
     "category_slider_NxtmUa",
     "featured_collection_FMeRwU",
-    "why_us_3HX6Nw",
-    "text_columns_with_images_HXGGhe"
+    "why_us_3HX6Nw"
   ]
 }

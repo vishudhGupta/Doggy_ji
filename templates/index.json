@@ -362,7 +362,7 @@
     "featured_collection_FMeRwU": {
       "type": "featured-collection",
       "custom_css": [
-        "h2{font-weight: 700;}"
+        "h2 {font-weight: 700;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
@@ -461,7 +461,7 @@
       "name": "Why Us",
       "settings": {
         "subheading": "WHY doggy ji?",
-        "heading": "Know Why Pet Owners Trust Drools",
+        "heading": "Know Why Pet Owners Trust Doggy Ji",
         "text_alignment": "center",
         "top_spacing": "none",
         "width": "page-width",

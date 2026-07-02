@@ -537,7 +537,7 @@
         "judge_me_reviews_featured_carousel_PhiFcx"
       ],
       "settings": {
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default"
       }
     }

@@ -567,7 +567,7 @@
         "instafeed_app_block_jPfBzt"
       ],
       "settings": {
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default"
       }
     }

@@ -172,7 +172,7 @@
           "settings": {
             "icon": "shopify://shop_images/smartphone_1304136.png",
             "heading": "Ask Expert",
-            "description": "Get the help of Expert to find best"
+            "description": ""
           }
         },
         "item_tFAP86": {
@@ -180,7 +180,7 @@
           "settings": {
             "icon": "shopify://shop_images/virtual-assistant_17617144.png",
             "heading": "Chat With Us",
-            "description": "We offer 24-hour chat support"
+            "description": ""
           }
         },
         "item_BbYRNh": {
@@ -188,7 +188,7 @@
           "settings": {
             "icon": "shopify://shop_images/express-delivery_11153357.png",
             "heading": "Fast Delivery",
-            "description": "Get Fast & Free Delivery"
+            "description": ""
           }
         },
         "item_iwPn3H": {
@@ -196,7 +196,7 @@
           "settings": {
             "icon": "shopify://shop_images/best-product_17235077.png",
             "heading": "Best Packaging",
-            "description": "Best Quality Packaging"
+            "description": ""
           }
         }
       },

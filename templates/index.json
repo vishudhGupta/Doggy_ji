@@ -744,7 +744,7 @@
         "subheading": "",
         "heading": "Frequently Asked Questions",
         "heading_aligment": "text-center",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default",
         "disable_accordion": false,
         "heading_tag": "h4",

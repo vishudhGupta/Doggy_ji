@@ -273,6 +273,25 @@
   justify-content: center;
   margin-bottom: 15px;
 }
+.product-card__discount-badge{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #ff3939;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  pointer-events: none;
+}
 .product-card__image-holder modal-opener{
   position: absolute;
   transform: translate3d(0,50px,0);
@@ -300,6 +319,12 @@
   margin-right: 0;
 }
 @media (max-width:1024px){
+  .product-card__discount-badge{
+    top: 8px;
+    right: 8px;
+    font-size: 11px;
+    padding: 4px 8px;
+  }
   .product-card__image-holder modal-opener{
     display: none;
   }

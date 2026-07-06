@@ -148,6 +148,10 @@ endif
     </a>  
     {%- endif -%}
 
+    {%- if has_discount -%}
+    <div class="product-card__discount-badge">{{ discount_percentage }}% OFF</div>
+    {%- endif -%}
+
     {%- if show_button_quickview and force_uniform_layout == false -%}
     <modal-opener class="no-js-hidden" data-modal="#QuickAdd-{{ product_card_product.id }}">
       {%- assign product_form_id = section_id | append: product_card_product.id -%}
@@ -224,7 +228,6 @@ endif
     {%- if show_price -%}
     <div class="product-card__pricing mt10">
       {%- if has_discount -%}
-      <div class="product-card__discount body2">{{ discount_percentage }}% OFF</div>
       <div class="product-card__price-row">
         <div class="price__regular body2"><s>{{ product_compare_money }}</s></div>
         <div class="price__sale card__price__main h5">{{ product_money_price }}</div>

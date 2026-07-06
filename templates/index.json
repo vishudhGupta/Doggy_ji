@@ -323,6 +323,14 @@
             "label": "Dog Accessories",
             "link": "shopify://collections/dog-accessories"
           }
+        },
+        "category_zXxnei": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Accessories_94863436-3c44-4583-9f3b-fb623869cf37.png",
+            "label": "Cat Wet Food",
+            "link": "shopify://collections/catty-ji-wet-food"
+          }
         }
       },
       "block_order": [
@@ -331,7 +339,8 @@
         "category_HmHmN4",
         "category_K638qp",
         "category_3CtRUk",
-        "category_P3CKpd"
+        "category_P3CKpd",
+        "category_zXxnei"
       ],
       "name": "Category slider",
       "settings": {

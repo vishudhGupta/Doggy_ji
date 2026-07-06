@@ -8,6 +8,8 @@
 {%- capture section_styles -%}
 #minion-section-{{ section.id }} {
 	--sbp-section-bg: {{ section.settings.section_background }};
+	--sbp-surface-overlay: {{ section.settings.background_overlay }};
+	--sbp-surface-overlay-opacity: {{ section.settings.background_overlay_opacity | divided_by: 100.0 }};
 	--sbp-heading-color: {{ section.settings.heading_color }};
 	--sbp-subheading-color: {{ section.settings.subheading_color }};
 	--sbp-card-radius: {{ section.settings.card_radius }}px;
@@ -26,7 +28,35 @@
 	padding: clamp(20px, 3vw, 34px);
 }
 
+#minion-section-{{ section.id }} .shop-by-pet__background-media,
+#minion-section-{{ section.id }} .shop-by-pet__background-overlay {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__background-media {
+	z-index: 0;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__background-media img,
+#minion-section-{{ section.id }} .shop-by-pet__background-media svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__background-overlay {
+	z-index: 1;
+	background: var(--sbp-surface-overlay);
+	opacity: var(--sbp-surface-overlay-opacity);
+}
+
 #minion-section-{{ section.id }} .shop-by-pet__header {
+	position: relative;
+	z-index: 3;
 	margin-bottom: 22px;
 }
 
@@ -43,7 +73,7 @@
 
 #minion-section-{{ section.id }} .shop-by-pet__grid {
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	display: grid;
 	grid-template-columns: repeat({{ section.settings.columns_desktop }}, minmax(0, 1fr));
 	gap: var(--sbp-card-gap);
@@ -54,11 +84,44 @@
 	overflow: hidden;
 	border-radius: var(--sbp-card-radius);
 	min-height: var(--sbp-card-min-height);
-	background: var(--sbp-card-bg, #f4f4f4);
+	background: transparent;
 	color: var(--sbp-card-text, var(--color-base));
 }
 
+#minion-section-{{ section.id }} .shop-by-pet__card--with-banner {
+	aspect-ratio: 16 / 6;
+	background: transparent;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__card-background,
+#minion-section-{{ section.id }} .shop-by-pet__card-overlay {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__card-background {
+	z-index: 0;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__card-background img,
+#minion-section-{{ section.id }} .shop-by-pet__card-background svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__card-overlay {
+	z-index: 1;
+	background: var(--sbp-card-overlay, transparent);
+	opacity: var(--sbp-card-overlay-opacity, 0);
+}
+
 #minion-section-{{ section.id }} .shop-by-pet__card-link {
+	position: relative;
+	z-index: 2;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
@@ -71,15 +134,34 @@
 	position: relative;
 	z-index: 2;
 	padding: var(--sbp-content-padding);
-	width: calc(100% - var(--sbp-image-width));
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
 }
 
+#minion-section-{{ section.id }} .shop-by-pet__card--with-banner .shop-by-pet__card-link {
+	min-height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+#minion-section-{{ section.id }} .shop-by-pet__card--with-banner .shop-by-pet__card-content {
+	width: min(58%, 280px);
+	min-height: 100%;
+	padding: clamp(22px, 3vw, 30px) 18px 18px 24px;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+	margin-right: auto;
+	gap: 12px;
+}
+
 #minion-section-{{ section.id }} .shop-by-pet__card-title {
 	margin: 0;
 	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: -0.02em;
 }
 
 #minion-section-{{ section.id }} .shop-by-pet__card-arrow {
@@ -94,27 +176,10 @@
 	flex: 0 0 auto;
 }
 
-#minion-section-{{ section.id }} .shop-by-pet__card-image-wrap {
-	position: relative;
-	width: var(--sbp-image-width);
-	min-height: inherit;
-}
-
-#minion-section-{{ section.id }} .shop-by-pet__card-image-wrap img,
-#minion-section-{{ section.id }} .shop-by-pet__card-image-wrap svg {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	object-position: bottom right;
-}
-
 #minion-section-{{ section.id }} .shop-by-pet__icon-layer {
 	position: absolute;
 	inset: 0;
-	z-index: 1;
+	z-index: 2;
 	pointer-events: none;
 }
 
@@ -156,7 +221,7 @@
 	}
 
 	#minion-section-{{ section.id }} .shop-by-pet__grid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat({{ section.settings.columns_mobile }}, minmax(0, 1fr));
 		gap: 12px;
 	}
 
@@ -164,19 +229,39 @@
 		min-height: 162px;
 	}
 
+	#minion-section-{{ section.id }} .shop-by-pet__card--with-banner {
+		min-height: 0;
+		aspect-ratio: 16 / 7;
+	}
+
+	#minion-section-{{ section.id }} .shop-by-pet__card--with-banner .shop-by-pet__card-background img,
+	#minion-section-{{ section.id }} .shop-by-pet__card--with-banner .shop-by-pet__card-background svg {
+		object-fit: contain;
+		object-position: right center;
+	}
+
 	#minion-section-{{ section.id }} .shop-by-pet__card-content {
-		width: 42%;
-		padding: 10px;
+		padding: 12px;
 		gap: 7px;
 	}
 
-	#minion-section-{{ section.id }} .shop-by-pet__card-image-wrap {
-		width: 58%;
+	#minion-section-{{ section.id }} .shop-by-pet__card--with-banner .shop-by-pet__card-content {
+		width: min(62%, 220px);
+		padding: 18px 12px 14px 16px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+		gap: 10px;
 	}
 
 	#minion-section-{{ section.id }} .shop-by-pet__card-title {
-		font-size: 13px;
-		line-height: 1.05;
+		font-size: 14px;
+		line-height: 1.15;
+	}
+
+	#minion-section-{{ section.id }} .shop-by-pet__card--with-banner .shop-by-pet__card-title {
+		font-size: 16px;
+		line-height: 1.2;
 	}
 
 	#minion-section-{{ section.id }} .shop-by-pet__card-arrow {
@@ -189,13 +274,6 @@
 		height: 8px;
 	}
 
-	#minion-section-{{ section.id }} .shop-by-pet__card-image-wrap img,
-	#minion-section-{{ section.id }} .shop-by-pet__card-image-wrap svg {
-		width: 132%;
-		height: 132%;
-		right: -14px;
-		bottom: -6px;
-	}
 }
 {%- endcapture -%}
 
@@ -206,6 +284,21 @@
 <div id="minion-section-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}" data-section-name="shop-by-pet">
 	<div class="{{ page_width }}">
 		<div class="shop-by-pet__surface mb--last-child-0">
+			{%- if section.settings.background_image != blank -%}
+				<div class="shop-by-pet__background-media" aria-hidden="true">
+					{{
+						section.settings.background_image
+						| image_url: width: 2400
+						| image_tag:
+							loading: 'lazy',
+							widths: '750,1100,1500,1780,2000,2400',
+							sizes: '100vw',
+							alt: ''
+					}}
+				</div>
+				<div class="shop-by-pet__background-overlay" aria-hidden="true"></div>
+			{%- endif -%}
+
 			{%- if section.settings.subheading != blank or section.settings.heading != blank -%}
 				<div class="shop-by-pet__header {{ section.settings.heading_alignment }}">
 					{%- if section.settings.subheading != blank -%}
@@ -245,10 +338,25 @@
 				{%- for block in section.blocks -%}
 					{%- if block.type == 'pet_card' -%}
 						<article
-							class="shop-by-pet__card"
-							style="--sbp-card-bg: {{ block.settings.card_bg }}; --sbp-card-text: {{ block.settings.text_color }}; --sbp-arrow-bg: {{ block.settings.arrow_bg }}; --sbp-arrow-icon: {{ block.settings.arrow_color }};"
+							class="shop-by-pet__card{% if block.settings.banner_image != blank %} shop-by-pet__card--with-banner{% endif %}"
+							style="--sbp-card-bg: {{ block.settings.card_bg }}; --sbp-card-text: {{ block.settings.text_color }}; --sbp-arrow-bg: {{ block.settings.arrow_bg }}; --sbp-arrow-icon: {{ block.settings.arrow_color }}; --sbp-card-overlay: {{ block.settings.banner_overlay }}; --sbp-card-overlay-opacity: {{ block.settings.banner_overlay_opacity | divided_by: 100.0 }};"
 							{{ block.shopify_attributes }}
 						>
+							{%- if block.settings.banner_image != blank -%}
+								<div class="shop-by-pet__card-background" aria-hidden="true">
+									{{
+										block.settings.banner_image
+										| image_url: width: 1600
+										| image_tag:
+											loading: 'lazy',
+											widths: '480,720,960,1200,1600',
+											sizes: '(max-width: 767px) 100vw, 50vw',
+											alt: ''
+									}}
+								</div>
+								<div class="shop-by-pet__card-overlay" aria-hidden="true"></div>
+							{%- endif -%}
+
 							{%- assign target_url = block.settings.link | default: '#' -%}
 							<a class="shop-by-pet__card-link" href="{{ target_url }}"{% if block.settings.link == blank %} aria-disabled="true"{% endif %}>
 								<div class="shop-by-pet__card-content">
@@ -261,22 +369,6 @@
 												<path d="M3.5 7h7M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
 										</span>
-									{%- endif -%}
-								</div>
-
-								<div class="shop-by-pet__card-image-wrap">
-									{%- if block.settings.image != blank -%}
-										{{
-											block.settings.image
-											| image_url: width: 900
-											| image_tag:
-												loading: 'lazy',
-												widths: '280,360,520,700,900',
-												sizes: '(max-width: 767px) 45vw, 30vw',
-												alt: block.settings.image.alt
-										}}
-									{%- else -%}
-										{%- render 'icons-placeholder-other', icon_name: 'image-1' -%}
 									{%- endif -%}
 								</div>
 							</a>
@@ -460,6 +552,27 @@
 			"default": "#ffffff"
 		},
 		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Background image"
+		},
+		{
+			"type": "color",
+			"id": "background_overlay",
+			"label": "Background overlay",
+			"default": "#ffffff"
+		},
+		{
+			"type": "range",
+			"id": "background_overlay_opacity",
+			"label": "Background overlay opacity",
+			"min": 0,
+			"max": 100,
+			"step": 1,
+			"unit": "%",
+			"default": 15
+		},
+		{
 			"type": "color",
 			"id": "heading_color",
 			"label": "Heading color",
@@ -511,14 +624,34 @@
 				},
 				{
 					"type": "image_picker",
-					"id": "image",
-					"label": "Pet image"
+					"id": "banner_image",
+					"label": "Background banner image"
 				},
 				{
 					"type": "checkbox",
 					"id": "show_arrow",
 					"label": "Show arrow button",
 					"default": true
+				},
+				{
+					"type": "header",
+					"content": "Banner overlay"
+				},
+				{
+					"type": "color",
+					"id": "banner_overlay",
+					"label": "Banner overlay color",
+					"default": "#ffffff"
+				},
+				{
+					"type": "range",
+					"id": "banner_overlay_opacity",
+					"label": "Banner overlay opacity",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"unit": "%",
+					"default": 0
 				},
 				{
 					"type": "header",

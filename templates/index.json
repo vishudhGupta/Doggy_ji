@@ -220,6 +220,54 @@
     "shop_by_pet_h7Cd6x": {
       "type": "shop-by-pet",
       "blocks": {
+        "bg_icon_jrceG4": {
+          "type": "bg_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/paw_672716.png",
+            "alt_text": "Background icon",
+            "position_x": 82,
+            "position_y": 20,
+            "icon_size": 26,
+            "icon_opacity": 100,
+            "rotation": -25
+          }
+        },
+        "bg_icon_6fD47i": {
+          "type": "bg_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/paw_672716.png",
+            "alt_text": "Background icon",
+            "position_x": 82,
+            "position_y": 92,
+            "icon_size": 26,
+            "icon_opacity": 100,
+            "rotation": -25
+          }
+        },
+        "bg_icon_9XqjLy": {
+          "type": "bg_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/paw_672716.png",
+            "alt_text": "Background icon",
+            "position_x": 10,
+            "position_y": 92,
+            "icon_size": 26,
+            "icon_opacity": 100,
+            "rotation": 40
+          }
+        },
+        "bg_icon_ewM9xn": {
+          "type": "bg_icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/paw_672716.png",
+            "alt_text": "Background icon",
+            "position_x": 10,
+            "position_y": 20,
+            "icon_size": 26,
+            "icon_opacity": 100,
+            "rotation": 33
+          }
+        },
         "pet_card_BGqkrJ": {
           "type": "pet_card",
           "settings": {
@@ -248,6 +296,10 @@
         }
       },
       "block_order": [
+        "bg_icon_jrceG4",
+        "bg_icon_6fD47i",
+        "bg_icon_9XqjLy",
+        "bg_icon_ewM9xn",
         "pet_card_BGqkrJ",
         "pet_card_P3Lgf6"
       ],

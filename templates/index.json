@@ -448,7 +448,7 @@
         "heading": "Best Sellers",
         "heading_aligment": "text-center",
         "button_name": "Show All",
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "default",
         "grid": "col-md-4 col-2",
         "desktop_slider": "show_mask",

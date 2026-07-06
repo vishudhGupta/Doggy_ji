@@ -321,7 +321,7 @@
         "image_width": 45,
         "columns_desktop": 2,
         "columns_tablet": 2,
-        "columns_mobile": 2,
+        "columns_mobile": 1,
         "section_background": "#ffffff",
         "background_overlay": "#ffffff",
         "background_overlay_opacity": 15,
@@ -691,7 +691,7 @@
       "type": "blog_section",
       "name": "Blog split latest",
       "settings": {
-        "blog": "news",
+        "blog": "",
         "side_heading": "Latest posts",
         "side_posts_limit": 4,
         "top_spacing": "small",

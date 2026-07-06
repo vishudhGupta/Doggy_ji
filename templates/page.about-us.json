@@ -19,81 +19,6 @@
         "heading_aligment": "text-center"
       }
     },
-    "164984766579c04c18": {
-      "type": "slideshow",
-      "blocks": {
-        "9f948a52-3c36-4dc8-a6d9-1d021d5e532c": {
-          "type": "slide",
-          "settings": {
-            "content_type": "image",
-            "video_url": "",
-            "image": "",
-            "image_overlay_opacity": 0,
-            "image_mobile": "",
-            "subheading": "ABOUT US",
-            "heading": "We makes food 🥩 that's actually good for your cat",
-            "description": "The love we get from our pets is like nothing else on Earth. Sometimes it feels like there’s no way we could ever do enough to give it back.",
-            "call_to_action": "one_link_banner",
-            "button_primary_name": "",
-            "url": "",
-            "button_secondary_name": "",
-            "button_secondary_url": "",
-            "content_aligment": "align-items-start justify-content-center",
-            "texts_aligment": "text-center",
-            "heading_tag": "h1",
-            "heading_tag_mobile": "h2--mobile",
-            "description_size": "normal",
-            "show_background": false,
-            "background_overlay_opacity": 90,
-            "hover_underline": false,
-            "color_subheading": "rgba(0,0,0,0)",
-            "color_heading": "rgba(0,0,0,0)",
-            "color_description": "rgba(0,0,0,0)",
-            "button_primary_bg": "rgba(0,0,0,0)",
-            "button_secondary_bg": "rgba(0,0,0,0)",
-            "color_background": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "9f948a52-3c36-4dc8-a6d9-1d021d5e532c"
-      ],
-      "settings": {
-        "top_spacing": "none",
-        "bottom_spacing": "small",
-        "width": "page-fullwidth",
-        "image_size": "auto",
-        "desktop_image_height": 440,
-        "texts_aligment_mobile": "text-center-mobile",
-        "desktop_navigation": "dots_arrows",
-        "mobile_navigation": "dots_arrows",
-        "dots_desktop_position": "center",
-        "autoplay_enabled": true,
-        "autoplay_time": 5,
-        "video_slide_mode": "autoplay_muted",
-        "play_button_enabled": true
-      }
-    },
-    "1643822141aa04be33": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "none",
-        "ticker_time": 20,
-        "direction": "ticker-to-left",
-        "text_size": "normal",
-        "url": "",
-        "text": "<p><strong>MINION</strong> is a category-defining health and wellness company focused on improving the lives of pets, pet parents.</p>",
-        "show_icon": "svg",
-        "icon_name": "smile_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#ffffff",
-        "gradient": "",
-        "background_spacing": "small",
-        "remove_bottom_spacing": true
-      }
-    },
     "1643822232dd24b53a": {
       "type": "image-with-text",
       "blocks": {
@@ -101,7 +26,6 @@
           "type": "image",
           "settings": {
             "content_type": "image",
-            "image": "",
             "image_ratio": "1.333333",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
@@ -155,6 +79,12 @@
         "background": "hide",
         "color_background": "rgba(0,0,0,0)",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -180,6 +110,12 @@
         "background": "color",
         "color_background": "#fff3b3",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -192,7 +128,6 @@
           "type": "image",
           "settings": {
             "content_type": "video",
-            "image": "",
             "image_ratio": "1.333333",
             "video_url": "https://www.youtube.com/watch?v=AiG_nGcAt0s",
             "description": ""
@@ -248,6 +183,12 @@
         "background": "hide",
         "color_background": "rgba(0,0,0,0)",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -261,7 +202,6 @@
           "settings": {
             "content_type": "image",
             "image_ratio": "1.333333",
-            "image": "",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
           }
@@ -366,6 +306,7 @@
         "image_ratio": "auto",
         "image_zoom_internal": false,
         "texts_aligment": "text-center",
+        "icon_alignment": "default",
         "heading_tag": "h4",
         "description_size": "normal",
         "hover_underline": false,
@@ -379,6 +320,12 @@
         "background": "hide",
         "color_background": "rgba(0,0,0,0)",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -400,6 +347,12 @@
         "background": "color",
         "color_background": "#ddf1f0",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_spacing": "small",
         "remove_bottom_spacing": false
       }
@@ -407,8 +360,6 @@
   },
   "order": [
     "main",
-    "164984766579c04c18",
-    "1643822141aa04be33",
     "1643822232dd24b53a",
     "164984846159fa7206",
     "16498485612bed26d3",

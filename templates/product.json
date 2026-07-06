@@ -221,7 +221,7 @@
     "1650281560803e681b": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "doggy-ji-biscuits",
         "subheading": "",
         "heading": "😻 You may also like",
         "heading_aligment": "text-center",
@@ -274,106 +274,25 @@
         "remove_bottom_spacing": false
       }
     },
-    "1650710704068f9172": {
-      "type": "text-columns-with-images",
+    "178299687587d8a461": {
+      "type": "apps",
       "blocks": {
-        "165071070424f33a27-0": {
-          "type": "blurb_icon",
+        "judge_me_reviews_review_widget_c7G9Df": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "show_icon": "svg",
-            "icon_name": "delivery",
-            "url": "",
-            "heading": "Free same-day delivery",
-            "description": "<p>Free shipping - no code needed, just head for checkout!</p>"
-          }
-        },
-        "165071070424f33a27-1": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "calendar",
-            "url": "",
-            "heading": "Repeat delivery",
-            "description": "<p>Repeat delivery with <strong>5% OFF</strong> every order.</p>"
-          }
-        },
-        "165071070424f33a27-2": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "parking",
-            "url": "",
-            "heading": "Curbside pickup",
-            "description": "<p>Order online, drive up, check in & pick up.</p>"
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
       "block_order": [
-        "165071070424f33a27-0",
-        "165071070424f33a27-1",
-        "165071070424f33a27-2"
+        "judge_me_reviews_review_widget_c7G9Df"
       ],
       "settings": {
-        "subheading": "",
-        "heading": "What your pet needs, when they need it",
-        "heading_aligment": "text-center",
-        "button_name": "",
-        "button_url": "",
         "top_spacing": "normal",
-        "width": "page-width",
-        "grid": "col-4",
-        "swipe_on_mobile": true,
-        "image_ratio": "auto",
-        "image_zoom_internal": false,
-        "texts_aligment": "text-center",
-        "heading_tag": "h4",
-        "description_size": "normal",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_swipe_buttons": "rgba(0,0,0,0)",
-        "color_heading_blurb": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#deefff",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
-    "1650277671aaffcdb0": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "none",
-        "ticker_time": 20,
-        "direction": "ticker-to-left",
-        "text_size": "normal",
-        "url": "",
-        "text": "<p><strong>Let's aeed your feline friends with hearty and healthy meals!</strong></p>",
-        "show_icon": "svg",
-        "icon_name": "cat_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#ffffff",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_spacing": "small",
-        "remove_bottom_spacing": false
+        "width": "default"
       }
     }
   },
@@ -382,7 +301,6 @@
     "1648018242bd6448c3",
     "1650710350b2667c74",
     "1650281560803e681b",
-    "1650710704068f9172",
-    "1650277671aaffcdb0"
+    "178299687587d8a461"
   ]
 }

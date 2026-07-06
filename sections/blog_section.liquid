@@ -1,0 +1,377 @@
+{%- liquid
+	assign page_width = settings.page_width_main
+	if section.settings.width != 'default'
+		assign page_width = section.settings.width
+	endif
+
+	assign selected_blog = section.settings.blog
+	assign has_articles = false
+	if selected_blog != blank and selected_blog.articles.size > 0
+		assign has_articles = true
+		assign featured_article = selected_blog.articles.first
+	endif
+-%}
+
+{%- capture section_styles -%}
+#minion-section-{{ section.id }} {
+	--blog-gap: {{ section.settings.column_gap }}px;
+	--blog-featured-radius: {{ section.settings.card_radius }}px;
+	--blog-text-color: {{ section.settings.text_color }};
+	--blog-muted-color: {{ section.settings.muted_color }};
+}
+
+#minion-section-{{ section.id }} .blog-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	gap: var(--blog-gap);
+	align-items: start;
+	color: var(--blog-text-color);
+}
+
+#minion-section-{{ section.id }} .blog-layout__featured-media {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border-radius: var(--blog-featured-radius);
+	background: #f3f3f3;
+	aspect-ratio: 16 / 9;
+	text-decoration: none;
+	color: inherit;
+}
+
+#minion-section-{{ section.id }} .blog-layout__featured-media img,
+#minion-section-{{ section.id }} .blog-layout__featured-media svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#minion-section-{{ section.id }} .blog-layout__featured-title {
+	margin: 18px 0 0;
+	text-align: center;
+	line-height: 1.35;
+	font-size: clamp(18px, 2vw, 28px);
+	font-weight: 500;
+	color: var(--blog-text-color);
+}
+
+#minion-section-{{ section.id }} .blog-layout__side {
+	border-left: 1px solid #d9d9d9;
+	padding-left: clamp(16px, 2vw, 30px);
+	min-height: 100%;
+	margin: 0;
+}
+
+#minion-section-{{ section.id }} .blog-layout__side-heading {
+	margin: 4px 0 18px;
+	font-size: 24px;
+	line-height: 1.25;
+	font-weight: 600;
+	color: var(--blog-text-color);
+}
+
+#minion-section-{{ section.id }} .blog-layout__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	gap: 16px;
+}
+
+#minion-section-{{ section.id }} .blog-layout__item {
+	display: grid;
+	grid-template-columns: 120px minmax(0, 1fr);
+	gap: 14px;
+	align-items: start;
+}
+
+#minion-section-{{ section.id }} .blog-layout__item-media {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background: #f3f3f3;
+	aspect-ratio: 16 / 9;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 4px;
+}
+
+#minion-section-{{ section.id }} .blog-layout__item-media img,
+#minion-section-{{ section.id }} .blog-layout__item-media svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#minion-section-{{ section.id }} .blog-layout__item-title {
+	margin: 0;
+	line-height: 1.35;
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--blog-text-color);
+}
+
+#minion-section-{{ section.id }} .blog-layout__item-title a,
+#minion-section-{{ section.id }} .blog-layout__featured-title a {
+	color: inherit;
+	text-decoration: none;
+	transition: opacity .2s ease;
+}
+
+#minion-section-{{ section.id }} .blog-layout__item-title a:hover,
+#minion-section-{{ section.id }} .blog-layout__featured-title a:hover {
+	opacity: .75;
+}
+
+#minion-section-{{ section.id }} .blog-layout__dummy {
+	color: var(--blog-muted-color);
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+	#minion-section-{{ section.id }} .blog-layout__item {
+		grid-template-columns: 108px minmax(0, 1fr);
+		gap: 12px;
+	}
+
+	#minion-section-{{ section.id }} .blog-layout__item-title {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	#minion-section-{{ section.id }} .blog-layout {
+		grid-template-columns: 1fr;
+		gap: 22px;
+	}
+
+	#minion-section-{{ section.id }} .blog-layout__featured-title {
+		font-size: 18px;
+		margin-top: 14px;
+	}
+
+	#minion-section-{{ section.id }} .blog-layout__side {
+		border-left: 0;
+		border-top: 1px solid #d9d9d9;
+		padding-left: 0;
+		padding-top: 16px;
+	}
+
+	#minion-section-{{ section.id }} .blog-layout__side-heading {
+		font-size: 20px;
+		margin-bottom: 14px;
+	}
+
+	#minion-section-{{ section.id }} .blog-layout__item {
+		grid-template-columns: 104px minmax(0, 1fr);
+	}
+
+	#minion-section-{{ section.id }} .blog-layout__item-title {
+		font-size: 15px;
+	}
+}
+{%- endcapture -%}
+
+<style>
+	{{ section_styles }}
+</style>
+
+<div id="minion-section-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}" data-section-name="blog-section-custom">
+	<div class="{{ page_width }}">
+		<div class="blog-layout">
+			<div class="blog-layout__featured">
+				{%- if has_articles -%}
+					<a class="blog-layout__featured-media" href="{{ featured_article.url }}">
+						{%- if featured_article.image != blank -%}
+							{{
+								featured_article.image
+								| image_url: width: 1600
+								| image_tag:
+									loading: 'lazy',
+									widths: '640,960,1200,1600',
+									sizes: '(max-width: 767px) 100vw, 66vw',
+									alt: featured_article.image.alt
+							}}
+						{%- else -%}
+							{%- render 'icons-placeholder-other', icon_name: 'image-1' -%}
+						{%- endif -%}
+					</a>
+					<h2 class="blog-layout__featured-title">
+						<a href="{{ featured_article.url }}">{{ featured_article.title | escape }}</a>
+					</h2>
+				{%- else -%}
+					<a class="blog-layout__featured-media" href="#" aria-disabled="true">
+						{%- render 'icons-placeholder-other', icon_name: 'image-1' -%}
+					</a>
+					<h2 class="blog-layout__featured-title">A Complete Guide to Dandruff in Dogs: Causes and Treatment</h2>
+					<p class="blog-layout__dummy">Add a blog and articles to replace this featured placeholder.</p>
+				{%- endif -%}
+			</div>
+
+			<aside class="blog-layout__side" aria-label="Latest posts">
+				<h3 class="blog-layout__side-heading">{{ section.settings.side_heading | escape }}</h3>
+				<ul class="blog-layout__list">
+					{%- if has_articles -%}
+						{%- for article in selected_blog.articles limit: section.settings.side_posts_limit offset: 1 -%}
+							<li class="blog-layout__item">
+								<a class="blog-layout__item-media" href="{{ article.url }}">
+									{%- if article.image != blank -%}
+										{{
+											article.image
+											| image_url: width: 500
+											| image_tag:
+												loading: 'lazy',
+												widths: '180,260,360,500',
+												sizes: '(max-width: 767px) 34vw, 120px',
+												alt: article.image.alt
+										}}
+									{%- else -%}
+										{%- render 'icons-placeholder-other', icon_name: 'image-1' -%}
+									{%- endif -%}
+								</a>
+								<h4 class="blog-layout__item-title"><a href="{{ article.url }}">{{ article.title | escape }}</a></h4>
+							</li>
+						{%- endfor -%}
+					{%- else -%}
+						{%- for i in (1..section.settings.side_posts_limit) -%}
+							<li class="blog-layout__item">
+								<a class="blog-layout__item-media" href="#" aria-disabled="true">
+									{%- render 'icons-placeholder-other', icon_name: 'image-1' -%}
+								</a>
+								<h4 class="blog-layout__item-title">How to care for your pet: sample blog title {{ i }}</h4>
+							</li>
+						{%- endfor -%}
+					{%- endif -%}
+				</ul>
+			</aside>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Blog split latest",
+	"tag": "section",
+	"disabled_on": {
+		"groups": ["header", "footer"]
+	},
+	"settings": [
+		{
+			"type": "blog",
+			"id": "blog",
+			"label": "Blog"
+		},
+		{
+			"type": "text",
+			"id": "side_heading",
+			"label": "Side heading",
+			"default": "Latest posts"
+		},
+		{
+			"type": "range",
+			"id": "side_posts_limit",
+			"label": "Side posts count",
+			"min": 2,
+			"max": 6,
+			"step": 1,
+			"default": 4
+		},
+		{
+			"type": "header",
+			"content": "Layout"
+		},
+		{
+			"type": "select",
+			"id": "top_spacing",
+			"label": "Top spacing",
+			"default": "normal",
+			"options": [
+				{
+					"value": "none",
+					"label": "None"
+				},
+				{
+					"value": "small",
+					"label": "Small"
+				},
+				{
+					"value": "medium",
+					"label": "Medium"
+				},
+				{
+					"value": "normal",
+					"label": "Normal"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "width",
+			"label": "Content width",
+			"default": "default",
+			"options": [
+				{
+					"value": "default",
+					"label": "Theme default"
+				},
+				{
+					"value": "page-width",
+					"label": "Boxed"
+				},
+				{
+					"value": "page-wide",
+					"label": "Wide"
+				}
+			]
+		},
+		{
+			"type": "range",
+			"id": "column_gap",
+			"label": "Columns gap",
+			"min": 12,
+			"max": 60,
+			"step": 2,
+			"unit": "px",
+			"default": 30
+		},
+		{
+			"type": "range",
+			"id": "card_radius",
+			"label": "Image corner radius",
+			"min": 0,
+			"max": 24,
+			"step": 1,
+			"unit": "px",
+			"default": 0
+		},
+		{
+			"type": "header",
+			"content": "Colors"
+		},
+		{
+			"type": "color",
+			"id": "text_color",
+			"label": "Text color",
+			"default": "#1f1f1f"
+		},
+		{
+			"type": "color",
+			"id": "muted_color",
+			"label": "Muted text color",
+			"default": "#777777"
+		}
+	],
+	"presets": [
+		{
+			"name": "Blog split latest"
+		}
+	]
+}
+{% endschema %}

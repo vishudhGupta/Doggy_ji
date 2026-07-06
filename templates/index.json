@@ -691,6 +691,82 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "accordion_AaYLa9": {
+      "type": "accordion",
+      "blocks": {
+        "text_Q4qF6X": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I give these biscuits to all dog breeds?",
+            "description": "<p>Yes, Doggy Jis’ biscuits are safe and healthy for all dog breeds and sizes. However, it is advised to follow the feeding guide. Explore all products at <a href=\"https://www.doggyji.com/\"><span style=\"text-decoration:underline\">https://www.doggyji.com/</span></a><span style=\"text-decoration:underline\">.</span></p>"
+          }
+        },
+        "text_WRj6gC": {
+          "type": "text",
+          "settings": {
+            "heading": "How to store the biscuits?",
+            "description": "<p>Store biscuits in a cool, dry place away from sunlight. Keep the pack sealed for freshness. Stock up now at Doggy Ji for long-lasting treats your dogs will enjoy!</p>"
+          }
+        },
+        "text_tkip8z": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I give Doggy Ji’s biscuits daily?",
+            "description": "<p>Absolutely! All Doggy Ji’s biscuits and treats are made for daily use. Just avoid overfeeding them. Order a fresh pack from Doggy Ji now and keep your pet happy and healthy!</p>"
+          }
+        },
+        "text_8qYF6E": {
+          "type": "text",
+          "settings": {
+            "heading": "How do I order these biscuits?",
+            "description": "<p>Ordering at Doggy Ji is easy. Just visit the site, choose the products, and add them to the cart. Enter your details and make a payment. Start ordering now!</p>"
+          }
+        },
+        "text_prekNC": {
+          "type": "text",
+          "settings": {
+            "heading": "Are vegetarian dog treats really healthy?",
+            "description": "<p>Yes, Doggy Ji’s vegetarian treats are full of natural ingredients and nutrients. They’re tasty and healthy. Try our veggie treats now!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q4qF6X",
+        "text_WRj6gC",
+        "text_tkip8z",
+        "text_8qYF6E",
+        "text_prekNC"
+      ],
+      "name": "t:sections.accordion.presets.name",
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Frequently Asked Questions",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "default",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -703,6 +779,7 @@
     "banner_with_text_t4MfBd",
     "1782997279ad5d784f",
     "1783074432faf5357d",
-    "blog_posts_ybhBkD"
+    "blog_posts_ybhBkD",
+    "accordion_AaYLa9"
   ]
 }

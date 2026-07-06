@@ -331,6 +331,14 @@
             "label": "Cat Wet Food",
             "link": "shopify://collections/catty-ji-wet-food"
           }
+        },
+        "category_FL6Rb8": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Combo_dc8fc9cb-be6f-486c-98d9-170f76e12745.png",
+            "label": "Cat Dry Food",
+            "link": "shopify://collections/catty-ji-dry-food"
+          }
         }
       },
       "block_order": [
@@ -340,14 +348,15 @@
         "category_K638qp",
         "category_3CtRUk",
         "category_P3CKpd",
-        "category_zXxnei"
+        "category_zXxnei",
+        "category_FL6Rb8"
       ],
       "name": "Category slider",
       "settings": {
         "heading": "Shop By Category",
         "top_spacing": "none",
         "width": "default",
-        "columns_desktop": 6,
+        "columns_desktop": 7,
         "columns_mobile": 3,
         "card_size_desktop": 106,
         "card_size_mobile": 72,

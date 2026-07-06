@@ -619,7 +619,7 @@
           "settings": {
             "title": "",
             "title_color": "#FEBB4A",
-            "title_size_v2": 19,
+            "title_size_v2": 30,
             "alignment": "center",
             "instafeed_margin_top": 0,
             "instafeed_margin_bottom": 0,
@@ -635,6 +635,9 @@
       },
       "block_order": [
         "instafeed_app_block_jPfBzt"
+      ],
+      "custom_css": [
+        "h2 {}"
       ],
       "settings": {
         "top_spacing": "none",

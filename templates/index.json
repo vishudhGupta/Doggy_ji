@@ -444,7 +444,7 @@
         "stat_nhLWbF": {
           "type": "stat",
           "settings": {
-            "stat_value": "65M+",
+            "stat_value": "1M+",
             "stat_label": "Happy Pet Owners",
             "card_bg": "#febb4a",
             "card_text_color": "#000000"
@@ -454,7 +454,7 @@
           "type": "stat",
           "settings": {
             "stat_value": "99%",
-            "stat_label": "Pincodes Covered",
+            "stat_label": "Pincodes Coverage",
             "card_bg": "#febb4a",
             "card_text_color": "#000000"
           }
@@ -462,7 +462,7 @@
         "stat_FWj4Ni": {
           "type": "stat",
           "settings": {
-            "stat_value": "42+",
+            "stat_value": "4+",
             "stat_label": "Years of Experience",
             "card_bg": "#febb4a",
             "card_text_color": "#000000"

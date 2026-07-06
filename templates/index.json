@@ -687,6 +687,21 @@
         "width": "default"
       }
     },
+    "blog_section_LpYETY": {
+      "type": "blog_section",
+      "name": "Blog split latest",
+      "settings": {
+        "blog": "",
+        "side_heading": "Latest posts",
+        "side_posts_limit": 4,
+        "top_spacing": "normal",
+        "width": "default",
+        "column_gap": 30,
+        "card_radius": 0,
+        "text_color": "#1f1f1f",
+        "muted_color": "#777777"
+      }
+    },
     "accordion_AaYLa9": {
       "type": "accordion",
       "blocks": {
@@ -775,6 +790,7 @@
     "banner_with_text_gXRL9W",
     "1782997279ad5d784f",
     "1783074432faf5357d",
+    "blog_section_LpYETY",
     "accordion_AaYLa9"
   ]
 }

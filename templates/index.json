@@ -691,10 +691,10 @@
       "type": "blog_section",
       "name": "Blog split latest",
       "settings": {
-        "blog": "",
+        "blog": "news",
         "side_heading": "Latest posts",
         "side_posts_limit": 4,
-        "top_spacing": "normal",
+        "top_spacing": "small",
         "width": "default",
         "column_gap": 30,
         "card_radius": 0,

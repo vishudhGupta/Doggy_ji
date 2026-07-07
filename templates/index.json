@@ -748,6 +748,9 @@
         "text_8qYF6E",
         "text_prekNC"
       ],
+      "custom_css": [
+        "#minion-section-template--22505175613693__accordion_AaYLa9{margin-bottom: 30px!important;}"
+      ],
       "name": "t:sections.accordion.presets.name",
       "settings": {
         "show_all_text_in_admin": true,

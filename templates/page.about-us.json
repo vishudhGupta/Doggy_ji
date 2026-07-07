@@ -19,6 +19,64 @@
         "heading_aligment": "text-center"
       }
     },
+    "about_us_QfxaiV": {
+      "type": "about-us",
+      "blocks": {
+        "decorative_icon_rEadae": {
+          "type": "decorative_icon",
+          "settings": {
+            "alt_text": "Decorative icon",
+            "position": "top-left",
+            "size": 84,
+            "opacity": 100
+          }
+        },
+        "decorative_icon_nEdmEf": {
+          "type": "decorative_icon",
+          "settings": {
+            "alt_text": "Decorative icon",
+            "position": "top-right",
+            "size": 88,
+            "opacity": 100
+          }
+        }
+      },
+      "block_order": [
+        "decorative_icon_rEadae",
+        "decorative_icon_nEdmEf"
+      ],
+      "name": "About Us",
+      "settings": {
+        "eyebrow_text": "About Us",
+        "heading_text": "Passion to Purpose: The Story of DoggyJi",
+        "body_text": "<p><strong>Ram Narayan</strong>, an engineer with a deep love for dogs, turned his concern for their well-being into a mission. While feeding stray dogs, he realized that glucose and other biscuits weren’t ideal for them. Determined to make a difference, he set out to create a healthier alternative.</p><p>After months of research, vet consultations, and testing, <strong>Doggy Ji was launched in January 2023</strong>. The goal? To provide nutritious, affordable, and high-quality food for dogs of all breeds, sizes, and ages.</p><p><strong>Doggy Ji makes feeding your dogs wholesome and pocket-friendly. It’s not just pet food—it’s a gesture of love in every bite!</strong></p>",
+        "body_max_width": 1280,
+        "eyebrow_size": 17,
+        "heading_size": 46,
+        "body_size": 17,
+        "body_line_height": 1.4,
+        "founder_photo": "shopify://shop_images/doggyji_founder_ram3-e1775719188771-1400x624.webp",
+        "founder_alt": "Founder photo",
+        "photo_max_width": 980,
+        "photo_overlap": 64,
+        "photo_radius": 36,
+        "connect_text": "Connect with Ram Narayan on",
+        "connect_link": "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFeoLGgKGS4YwAAAZ88Urx4cCehClaOQ00jDkHCoIzCawWeTO7kCs9TirHE5fgdTgNn7goq3zedh6l12MAmI-y3q9rL_deOE7QxXID4AkiLl1zpBcSCdXbZ2gtxV7H8CdqGsEo=&original_referer=https://www.doggyji.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fram-narayan-33585738",
+        "open_connect_new_tab": true,
+        "connect_icon": "linkedin",
+        "connect_icon_label": "in",
+        "connect_size": 22,
+        "hero_bg_color": "#20bec4",
+        "lower_bg_color": "#20BEC4",
+        "hero_background_image": "shopify://shop_images/1.svg",
+        "background_image_opacity": 100,
+        "max_width": 1500,
+        "hero_padding_top": 64,
+        "hero_padding_bottom": 120,
+        "text_color": "#181818",
+        "muted_color": "#2a2a2a"
+      }
+    },
     "image_with_text_BfB9iJ": {
       "type": "image-with-text",
       "blocks": {
@@ -88,6 +146,7 @@
   },
   "order": [
     "main",
+    "about_us_QfxaiV",
     "image_with_text_BfB9iJ"
   ]
 }

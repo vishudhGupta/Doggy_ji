@@ -1,0 +1,695 @@
+{%- liquid
+	assign has_decorative_icons = false
+	for block in section.blocks
+		if block.type == 'decorative_icon' and block.settings.image != blank
+			assign has_decorative_icons = true
+			break
+		endif
+	endfor
+-%}
+
+<style>
+	.about-us {
+		--about-hero-bg: {{ section.settings.hero_bg_color }};
+		--about-lower-bg: {{ section.settings.lower_bg_color }};
+		--about-text: {{ section.settings.text_color }};
+		--about-muted: {{ section.settings.muted_color }};
+		--about-max-width: {{ section.settings.max_width }}px;
+		--about-heading-size: {{ section.settings.heading_size }}px;
+		--about-eyebrow-size: {{ section.settings.eyebrow_size }}px;
+		--about-body-size: {{ section.settings.body_size }}px;
+		--about-connect-size: {{ section.settings.connect_size }}px;
+		--about-photo-radius: {{ section.settings.photo_radius }}px;
+		--about-photo-max-width: {{ section.settings.photo_max_width }}px;
+		background: var(--about-lower-bg);
+		color: var(--about-text);
+		overflow: hidden;
+	}
+
+	.about-us__hero {
+		position: relative;
+		background: var(--about-hero-bg);
+		padding: {{ section.settings.hero_padding_top }}px 0 {{ section.settings.hero_padding_bottom }}px;
+	}
+
+	.about-us__hero-bg,
+	.about-us__lower-bg {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		opacity: {{ section.settings.background_image_opacity | divided_by: 100.0 }};
+	}
+
+	.about-us__lower-bg {
+		background-size: cover;
+	}
+
+	.about-us__container {
+		width: min(var(--about-max-width), calc(100% - 32px));
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	.about-us__content {
+		position: relative;
+		text-align: center;
+	}
+
+	.about-us__eyebrow {
+		margin: 0 0 10px;
+		font-size: var(--about-eyebrow-size);
+		line-height: 1.15;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.about-us__heading {
+		margin: 0 auto;
+		max-width: 980px;
+		font-size: var(--about-heading-size);
+		line-height: 0.92;
+		font-weight: 900;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+	}
+
+	.about-us__body {
+		margin: 18px auto 0;
+		max-width: {{ section.settings.body_max_width }}px;
+		font-size: var(--about-body-size);
+		line-height: {{ section.settings.body_line_height }};
+		color: var(--about-text);
+	}
+
+	.about-us__body strong {
+		font-weight: 800;
+	}
+
+	.about-us__decorations {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	.about-us__decorative-icon {
+		position: absolute;
+		display: block;
+		line-height: 0;
+	}
+
+	.about-us__decorative-icon img {
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.about-us__decorative-icon--top-left { top: 12%; left: 7%; }
+	.about-us__decorative-icon--top-right { top: 16%; right: 14%; }
+	.about-us__decorative-icon--mid-left { top: 46%; left: 2%; }
+	.about-us__decorative-icon--mid-right { top: 46%; right: 3%; }
+	.about-us__decorative-icon--bottom-left { bottom: 3%; left: 8%; }
+	.about-us__decorative-icon--bottom-right { bottom: 3%; right: 8%; }
+
+	.about-us__media {
+		position: relative;
+		background: var(--about-lower-bg);
+		padding: 0 0 34px;
+	}
+
+	.about-us__photo-wrap {
+		width: min(var(--about-photo-max-width), calc(100% - 32px));
+		margin: calc(var(--about-photo-overlap) * -1) auto 0;
+		border-radius: var(--about-photo-radius);
+		overflow: hidden;
+		box-shadow: 0 18px 44px rgba(0, 0, 0, 0.12);
+		position: relative;
+		z-index: 2;
+	}
+
+	.about-us__photo {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.about-us__connect {
+		margin: 18px auto 0;
+		text-align: center;
+		font-size: var(--about-connect-size);
+		line-height: 1.25;
+		font-weight: 700;
+		color: var(--about-text);
+	}
+
+	.about-us__connect-link {
+		color: inherit;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.about-us__connect-link:hover {
+		text-decoration: underline;
+	}
+
+	.about-us__connect-icon {
+		width: 28px;
+		height: 28px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 6px;
+		background: #0a66c2;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 800;
+		flex-shrink: 0;
+	}
+
+	.about-us__connect-icon svg {
+		width: 18px;
+		height: 18px;
+		fill: currentColor;
+	}
+
+	.about-us__connect-icon--none {
+		display: none;
+	}
+
+	@media (max-width: 990px) {
+		.about-us__container {
+			width: calc(100% - 24px);
+		}
+
+		.about-us__heading {
+			font-size: calc(var(--about-heading-size) * 0.78);
+		}
+
+		.about-us__body {
+			max-width: 100%;
+		}
+
+		.about-us__decorative-icon--top-left { left: 3%; }
+		.about-us__decorative-icon--top-right { right: 6%; }
+	}
+
+	@media (max-width: 576px) {
+		.about-us__hero {
+			padding: 46px 0 120px;
+		}
+
+		.about-us__container {
+			width: calc(100% - 20px);
+		}
+
+		.about-us__eyebrow {
+			margin-bottom: 8px;
+		}
+
+		.about-us__heading {
+			font-size: calc(var(--about-heading-size) * 0.58);
+			line-height: 0.98;
+		}
+
+		.about-us__body {
+			margin-top: 14px;
+			font-size: calc(var(--about-body-size) - 1px);
+		}
+
+		.about-us__decorations {
+			display: none;
+		}
+
+		.about-us__photo-wrap {
+			width: calc(100% - 12px);
+		}
+
+		.about-us__connect {
+			margin-top: 14px;
+			font-size: calc(var(--about-connect-size) - 1px);
+		}
+
+		.about-us__connect-icon {
+			width: 24px;
+			height: 24px;
+		}
+
+		.about-us__connect-icon svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+</style>
+
+<section class="about-us" aria-label="About us">
+	<div class="about-us__hero">
+		{% if section.settings.hero_background_image != blank %}
+			<div
+				class="about-us__hero-bg"
+				style="background-image: url('{{ section.settings.hero_background_image | image_url: width: 2400 }}');"
+				aria-hidden="true"
+			></div>
+		{% endif %}
+
+		<div class="about-us__container">
+			<div class="about-us__content">
+				{% if has_decorative_icons %}
+					<div class="about-us__decorations" aria-hidden="true">
+						{% for block in section.blocks %}
+							{% if block.type == 'decorative_icon' and block.settings.image != blank %}
+								{% assign position_class = 'about-us__decorative-icon--top-left' %}
+								{% case block.settings.position %}
+									{% when 'top-right' %}
+										{% assign position_class = 'about-us__decorative-icon--top-right' %}
+									{% when 'mid-left' %}
+										{% assign position_class = 'about-us__decorative-icon--mid-left' %}
+									{% when 'mid-right' %}
+										{% assign position_class = 'about-us__decorative-icon--mid-right' %}
+									{% when 'bottom-left' %}
+										{% assign position_class = 'about-us__decorative-icon--bottom-left' %}
+									{% when 'bottom-right' %}
+										{% assign position_class = 'about-us__decorative-icon--bottom-right' %}
+								{% endcase %}
+
+								<span
+									class="about-us__decorative-icon {{ position_class }}"
+									style="width: {{ block.settings.size }}px; opacity: {{ block.settings.opacity | divided_by: 100.0 }};"
+									{{ block.shopify_attributes }}
+								>
+									{{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.alt_text }}
+								</span>
+							{% endif %}
+						{% endfor %}
+					</div>
+				{% endif %}
+
+				{% if section.settings.eyebrow_text != blank %}
+					<p class="about-us__eyebrow">{{ section.settings.eyebrow_text }}</p>
+				{% endif %}
+
+				{% if section.settings.heading_text != blank %}
+					<h2 class="about-us__heading">{{ section.settings.heading_text }}</h2>
+				{% endif %}
+
+				{% if section.settings.body_text != blank %}
+					<div class="about-us__body">{{ section.settings.body_text }}</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="about-us__media">
+		{% if section.settings.lower_background_image != blank %}
+			<div
+				class="about-us__lower-bg"
+				style="background-image: url('{{ section.settings.lower_background_image | image_url: width: 2400 }}');"
+				aria-hidden="true"
+			></div>
+		{% endif %}
+
+		<div class="about-us__container">
+			{% if section.settings.founder_photo != blank %}
+				<div class="about-us__photo-wrap" style="max-width: {{ section.settings.photo_max_width }}px; --about-photo-overlap: {{ section.settings.photo_overlap }}px;">
+					{{ section.settings.founder_photo | image_url: width: 1800 | image_tag: class: 'about-us__photo', loading: 'lazy', alt: section.settings.founder_alt | escape }}
+				</div>
+			{% endif %}
+
+			{% if section.settings.connect_text != blank %}
+				<div class="about-us__connect">
+					{% if section.settings.connect_link != blank %}
+						<a class="about-us__connect-link" href="{{ section.settings.connect_link }}"{% if section.settings.open_connect_new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
+							<span>{{ section.settings.connect_text }}</span>
+							<span class="about-us__connect-icon{% if section.settings.connect_icon == 'none' %} about-us__connect-icon--none{% endif %}" aria-hidden="true">
+								{% case section.settings.connect_icon %}
+									{% when 'linkedin' %}
+										<svg viewBox="0 0 24 24"><path d="M4.5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 8.8h3v12H3v-12Zm7.2 0h2.9v1.6h.1c.4-.8 1.4-1.8 3-1.8 3.2 0 3.8 2.1 3.8 4.9v7.3h-3v-6.5c0-1.6 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4v6.6h-3v-12Z"/></svg>
+									{% when 'instagram' %}
+										<svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1 .1 1.6.2 2 .4.5.2.9.4 1.3.8.4.4.6.8.8 1.3.2.4.3 1 .4 2 .1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1-.2 1.6-.4 2-.2.5-.4.9-.8 1.3-.4.4-.8.6-1.3.8-.4.2-1 .3-2 .4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1-.1-1.6-.2-2-.4-.5-.2-.9-.4-1.3-.8-.4-.4-.6-.8-.8-1.3-.2-.4-.3-1-.4-2-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1 .2-1.6.4-2 .2-.5.4-.9.8-1.3.4-.4.8-.6 1.3-.8.4-.2 1-.3 2-.4 1.2-.1 1.6-.1 4.8-.1Zm0 1.9c-3.1 0-3.5 0-4.7.1-.9 0-1.4.2-1.8.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.2.4-.3.9-.3 1.8-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 .9.2 1.4.3 1.8.2.4.3.7.6 1 .3.3.6.5 1 .6.4.2.9.3 1.8.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c.9 0 1.4-.2 1.8-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .2-.4.3-.9.3-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-.9-.2-1.4-.3-1.8-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.4-.2-.9-.3-1.8-.3-1.2-.1-1.6-.1-4.7-.1Zm0 3.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4Zm0 1.9a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Zm6-3.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
+									{% when 'x' %}
+										<svg viewBox="0 0 24 24"><path d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.6l-5.2-6.9L5.7 22H2.4l7.7-8.8L.5 2h6.8l4.7 6.3L18.9 2Zm-1.2 18h1.8L6.3 3.9H4.4L17.7 20Z"/></svg>
+									{% else %}
+										<span>{{ section.settings.connect_icon_label }}</span>
+								{% endcase %}
+							</span>
+						</a>
+					{% else %}
+						<span>{{ section.settings.connect_text }}</span>
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "About Us",
+	"settings": [
+		{
+			"type": "header",
+			"content": "Content"
+		},
+		{
+			"type": "text",
+			"id": "eyebrow_text",
+			"label": "Eyebrow text",
+			"default": "About Us"
+		},
+		{
+			"type": "text",
+			"id": "heading_text",
+			"label": "Heading text",
+			"default": "Passion to Purpose: The Story of DoggyJi"
+		},
+		{
+			"type": "richtext",
+			"id": "body_text",
+			"label": "Body text",
+			"default": "<p><strong>Ram Narayan</strong>, an engineer with a deep love for dogs, turned his concern for their well-being into a mission. While feeding stray dogs, he realized that glucose and other biscuits weren’t ideal for them. Determined to make a difference, he set out to create a healthier alternative.</p><p>After months of research, vet consultations, and testing, <strong>Doggy Ji was launched in January 2023</strong>. The goal? To provide nutritious, affordable, and high-quality food for dogs of all breeds, sizes, and ages.</p><p><strong>Doggy Ji makes feeding your dogs wholesome and pocket-friendly. It’s not just pet food—it’s a gesture of love in every bite!</strong></p>"
+		},
+		{
+			"type": "range",
+			"id": "body_max_width",
+			"label": "Body max width",
+			"min": 360,
+			"max": 1600,
+			"step": 20,
+			"unit": "px",
+			"default": 1280
+		},
+		{
+			"type": "range",
+			"id": "eyebrow_size",
+			"label": "Eyebrow size",
+			"min": 10,
+			"max": 32,
+			"step": 1,
+			"unit": "px",
+			"default": 16
+		},
+		{
+			"type": "range",
+			"id": "heading_size",
+			"label": "Heading size",
+			"min": 24,
+			"max": 96,
+			"step": 2,
+			"unit": "px",
+			"default": 68
+		},
+		{
+			"type": "range",
+			"id": "body_size",
+			"label": "Body size",
+			"min": 12,
+			"max": 32,
+			"step": 1,
+			"unit": "px",
+			"default": 17
+		},
+		{
+			"type": "range",
+			"id": "body_line_height",
+			"label": "Body line height",
+			"min": 1,
+			"max": 2,
+	      "step": 0.1,
+			"default": 1.4
+		},
+		{
+			"type": "header",
+			"content": "Founder Photo"
+		},
+		{
+			"type": "image_picker",
+			"id": "founder_photo",
+			"label": "Founder photo"
+		},
+		{
+			"type": "text",
+			"id": "founder_alt",
+			"label": "Founder photo alt text",
+			"default": "Founder photo"
+		},
+		{
+			"type": "range",
+			"id": "photo_max_width",
+			"label": "Founder photo max width",
+			"min": 280,
+			"max": 1400,
+			"step": 20,
+			"unit": "px",
+			"default": 980
+		},
+		{
+			"type": "range",
+			"id": "photo_overlap",
+			"label": "Founder photo overlap",
+			"min": 0,
+			"max": 180,
+			"step": 4,
+			"unit": "px",
+			"default": 64
+		},
+		{
+			"type": "range",
+			"id": "photo_radius",
+			"label": "Founder photo corner radius",
+			"min": 0,
+			"max": 80,
+			"step": 2,
+			"unit": "px",
+			"default": 36
+		},
+		{
+			"type": "header",
+			"content": "Connect Row"
+		},
+		{
+			"type": "text",
+			"id": "connect_text",
+			"label": "Connect text",
+			"default": "Connect with Ram Narayan on"
+		},
+		{
+			"type": "url",
+			"id": "connect_link",
+			"label": "Connect link"
+		},
+		{
+			"type": "checkbox",
+			"id": "open_connect_new_tab",
+			"label": "Open connect link in new tab",
+			"default": true
+		},
+		{
+			"type": "select",
+			"id": "connect_icon",
+			"label": "Connect icon",
+			"options": [
+				{
+					"value": "linkedin",
+					"label": "LinkedIn"
+				},
+				{
+					"value": "instagram",
+					"label": "Instagram"
+				},
+				{
+					"value": "x",
+					"label": "X"
+				},
+				{
+					"value": "none",
+					"label": "None"
+				}
+			],
+			"default": "linkedin"
+		},
+		{
+			"type": "text",
+			"id": "connect_icon_label",
+			"label": "Fallback icon label",
+			"default": "in"
+		},
+		{
+			"type": "range",
+			"id": "connect_size",
+			"label": "Connect text size",
+			"min": 12,
+			"max": 36,
+			"step": 1,
+			"unit": "px",
+			"default": 22
+		},
+		{
+			"type": "header",
+			"content": "Backgrounds"
+		},
+		{
+			"type": "color",
+			"id": "hero_bg_color",
+			"label": "Hero background color",
+			"default": "#20bec4"
+		},
+		{
+			"type": "color",
+			"id": "lower_bg_color",
+			"label": "Lower background color",
+			"default": "#f7f1e3"
+		},
+		{
+			"type": "image_picker",
+			"id": "hero_background_image",
+			"label": "Hero background image"
+		},
+		{
+			"type": "image_picker",
+			"id": "lower_background_image",
+			"label": "Lower background image"
+		},
+		{
+			"type": "range",
+			"id": "background_image_opacity",
+			"label": "Background image opacity",
+			"min": 0,
+			"max": 100,
+			"step": 5,
+			"unit": "%",
+			"default": 20
+		},
+		{
+			"type": "header",
+			"content": "Layout"
+		},
+		{
+			"type": "range",
+			"id": "max_width",
+			"label": "Content max width",
+			"min": 960,
+			"max": 1800,
+			"step": 20,
+			"unit": "px",
+			"default": 1500
+		},
+		{
+			"type": "range",
+			"id": "hero_padding_top",
+			"label": "Hero top padding",
+			"min": 20,
+			"max": 180,
+			"step": 4,
+			"unit": "px",
+			"default": 64
+		},
+		{
+			"type": "range",
+			"id": "hero_padding_bottom",
+			"label": "Hero bottom padding",
+			"min": 40,
+			"max": 220,
+			"step": 4,
+			"unit": "px",
+			"default": 120
+		},
+		{
+			"type": "color",
+			"id": "text_color",
+			"label": "Text color",
+			"default": "#181818"
+		},
+		{
+			"type": "color",
+			"id": "muted_color",
+			"label": "Muted text color",
+			"default": "#2a2a2a"
+		}
+	],
+	"blocks": [
+		{
+			"type": "decorative_icon",
+			"name": "Decorative icon",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Icon image"
+				},
+				{
+					"type": "text",
+					"id": "alt_text",
+					"label": "Alt text",
+					"default": "Decorative icon"
+				},
+				{
+					"type": "select",
+					"id": "position",
+					"label": "Position",
+					"options": [
+						{ "value": "top-left", "label": "Top left" },
+						{ "value": "top-right", "label": "Top right" },
+						{ "value": "mid-left", "label": "Middle left" },
+						{ "value": "mid-right", "label": "Middle right" },
+						{ "value": "bottom-left", "label": "Bottom left" },
+						{ "value": "bottom-right", "label": "Bottom right" }
+					],
+					"default": "top-left"
+				},
+				{
+					"type": "range",
+					"id": "size",
+					"label": "Size",
+					"min": 20,
+					"max": 220,
+					"step": 2,
+					"unit": "px",
+					"default": 96
+				},
+				{
+					"type": "range",
+					"id": "opacity",
+					"label": "Opacity",
+					"min": 10,
+					"max": 100,
+					"step": 5,
+					"unit": "%",
+					"default": 100
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "About Us",
+			"blocks": [
+				{
+					"type": "decorative_icon",
+					"settings": {
+						"position": "top-left",
+						"size": 84,
+						"opacity": 100
+					}
+				},
+				{
+					"type": "decorative_icon",
+					"settings": {
+						"position": "top-right",
+						"size": 88,
+						"opacity": 100
+					}
+				}
+			]
+		}
+	]
+}
+{% endschema %}

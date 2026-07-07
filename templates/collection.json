@@ -54,38 +54,11 @@
         "show_badge_sold_out": true,
         "show_badge_feature": true
       }
-    },
-    "164983697782d63734": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "normal",
-        "ticker_time": 20,
-        "direction": "ticker-to-left",
-        "text_size": "normal",
-        "url": "",
-        "text": "<p><strong>USDA-Certified   /   Humanely-harvested   /   Sustainably-sourced ingredients   /   No BPAs   /   No preservatives   /    Grain-free   /   Protein rich</strong></p>",
-        "show_icon": "svg",
-        "icon_name": "cat_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#ddf1f0",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_spacing": "small",
-        "remove_bottom_spacing": false
-      }
     }
   },
   "order": [
     "heading",
     "description",
-    "product-grid",
-    "164983697782d63734"
+    "product-grid"
   ]
 }

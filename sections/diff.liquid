@@ -1,0 +1,463 @@
+<style>
+	.diff-section {
+		--diff-bg: {{ section.settings.background_color }};
+		--diff-text: {{ section.settings.text_color }};
+		--diff-line: {{ section.settings.line_color }};
+		--diff-dot: {{ section.settings.dot_color }};
+		--diff-max-width: {{ section.settings.max_width }}px;
+		--diff-title-size: {{ section.settings.title_size }}px;
+		--diff-card-title-size: {{ section.settings.card_title_size }}px;
+		--diff-card-body-size: {{ section.settings.card_body_size }}px;
+		background: var(--diff-bg);
+		color: var(--diff-text);
+		padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+	}
+
+	.diff-section__container {
+		width: min(var(--diff-max-width), calc(100% - 32px));
+		margin: 0 auto;
+	}
+
+	.diff-section__title {
+		margin: 0;
+		text-align: center;
+		font-size: var(--diff-title-size);
+		line-height: 1;
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		text-transform: uppercase;
+	}
+
+	.diff-section__line {
+		position: relative;
+		margin: {{ section.settings.line_spacing_top }}px 0 {{ section.settings.cards_spacing_top }}px;
+		height: 22px;
+	}
+
+	.diff-section__line::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 1px;
+		background: var(--diff-line);
+		opacity: 0.65;
+	}
+
+	.diff-section__dots {
+		position: relative;
+		z-index: 1;
+		height: 100%;
+	}
+
+	.diff-section__dot {
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: var(--diff-dot);
+	}
+
+	.diff-section__dot--first {
+		left: 6%;
+		width: 20px;
+		height: 20px;
+	}
+
+	.diff-section__dot--second { left: 29%; }
+	.diff-section__dot--third { left: 53%; }
+	.diff-section__dot--fourth { left: 77%; }
+
+	.diff-section__grid {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 18px;
+	}
+
+	.diff-section__card {
+		border-radius: 22px;
+		padding: 18px 18px 22px;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		background: var(--card-bg, #f4d18d);
+	}
+
+	.diff-section__card-icon {
+		width: 64px;
+		height: 64px;
+		margin-bottom: 18px;
+		color: var(--card-icon-color, #111);
+		flex-shrink: 0;
+	}
+
+	.diff-section__card-icon svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1.8;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+
+	.diff-section__card-icon img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: contain;
+	}
+
+	.diff-section__card-title {
+		margin: 0;
+		font-size: var(--diff-card-title-size);
+		line-height: 0.95;
+		font-weight: 900;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+	}
+
+	.diff-section__card-body {
+		margin-top: 18px;
+		font-size: var(--diff-card-body-size);
+		line-height: 1.45;
+		color: var(--card-text-color, var(--diff-text));
+	}
+
+	.diff-section__card-body p {
+		margin: 0;
+	}
+
+	@media (max-width: 990px) {
+		.diff-section__container {
+			width: calc(100% - 24px);
+		}
+
+		.diff-section__grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.diff-section__title {
+			font-size: calc(var(--diff-title-size) * 0.82);
+		}
+
+		.diff-section__dot--first {
+			left: 8%;
+		}
+
+		.diff-section__dot--second { left: 33%; }
+		.diff-section__dot--third { left: 67%; }
+		.diff-section__dot--fourth { left: 92%; }
+	}
+
+	@media (max-width: 576px) {
+		.diff-section {
+			padding: 30px 0 34px;
+		}
+
+		.diff-section__container {
+			width: calc(100% - 18px);
+		}
+
+		.diff-section__title {
+			font-size: calc(var(--diff-title-size) * 0.56);
+			line-height: 1.02;
+		}
+
+		.diff-section__line {
+			margin: 28px 0 20px;
+			height: 18px;
+		}
+
+		.diff-section__grid {
+			grid-template-columns: 1fr;
+			gap: 14px;
+		}
+
+		.diff-section__card {
+			padding: 16px 16px 18px;
+			border-radius: 18px;
+		}
+
+		.diff-section__card-icon {
+			width: 54px;
+			height: 54px;
+			margin-bottom: 14px;
+		}
+
+		.diff-section__card-title {
+			font-size: calc(var(--diff-card-title-size) * 0.9);
+		}
+	}
+</style>
+
+<section class="diff-section" aria-label="The Doggy Ji Difference">
+	<div class="diff-section__container">
+		{% if section.settings.title != blank %}
+			<h2 class="diff-section__title">{{ section.settings.title }}</h2>
+		{% endif %}
+
+		<div class="diff-section__line" aria-hidden="true">
+			<div class="diff-section__dots">
+				<span class="diff-section__dot diff-section__dot--first"></span>
+				<span class="diff-section__dot diff-section__dot--second"></span>
+				<span class="diff-section__dot diff-section__dot--third"></span>
+				<span class="diff-section__dot diff-section__dot--fourth"></span>
+			</div>
+		</div>
+
+		<div class="diff-section__grid">
+			{% for block in section.blocks %}
+				<article class="diff-section__card" style="--card-bg: {{ block.settings.card_bg }}; --card-text-color: {{ block.settings.text_color }}; --card-icon-color: {{ block.settings.icon_color }};" {{ block.shopify_attributes }}>
+					<div class="diff-section__card-icon" aria-hidden="true">
+						{% if block.settings.icon_image != blank %}
+							{{ block.settings.icon_image | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.icon_alt }}
+						{% else %}
+							{% case block.settings.icon %}
+								{% when 'heart' %}
+									<svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9.1C.4 7.8 2.4 4.5 5.9 4.5c2 0 3.5 1 4.5 2.4 1-1.4 2.5-2.4 4.5-2.4 3.5 0 5.5 3.3 3.4 7.4C19 16.65 12 21 12 21Z"/></svg>
+								{% when 'leaf' %}
+									<svg viewBox="0 0 24 24"><path d="M20 4c-7.5 0-13.5 4.5-15.5 11.5C3 19.2 4.8 21 7.6 21c5.6 0 10.2-4.8 10.2-10.5 0-1.9-.2-4-.8-6.5ZM6 18c1.4-4 5-7.2 10.2-8.8"/><path d="M6 18c3-1 5.8-3.2 8.2-6.6"/></svg>
+								{% when 'calendar' %}
+									<svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2"/><path d="M7 3.5v4M17 3.5v4M3.5 10.5h17"/><path d="M8 14h3M13 14h3M8 17h3"/></svg>
+								{% when 'stray' %}
+									<svg viewBox="0 0 24 24"><path d="M4 18c1.5-2 2.6-3.2 4-3.2 1.3 0 2 .8 2.8 2.1.8-1.2 1.7-2.1 3.1-2.1 1.5 0 2.7 1.1 3.9 3.2"/><path d="M6.2 12.3c.5-2.4 2.4-4.3 5.8-4.3 3.8 0 5.8 2.1 6.2 5.2"/><path d="M7 6.2c0 1-.8 1.8-1.8 1.8S3.4 7.2 3.4 6.2 4.2 4.4 5.2 4.4 7 5.2 7 6.2Zm12 0c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8.8-1.8 1.8-1.8 1.8.8 1.8 1.8Z"/></svg>
+								{% endcase %}
+						{% endif %}
+					</div>
+
+					{% if block.settings.heading != blank %}
+						<h3 class="diff-section__card-title">{{ block.settings.heading }}</h3>
+					{% endif %}
+
+					{% if block.settings.text != blank %}
+						<div class="diff-section__card-body">{{ block.settings.text }}</div>
+					{% endif %}
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Doggy Ji Difference",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title",
+			"default": "The Doggy Ji Difference"
+		},
+		{
+			"type": "range",
+			"id": "title_size",
+			"label": "Title size",
+			"min": 24,
+			"max": 84,
+			"step": 2,
+			"unit": "px",
+			"default": 56
+		},
+		{
+			"type": "range",
+			"id": "card_title_size",
+			"label": "Card title size",
+			"min": 18,
+			"max": 42,
+			"step": 1,
+			"unit": "px",
+			"default": 26
+		},
+		{
+			"type": "range",
+			"id": "card_body_size",
+			"label": "Card body size",
+			"min": 12,
+			"max": 24,
+			"step": 1,
+			"unit": "px",
+			"default": 17
+		},
+		{
+			"type": "range",
+			"id": "max_width",
+			"label": "Content max width",
+			"min": 900,
+			"max": 1800,
+			"step": 20,
+			"unit": "px",
+			"default": 1500
+		},
+		{
+			"type": "range",
+			"id": "padding_top",
+			"label": "Top padding",
+			"min": 20,
+			"max": 120,
+			"step": 2,
+			"unit": "px",
+			"default": 32
+		},
+		{
+			"type": "range",
+			"id": "padding_bottom",
+			"label": "Bottom padding",
+			"min": 20,
+			"max": 120,
+			"step": 2,
+			"unit": "px",
+			"default": 36
+		},
+		{
+			"type": "range",
+			"id": "line_spacing_top",
+			"label": "Line spacing top",
+			"min": 16,
+			"max": 80,
+			"step": 2,
+			"unit": "px",
+			"default": 36
+		},
+		{
+			"type": "range",
+			"id": "cards_spacing_top",
+			"label": "Cards spacing top",
+			"min": 0,
+			"max": 60,
+			"step": 2,
+			"unit": "px",
+			"default": 16
+		},
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background color",
+			"default": "#f8f1e3"
+		},
+		{
+			"type": "color",
+			"id": "text_color",
+			"label": "Text color",
+			"default": "#111111"
+		},
+		{
+			"type": "color",
+			"id": "line_color",
+			"label": "Line color",
+			"default": "#4d4d4d"
+		},
+		{
+			"type": "color",
+			"id": "dot_color",
+			"label": "Dot color",
+			"default": "#111111"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Feature card",
+			"settings": [
+				{
+					"type": "select",
+					"id": "icon",
+					"label": "Icon",
+					"options": [
+						{ "value": "heart", "label": "Heart / nutrition" },
+						{ "value": "leaf", "label": "Leaf / ingredients" },
+						{ "value": "calendar", "label": "Calendar / everyday" },
+						{ "value": "stray", "label": "Stray dogs" }
+					],
+					"default": "heart"
+				},
+						{
+							"type": "image_picker",
+							"id": "icon_image",
+							"label": "Upload icon"
+						},
+						{
+							"type": "text",
+							"id": "icon_alt",
+							"label": "Icon alt text",
+							"default": "Feature icon"
+						},
+				{
+					"type": "text",
+					"id": "heading",
+					"label": "Heading",
+					"default": "Affordable nutrition for every dog"
+				},
+				{
+					"type": "richtext",
+					"id": "text",
+					"label": "Text",
+					"default": "<p>Doggy Ji is built to make daily dog feeding genuinely affordable. With low-cost packs like ₹10 options, it removes the barrier of price for regular feeding. Whether it’s your pet or street dogs, consistent nutrition becomes easy and sustainable.</p>"
+				},
+				{
+					"type": "color",
+					"id": "card_bg",
+					"label": "Card background",
+					"default": "#f6d48a"
+				},
+				{
+					"type": "color",
+					"id": "text_color",
+					"label": "Text color",
+					"default": "#111111"
+				},
+				{
+					"type": "color",
+					"id": "icon_color",
+					"label": "Icon color",
+					"default": "#111111"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Doggy Ji Difference",
+			"blocks": [
+				{
+					"type": "card",
+					"settings": {
+						"icon": "heart",
+						"heading": "Affordable nutrition for every dog",
+						"card_bg": "#f6d48a"
+					}
+				},
+				{
+					"type": "card",
+					"settings": {
+						"icon": "leaf",
+						"heading": "Clean, simple ingredients",
+						"card_bg": "#f4b48f"
+					}
+				},
+				{
+					"type": "card",
+					"settings": {
+						"icon": "calendar",
+						"heading": "Made for everyday feeding",
+						"card_bg": "#f3c68f"
+					}
+				},
+				{
+					"type": "card",
+					"settings": {
+						"icon": "stray",
+						"heading": "Built for strays & community feeding",
+						"card_bg": "#a7dde0"
+					}
+				}
+			]
+		}
+	]
+}
+{% endschema %}

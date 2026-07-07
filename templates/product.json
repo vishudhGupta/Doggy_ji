@@ -95,25 +95,6 @@
             "icon_name_5": "",
             "content_5": ""
           }
-        },
-        "gallery_bx3fwe": {
-          "type": "gallery",
-          "settings": {
-            "heading": "Guaranteed safe checkout",
-            "icon_name": "secure_sm",
-            "grid": "col-2",
-            "image_ratio": "auto",
-            "image_fit": "image-fit-contain"
-          }
-        },
-        "1e7e994a-ed88-406e-9a98-eaaf5a624851": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Description",
-            "icon_name": "new_sm",
-            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
-            "page": "include_additional_features"
-          }
         }
       },
       "block_order": [
@@ -124,9 +105,7 @@
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
         "ab5ab2dc-3efb-4d96-82c2-068a730c0fe3",
         "03273730-7345-42ca-900c-d5d4b561aa65",
-        "ac2db628-888a-4658-bc4e-07bb8a99cb6f",
-        "gallery_bx3fwe",
-        "1e7e994a-ed88-406e-9a98-eaaf5a624851"
+        "ac2db628-888a-4658-bc4e-07bb8a99cb6f"
       ],
       "settings": {
         "top_spacing": "none",

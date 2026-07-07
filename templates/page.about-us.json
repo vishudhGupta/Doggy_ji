@@ -67,7 +67,7 @@
         "connect_icon_label": "in",
         "connect_size": 22,
         "hero_bg_color": "#20bec4",
-        "lower_bg_color": "#20BEC4",
+        "lower_bg_color": "#20bec4",
         "hero_background_image": "shopify://shop_images/1.svg",
         "background_image_opacity": 100,
         "max_width": 1500,
@@ -129,8 +129,177 @@
         "color_svg": "rgba(0,0,0,0)",
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#F7F1E3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "sec_2_abo_XVygpf": {
+      "type": "sec-2_abo",
+      "name": "About Story Section",
+      "settings": {
+        "eyebrow_text": "About Us",
+        "title_prefix": "Meet",
+        "title_highlight_1": "Feni",
+        "title_mid": "and",
+        "title_highlight_2": "Scotch:",
+        "title_suffix": "The Real Founders of Doggy Ji",
+        "body_text": "<p>Doggy ji’s story began with two special companions—<strong>Feni and Scotch</strong>. Ram Narayan, the creator of Doggyji, found endless inspiration in his beloved dogs, who brought joy, love, and a deeper understanding of what dogs truly need.</p><p><strong>In their honour, he named his parent company, Fensco Foods (a blend of their names), as a tribute to the bond they share.</strong> To us, Feni and Scotch are the true founders of Doggyji—their unconditional love and playful spirits inspire everything we do.</p>",
+        "body_max_width": 1200,
+        "body_size": 16,
+        "body_line_height": 1.4,
+        "title_size": 54,
+        "subtitle_size": 16,
+        "left_image": "shopify://shop_images/Dog.webp",
+        "left_image_alt": "Left dog photo",
+        "right_image": "shopify://shop_images/DogInCar.webp",
+        "right_image_alt": "Right dog photo",
+        "side_image_width": 320,
+        "side_image_width_tablet": 220,
+        "side_image_radius": 22,
+        "max_width": 1600,
+        "content_max_width": 760,
+        "hero_min_height": 620,
+        "hero_padding_top": 40,
+        "hero_padding_bottom": 40,
+        "content_padding_top": 0,
+        "content_padding_bottom": 0,
+        "background_color": "#f7f1e3",
+        "text_color": "#101010",
+        "muted_color": "#1d1d1d",
+        "accent_color": "#ef5b00",
+        "background_image_opacity": 20
+      }
+    },
+    "image_with_text_MfRgGp": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_UTbLwk": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify://shop_images/Mission.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "heading_FNQFif": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Mission"
+          }
+        },
+        "text_kXza33": {
+          "type": "text",
+          "settings": {
+            "show_icon": "none",
+            "icon_name": "",
+            "text": "<p>To provide healthy, effective, and affordable nutrition solutions for every Indian dog. We aim to revolutionize pet nutrition by making quality food accessible to all income groups while educating pet parents about the importance of proper nutrition.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_UTbLwk",
+        "heading_FNQFif",
+        "text_kXza33"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "image_zoom_internal": false,
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#F7F1E3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "image_with_text_ijji6M": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_7eWUmR": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify://shop_images/VIsion.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "heading_iypL8c": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Vision"
+          }
+        },
+        "text_UHqKPY": {
+          "type": "text",
+          "settings": {
+            "show_icon": "none",
+            "icon_name": "",
+            "text": "<p>To become India’s most trusted and accessible pet nutrition brand while ensuring every dog has access to quality food that promotes their health and happiness. We envision a future where no pet goes without proper nutrition due to financial constraints</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_7eWUmR",
+        "heading_iypL8c",
+        "text_UHqKPY"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "image_zoom_internal": false,
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#F7F1E3",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -147,6 +316,9 @@
   "order": [
     "main",
     "about_us_QfxaiV",
-    "image_with_text_BfB9iJ"
+    "image_with_text_BfB9iJ",
+    "sec_2_abo_XVygpf",
+    "image_with_text_MfRgGp",
+    "image_with_text_ijji6M"
   ]
 }

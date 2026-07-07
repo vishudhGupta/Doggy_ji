@@ -11,6 +11,153 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_RqmTfc": {
+      "type": "custom-footer",
+      "blocks": {
+        "social_link_8VWWnU": {
+          "type": "social_link",
+          "settings": {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/doggyji_official/",
+            "icon": "instagram"
+          }
+        },
+        "social_link_aeA3Xr": {
+          "type": "social_link",
+          "settings": {
+            "label": "Facebook",
+            "url": "https://www.facebook.com/doggyjiofficial",
+            "icon": "facebook"
+          }
+        },
+        "social_link_NUTgkf": {
+          "type": "social_link",
+          "settings": {
+            "label": "Youtube",
+            "url": "https://www.youtube.com/@doggyji_official",
+            "icon": "youtube"
+          }
+        },
+        "menu_column_HgDkib": {
+          "type": "menu_column",
+          "settings": {
+            "heading": "Products",
+            "menu": ""
+          }
+        },
+        "menu_column_943qAp": {
+          "type": "menu_column",
+          "settings": {
+            "heading": "Support",
+            "menu": ""
+          }
+        },
+        "menu_column_ztEKP9": {
+          "type": "menu_column",
+          "settings": {
+            "heading": "Company",
+            "menu": ""
+          }
+        },
+        "contact_item_XQPCyw": {
+          "type": "contact_item",
+          "settings": {
+            "icon": "location",
+            "text": "# 797, Pradhan Villa, Ground Floor, BCCHS Layout, Vajarahalli, Bangalore 560109",
+            "link": ""
+          }
+        },
+        "contact_item_mdHYGP": {
+          "type": "contact_item",
+          "settings": {
+            "icon": "phone",
+            "text": "+91 866 0808 858",
+            "link": ""
+          }
+        },
+        "contact_item_3Rei9W": {
+          "type": "contact_item",
+          "settings": {
+            "icon": "mail",
+            "text": "info@doggyji.com",
+            "link": ""
+          }
+        },
+        "popular_search_link_3abCPk": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji Ragi Shots",
+            "url": ""
+          }
+        },
+        "popular_search_link_k7BWTF": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji Biscuits (Chicken Extracts) - 96 Packets",
+            "url": ""
+          }
+        },
+        "popular_search_link_CcEMPt": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji V-Bite (Vegan Biscuits) - 48 Packets",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_link_8VWWnU",
+        "social_link_aeA3Xr",
+        "social_link_NUTgkf",
+        "menu_column_HgDkib",
+        "menu_column_943qAp",
+        "menu_column_ztEKP9",
+        "contact_item_XQPCyw",
+        "contact_item_mdHYGP",
+        "contact_item_3Rei9W",
+        "popular_search_link_3abCPk",
+        "popular_search_link_k7BWTF",
+        "popular_search_link_CcEMPt"
+      ],
+      "name": "Custom Footer",
+      "settings": {
+        "show_logo": true,
+        "logo_image": "shopify://shop_images/DOggyji-new-logo-1.webp",
+        "logo_width": 120,
+        "brand_line_1": "",
+        "brand_title": "",
+        "brand_hash": "#DOGGYJI",
+        "about_text": "<p>Doggy Ji biscuits are crafted with love and care. We use only the finest ingredients to ensure the highest quality and flavor.</p>",
+        "contact_heading": "Contact",
+        "show_popular_searches": true,
+        "popular_searches_title": "Popular Searches:",
+        "popular_searches_text": "Doggy Ji Ragi Shots |Doggy Ji Biscuits (Chicken Extracts) – 96 Packets|Doggy Ji V-Bite (Vegan Biscuits) – 48 Packets|\nDoggy Ji Biscuits (Chicken Extracts) – 48 Packets|Doggy Ji V-Bite (Vegan Biscuits) – 24 Packets |Doggy Ji Mini Combo|\nReflective Dog Collar|Doggy Ji Ayurvedic Pet Wipes|Doggy Ji Pet Wipes (Trial Pack)|Doggy Ji Vegan Mini Combo",
+        "popular_links_separator": "https://www.doggyji.com/shop/doggy-ji-biscuits/doggy-ji-ragi-shots-nutritious-dog-treats/|",
+        "open_popular_links_new_tab": true,
+        "font_family": "clean",
+        "max_width": 1280,
+        "padding_top": 28,
+        "padding_bottom": 18,
+        "title_size": 24,
+        "hash_size": 40,
+        "body_size": 18,
+        "about_line_height": 1.5,
+        "menu_size": 16,
+        "popular_size": 14,
+        "social_size": 15,
+        "social_radius": 30,
+        "columns_desktop": 4,
+        "columns_tablet": 2,
+        "open_social_new_tab": true,
+        "show_divider": true,
+        "bg_color": "#efb347",
+        "text_color": "#121212",
+        "muted_color": "#121212",
+        "social_bg_color": "#1e1a18",
+        "social_text_color": "#ffffff",
+        "divider_color": "#1e1a18"
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -60,6 +207,7 @@
         "a02006d6-62ca-4b97-83cf-132b52a8a539",
         "359796ef-2c18-41e5-baf4-b897ea8ba40b"
       ],
+      "disabled": true,
       "settings": {
         "top_spacing": "none",
         "width": "page-width",
@@ -73,16 +221,17 @@
         "payment_enable": true,
         "color_heading": "#000000",
         "color_text": "#000000",
-        "color_links": "#23C1C3",
+        "color_links": "#23c1c3",
         "color_input_bg": "rgba(0,0,0,0)",
         "color_input_bg_active": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#FEBB4A",
+        "color_background": "#febb4a",
         "gradient": ""
       }
     }
   },
   "order": [
+    "custom_footer_RqmTfc",
     "footer"
   ]
 }

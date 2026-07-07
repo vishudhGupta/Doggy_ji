@@ -42,21 +42,21 @@
           "type": "menu_column",
           "settings": {
             "heading": "Products",
-            "menu": ""
+            "menu": "products"
           }
         },
         "menu_column_943qAp": {
           "type": "menu_column",
           "settings": {
             "heading": "Support",
-            "menu": ""
+            "menu": "footer"
           }
         },
         "menu_column_ztEKP9": {
           "type": "menu_column",
           "settings": {
             "heading": "Company",
-            "menu": ""
+            "menu": "footer-menu-2"
           }
         },
         "contact_item_XQPCyw": {

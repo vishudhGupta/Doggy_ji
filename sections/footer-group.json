@@ -86,22 +86,64 @@
         "popular_search_link_3abCPk": {
           "type": "popular_search_link",
           "settings": {
-            "label": "Doggy Ji Ragi Shots",
-            "url": ""
+            "label": "Doggy Ji Ragi Shots|",
+            "url": "shopify://products/doggy-ji-ragi-shots-pack-of-5-nutritious-dog-treats-limited-time-offer"
           }
         },
         "popular_search_link_k7BWTF": {
           "type": "popular_search_link",
           "settings": {
-            "label": "Doggy Ji Biscuits (Chicken Extracts) - 96 Packets",
-            "url": ""
+            "label": "Doggy Ji Biscuits (Chicken Extracts) - 96 Packets|",
+            "url": "shopify://products/doggy-ji-biscuits-with-chicken-extracts-96-packets"
           }
         },
         "popular_search_link_CcEMPt": {
           "type": "popular_search_link",
           "settings": {
-            "label": "Doggy Ji V-Bite (Vegan Biscuits) - 48 Packets",
-            "url": ""
+            "label": "Doggy Ji V-Bite (Vegan Biscuits) - 48 Packets|",
+            "url": "shopify://products/doggy-ji-v-bite-vegan-biscuits-48-packets"
+          }
+        },
+        "popular_search_link_MEF4Wm": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji Biscuits (Chicken Extracts) – 48 Packets|",
+            "url": "shopify://products/doggy-ji-biscuits-with-chicken-extracts-48-packets"
+          }
+        },
+        "popular_search_link_wC8twh": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji V-Bite (Vegan Biscuits) – 24 Packets |",
+            "url": "shopify://products/doggy-ji-v-bite-vegan-biscuits-24-packets"
+          }
+        },
+        "popular_search_link_XzUR8k": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji Mini Combo|",
+            "url": "shopify://products/doggy-ji-mini-combo-doggy-ji-biscuits-with-chicken-extracts-6-packets-ragi-shots-1-pouch"
+          }
+        },
+        "popular_search_link_rc7z6h": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Reflective Dog Collar|",
+            "url": "shopify://products/reflective-dog-collar"
+          }
+        },
+        "popular_search_link_63imLK": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji Ayurvedic Pet Wipes|Doggy Ji Pet Wipes (Trial Pack)|",
+            "url": "shopify://products/doggy-ji-ayurvedic-pet-wipes-trial-pack"
+          }
+        },
+        "popular_search_link_RAxWVK": {
+          "type": "popular_search_link",
+          "settings": {
+            "label": "Doggy Ji Vegan Mini Combo",
+            "url": "shopify://products/doggy-ji-mini-combo-doggy-ji-biscuits-with-chicken-extracts-6-packets-ragi-shots-1-pouch"
           }
         }
       },
@@ -117,7 +159,13 @@
         "contact_item_3Rei9W",
         "popular_search_link_3abCPk",
         "popular_search_link_k7BWTF",
-        "popular_search_link_CcEMPt"
+        "popular_search_link_CcEMPt",
+        "popular_search_link_MEF4Wm",
+        "popular_search_link_wC8twh",
+        "popular_search_link_XzUR8k",
+        "popular_search_link_rc7z6h",
+        "popular_search_link_63imLK",
+        "popular_search_link_RAxWVK"
       ],
       "name": "Custom Footer",
       "settings": {
@@ -132,7 +180,7 @@
         "show_popular_searches": true,
         "popular_searches_title": "Popular Searches:",
         "popular_searches_text": "Doggy Ji Ragi Shots |Doggy Ji Biscuits (Chicken Extracts) – 96 Packets|Doggy Ji V-Bite (Vegan Biscuits) – 48 Packets|\nDoggy Ji Biscuits (Chicken Extracts) – 48 Packets|Doggy Ji V-Bite (Vegan Biscuits) – 24 Packets |Doggy Ji Mini Combo|\nReflective Dog Collar|Doggy Ji Ayurvedic Pet Wipes|Doggy Ji Pet Wipes (Trial Pack)|Doggy Ji Vegan Mini Combo",
-        "popular_links_separator": "https://www.doggyji.com/shop/doggy-ji-biscuits/doggy-ji-ragi-shots-nutritious-dog-treats/|",
+        "popular_links_separator": "",
         "open_popular_links_new_tab": true,
         "font_family": "clean",
         "max_width": 1280,

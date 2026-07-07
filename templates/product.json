@@ -66,13 +66,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "ab5ab2dc-3efb-4d96-82c2-068a730c0fe3": {
-          "type": "message",
-          "settings": {
-            "show_icon": true,
-            "text": "Ask a question"
-          }
-        },
         "03273730-7345-42ca-900c-d5d4b561aa65": {
           "type": "share",
           "settings": {
@@ -103,7 +96,6 @@
         "ae34e2b1-9301-41fa-90ba-334a896aea64",
         "474c52ec-9315-4a99-a528-767a2d2e55c7",
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
-        "ab5ab2dc-3efb-4d96-82c2-068a730c0fe3",
         "03273730-7345-42ca-900c-d5d4b561aa65",
         "ac2db628-888a-4658-bc4e-07bb8a99cb6f"
       ],
@@ -135,9 +127,65 @@
     "1650281560803e681b": {
       "type": "featured-collection",
       "settings": {
-        "collection": "doggy-ji-biscuits",
+        "collection": "catty-ji-dry-food",
         "subheading": "",
         "heading": "😻 You may also like",
+        "heading_aligment": "text-center",
+        "button_name": "Show All",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-st-6 col-3",
+        "desktop_slider": "show_mask",
+        "desktop_slider_scroll_one": false,
+        "mobile_grid": "6",
+        "swipe_on_mobile": true,
+        "product_limit": 8,
+        "image_ratio": "auto",
+        "image_zoom_internal": false,
+        "show_secondary_image": true,
+        "texts_aligment": "text-center",
+        "product_name_size": "normal",
+        "show_vendor": false,
+        "show_type": false,
+        "show_price": true,
+        "truncate_product_name": false,
+        "hover_underline": false,
+        "button_type_product": "hide",
+        "show_button_quickview": true,
+        "show_badge_on_sale": true,
+        "show_badge_sold_out": true,
+        "show_badge_feature": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_meta": "rgba(0,0,0,0)",
+        "color_all_elements": "rgba(0,0,0,0)",
+        "color_price": "rgba(0,0,0,0)",
+        "color_save_price": "rgba(0,0,0,0)",
+        "color_button_quickview": "rgba(0,0,0,0)",
+        "color_button_product": "rgba(0,0,0,0)",
+        "color_border_1": "rgba(0,0,0,0)",
+        "color_border_2": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "featured_collection_WtTHxG": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "doggy-ji-biscuits",
+        "subheading": "",
+        "heading": "Best Sellers",
         "heading_aligment": "text-center",
         "button_name": "Show All",
         "top_spacing": "normal",
@@ -279,6 +327,7 @@
     "main",
     "1648018242bd6448c3",
     "1650281560803e681b",
+    "featured_collection_WtTHxG",
     "1650710350b2667c74",
     "178299687587d8a461"
   ]

@@ -19,154 +19,45 @@
         "heading_aligment": "text-center"
       }
     },
-    "1643822232dd24b53a": {
+    "image_with_text_BfB9iJ": {
       "type": "image-with-text",
       "blocks": {
-        "1643822232a144ef4a-0": {
+        "image_tbHHMR": {
           "type": "image",
           "settings": {
             "content_type": "image",
+            "image": "shopify://shop_images/Gemini_Generated_Image_90jzfb90jzfb90jz-1400x764.webp",
             "image_ratio": "1.333333",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
           }
         },
-        "1643822232a144ef4a-1": {
+        "heading_Bpy7tj": {
           "type": "heading",
           "settings": {
-            "subheading": "",
-            "heading": "At Minion, we really, really love cats. And we want to do everything that we can to keep our four legged friends happy and healthy."
+            "subheading": "Our Values",
+            "heading": "What Sets Us Apart?"
           }
         },
-        "1643822232a144ef4a-2": {
+        "text_zGjRYy": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "none",
             "icon_name": "",
-            "text": "<p>Since our founding in 2010, we’ve been trailblazing new standards in pet care.</p>"
-          }
-        },
-        "1643822232a144ef4a-3": {
-          "type": "button",
-          "settings": {
-            "button_name": "Join our team"
+            "text": "<p><strong>At Doggy Ji, we bridge the gap between quality and affordability in pet nutrition.</strong>While many brands offer healthy options at premium prices, we believe every dog deserves nutritious food, regardless of their owner’s budget. Our commitment to this vision has made us India’s pioneering affordable pet nutrition brand. Each batch of our products undergoes rigorous testing to ensure it meets our high standards of nutrition and safety.<br/><br/></p>"
           }
         }
       },
       "block_order": [
-        "1643822232a144ef4a-0",
-        "1643822232a144ef4a-1",
-        "1643822232a144ef4a-2",
-        "1643822232a144ef4a-3"
+        "image_tbHHMR",
+        "heading_Bpy7tj",
+        "text_zGjRYy"
       ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "row_reverse": false,
-        "heading_aligment": "text-center",
-        "content_aligment": "align-self-center",
-        "texts_aligment": "text-left",
-        "heading_tag": "h2",
-        "text_size": "normal",
-        "image_zoom_internal": false,
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
-    "164984846159fa7206": {
-      "type": "text",
-      "settings": {
-        "subheading": "",
-        "heading": "We’re here for the life of your pet and are committed to being your partner in their health journey.  😻",
-        "description": "<p>Our products are developed to support cats through different stages of life, and we're committed to continue innovating on pet wellness as the health journeys of our pets evolve.</p>",
-        "button_name": "",
-        "button_url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "texts_aligment": "text-center",
-        "heading_tag": "h2",
-        "description_size": "normal",
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#fff3b3",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
-    "16498485612bed26d3": {
-      "type": "image-with-text",
-      "blocks": {
-        "16498485612e17661c-0": {
-          "type": "image",
-          "settings": {
-            "content_type": "video",
-            "image_ratio": "1.333333",
-            "video_url": "https://www.youtube.com/watch?v=AiG_nGcAt0s",
-            "description": ""
-          }
-        },
-        "16498485612e17661c-1": {
-          "type": "heading",
-          "settings": {
-            "subheading": "",
-            "heading": "Everything they need, nothing they don’t."
-          }
-        },
-        "16498485612e17661c-2": {
-          "type": "text",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "certified",
-            "text": "<p>We cook high-protein food using only USDA-certified</p>"
-          }
-        },
-        "16498485612e17661c-3": {
-          "type": "text",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "chicken",
-            "text": "<p>Humanely-harvested, sustainably-sourced ingredients, maintaining all of the nutrients cats need to be healthy. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "16498485612e17661c-0",
-        "16498485612e17661c-1",
-        "16498485612e17661c-2",
-        "16498485612e17661c-3"
-      ],
-      "settings": {
-        "url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
+        "top_spacing": "none",
+        "width": "default",
         "row_reverse": true,
         "heading_aligment": "text-center",
         "content_aligment": "align-self-center",
@@ -193,178 +84,10 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
-    },
-    "164382390647e17c5f": {
-      "type": "image-with-text-bg",
-      "blocks": {
-        "1643823906f56fcfc0-0": {
-          "type": "image",
-          "settings": {
-            "content_type": "image",
-            "image_ratio": "1.333333",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "1643823906f56fcfc0-1": {
-          "type": "heading",
-          "settings": {
-            "subheading": "",
-            "heading": "Healthy cat food, delivered. 📦"
-          }
-        },
-        "1643823906f56fcfc0-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Chameleon cooks up high quality food for cats, and delivers it right to your doorstep. Give your feline friend the best cat food delivery. Our protein-packed meals are a complete and balanced diet, ideal food for every stage of life.</p>"
-          }
-        },
-        "1643823906f56fcfc0-3": {
-          "type": "button",
-          "settings": {
-            "button_name": "Get started"
-          }
-        }
-      },
-      "block_order": [
-        "1643823906f56fcfc0-0",
-        "1643823906f56fcfc0-1",
-        "1643823906f56fcfc0-2",
-        "1643823906f56fcfc0-3"
-      ],
-      "settings": {
-        "url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "column_reverse": true,
-        "texts_aligment": "text-center",
-        "heading_tag": "h2",
-        "text_size": "normal",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "play_background": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#ffcfdb",
-        "gradient": "",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "background_bp": 73
-      }
-    },
-    "16438240923e421f57": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "164382409228004486-0": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "phone",
-            "url": "",
-            "heading": "",
-            "description": "<p>Our team is available by text at <br/><strong>Tel: (123) 456-7891 </strong><br/>and by email at <a href=\"/pages/contact\" title=\"Contact\"><strong>customers@youremail.com</strong></a></p>"
-          }
-        },
-        "164382409228004486-2": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "clock",
-            "url": "",
-            "heading": "",
-            "description": "<p>Our hours of operation are<br/>Monday-Thursday: 10 AM-7 PM EST,<br/>Friday: 10 AM-6 PM EST<br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
-          }
-        },
-        "5319eff3-2504-4753-a342-aaabaa44cb6c": {
-          "type": "blurb_icon",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "chat",
-            "url": "",
-            "heading": "",
-            "description": "<p>We aim to answer all inquiries within<br/>1 business day.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "164382409228004486-0",
-        "164382409228004486-2",
-        "5319eff3-2504-4753-a342-aaabaa44cb6c"
-      ],
-      "settings": {
-        "subheading": "",
-        "heading": "Get in touch",
-        "heading_aligment": "text-center",
-        "button_name": "",
-        "button_url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "grid": "col-4",
-        "swipe_on_mobile": false,
-        "image_ratio": "auto",
-        "image_zoom_internal": false,
-        "texts_aligment": "text-center",
-        "icon_alignment": "default",
-        "heading_tag": "h4",
-        "description_size": "normal",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_swipe_buttons": "rgba(0,0,0,0)",
-        "color_heading_blurb": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
-    "1643824354c92f4f8b": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "normal",
-        "ticker_time": 20,
-        "direction": "ticker-to-left",
-        "text_size": "normal",
-        "url": "",
-        "text": "<p><strong>MINION</strong> is a category-defining health and wellness company focused on improving the lives of pets, pet parents.</p>",
-        "show_icon": "svg",
-        "icon_name": "cat_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#ddf1f0",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_spacing": "small",
-        "remove_bottom_spacing": false
-      }
     }
   },
   "order": [
     "main",
-    "1643822232dd24b53a",
-    "164984846159fa7206",
-    "16498485612bed26d3",
-    "164382390647e17c5f",
-    "16438240923e421f57",
-    "1643824354c92f4f8b"
+    "image_with_text_BfB9iJ"
   ]
 }

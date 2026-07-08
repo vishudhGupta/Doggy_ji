@@ -390,6 +390,105 @@
         "line_color": "#4d4d4d",
         "dot_color": "#111111"
       }
+    },
+    "text_YVnyBP": {
+      "type": "text",
+      "name": "Text",
+      "settings": {
+        "subheading": "",
+        "heading": "Our Expertise",
+        "description": "<p>Our products are crafted by expert veterinarians and passionate dog lovers who understand both canine nutrition and the joy of pet parenthood. Our team includes <strong>certified animal nutritionists, veterinary professionals, and quality control experts</strong> who work together to create perfect formulations.</p>",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#F7F1E3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "image_with_text_XFVxFp": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_Eqe7eh": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify://shop_images/Untitled_Artwork-8-1-e1775737816603.webp",
+            "image_ratio": "auto",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "heading_wB6zBN": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Every recipe is thoughtfully formulated to ensure:"
+          }
+        },
+        "text_BqKx7m": {
+          "type": "text",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/check_11386870.png",
+            "icon_name": "",
+            "text": "<p>Optimal nutritional balance for different life stages</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_Eqe7eh",
+        "heading_wB6zBN",
+        "text_BqKx7m"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "image_zoom_internal": false,
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#f7f1e3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -399,6 +498,8 @@
     "sec_2_abo_XVygpf",
     "image_with_text_MfRgGp",
     "image_with_text_ijji6M",
-    "diff_BdLUEe"
+    "diff_BdLUEe",
+    "text_YVnyBP",
+    "image_with_text_XFVxFp"
   ]
 }

@@ -17,7 +17,9 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "image": "{{ collection.metafields.custom.dekstop_banner.value }}",
             "image_overlay_opacity": 0,
+            "image_mobile": "{{ collection.metafields.custom.mobile_banner.value }}",
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
             "heading": "",
@@ -100,7 +102,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "top_spacing": "small",
+        "top_spacing": "none",
         "width": "page-width",
         "grid": "col-st-6 col-3",
         "mobile_grid": "6",

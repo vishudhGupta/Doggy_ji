@@ -4,7 +4,7 @@
 .chm-toggle__button{
   display: flex;
   align-items: center;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 *:not(.top-and-bottom-lines)>.chm-toggle:first-child .chm-toggle__button{
@@ -57,7 +57,7 @@
   opacity: 0.3;
 }
 .chm-toggle[open].toggle-opening .chm-toggle__button{
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
 .chm-toggle[open] .chm-toggle__button{
   padding-bottom:0;
@@ -73,7 +73,7 @@
   max-height: var(--scroll-height);
 }
 .chm-toggle[open] .chm-toggle__content{
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -85,8 +85,32 @@
 }
 .admin-panel--no-js .chm-toggle[open] .chm-toggle__content,
 .no-js .chm-toggle[open] .chm-toggle__content{
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   opacity: 1;
   max-height: unset;
+}
+
+/* Content sizing within toggle */
+.chm-toggle__content h1,
+.chm-toggle__content h2,
+.chm-toggle__content h3{
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.chm-toggle__content h1:first-child,
+.chm-toggle__content h2:first-child,
+.chm-toggle__content h3:first-child{
+  margin-top: 0;
+}
+
+.chm-toggle__content p{
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.chm-toggle__content p:last-child{
+  margin-bottom: 0;
 }

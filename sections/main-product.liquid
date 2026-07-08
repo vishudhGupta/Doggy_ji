@@ -19,11 +19,14 @@
   <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
   <link rel="stylesheet" href="{{ 'component-image-gallery.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'component-image-gallery.css' | asset_url | stylesheet_tag }}</noscript>
+  <link rel="stylesheet" href="{{ 'component-product-features-icons.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript>{{ 'component-product-features-icons.css' | asset_url | stylesheet_tag }}</noscript>
   {%- else -%}
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'component-inputs.css' | asset_url | stylesheet_tag }}
   {{ 'component-image-gallery.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-features-icons.css' | asset_url | stylesheet_tag }}
   {%- if section.settings.use_accordion -%}
   {{ 'component-toggle.css' | asset_url | stylesheet_tag }}
   {%- else -%}
@@ -849,6 +852,9 @@
             <span>{{ block.settings.text }}</span>
           </button>
         </modal-opener>
+
+        {%- when "feature_icons" -%}
+        {% render 'product-features-icons', block: block %}
 
         {%- when 'gallery' -%}
         <div class="mt40" {{ block.shopify_attributes }}>
@@ -2354,6 +2360,57 @@
             ],
             "default": "hide",
     		"label": "t:sections.featured-collection.settings.button_type_product.label"
+          }
+        ]
+      },
+      {
+        "type": "feature_icons",
+        "name": "Feature Icons",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Icon 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon_1_image",
+            "label": "Icon Image"
+          },
+          {
+            "type": "text",
+            "id": "icon_1_text",
+            "label": "Icon Text",
+            "default": "Feature 1"
+          },
+          {
+            "type": "header",
+            "content": "Icon 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon_2_image",
+            "label": "Icon Image"
+          },
+          {
+            "type": "text",
+            "id": "icon_2_text",
+            "label": "Icon Text",
+            "default": "Feature 2"
+          },
+          {
+            "type": "header",
+            "content": "Icon 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon_3_image",
+            "label": "Icon Image"
+          },
+          {
+            "type": "text",
+            "id": "icon_3_text",
+            "label": "Icon Text",
+            "default": "Feature 3"
           }
         ]
       },

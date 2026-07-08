@@ -84,6 +84,17 @@
             "custom_liquid": "<div style=\"text-align:center; padding:0px 0;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0915/2259/7168/files/Payment_icons.webp?v=1783512398\" \n    alt=\"Secure payment methods\"\n    style=\"max-width:100%; height:auto;\"\n  >\n</div>"
           }
         },
+        "feature_icons_iHrj7k": {
+          "type": "feature_icons",
+          "settings": {
+            "icon_1_image": "shopify://shop_images/05-shopping-bag.gif",
+            "icon_1_text": "",
+            "icon_2_image": "shopify://shop_images/43-money-1.gif",
+            "icon_2_text": "",
+            "icon_3_image": "shopify://shop_images/Ideal-for-All-Dogs-1.gif",
+            "icon_3_text": ""
+          }
+        },
         "03273730-7345-42ca-900c-d5d4b561aa65": {
           "type": "share",
           "settings": {
@@ -96,7 +107,7 @@
           "settings": {
             "heading": "Product Description",
             "icon_name": "",
-            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}</p>",
             "page": ""
           }
         }
@@ -110,6 +121,7 @@
         "474c52ec-9315-4a99-a528-767a2d2e55c7",
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
         "custom_liquid_MCdM4x",
+        "feature_icons_iHrj7k",
         "03273730-7345-42ca-900c-d5d4b561aa65",
         "collapsible_tab_DqYNBK"
       ],

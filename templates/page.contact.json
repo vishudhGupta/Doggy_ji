@@ -24,7 +24,7 @@
       "settings": {
         "subheading": "CONTACT US",
         "heading": "We're here for you",
-        "description": "<p>📞<strong> Tel: (123) 456-7890</strong><br/><br/>7895 Piermont Dr NE Albuquerque, NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>",
+        "description": "<p><strong># 797, Pradhan Villa, Ground Floor, BCCHS Layout, Vajarahalli, Bangalore 560109</strong></p><p><a href=\"tel:%20+91%20866%200808%20858\">+91 866 0808 858</a></p><p><a href=\"mailto:info@doggyji.com\">info@doggyji.com</a></p>",
         "button_name": "",
         "button_url": "",
         "top_spacing": "none",
@@ -32,13 +32,19 @@
         "texts_aligment": "text-center",
         "heading_tag": "h1",
         "description_size": "normal",
-        "color_subheading": "rgba(0,0,0,0)",
+        "color_subheading": "#000000",
         "color_heading": "rgba(0,0,0,0)",
         "color_description": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#deefff",
+        "color_background": "#FEBB4A",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -51,7 +57,7 @@
         "heading": "Let's chat 💬",
         "text": "Got a question or just want to chat?",
         "heading_aligment": "text-center",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "page-width",
         "description_size": "normal",
         "color_subheading": "rgba(0,0,0,0)",
@@ -60,29 +66,17 @@
         "color_input_bg": "rgba(0,0,0,0)",
         "color_input_bg_active": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#FEBB4A",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
-    "164362679434260775": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "normal",
-        "ticker_time": 20,
-        "text_size": "normal",
-        "text": "<p><strong>A NOTE ON CORONAVIRUS</strong>: Shipping in compliance with social distancing measures and current U.S. government regulations.</p>",
-        "show_icon": "svg",
-        "icon_name": "virus_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#fff3b3",
-        "gradient": "",
-        "background_spacing": "small",
         "remove_bottom_spacing": false
       }
     }
@@ -90,7 +84,6 @@
   "order": [
     "main",
     "1643620706e63535d6",
-    "form",
-    "164362679434260775"
+    "form"
   ]
 }

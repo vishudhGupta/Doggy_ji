@@ -130,7 +130,7 @@
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#F7F1E3",
+        "color_background": "#f7f1e3",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -233,7 +233,7 @@
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#F7F1E3",
+        "color_background": "#f7f1e3",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -299,6 +299,279 @@
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
+        "color_background": "#f7f1e3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "diff_BdLUEe": {
+      "type": "diff",
+      "blocks": {
+        "card_8cRCFd": {
+          "type": "card",
+          "settings": {
+            "icon": "heart",
+            "icon_image": "shopify://shop_images/dog_1.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Affordable nutrition for every dog",
+            "text": "<p>Doggy Ji is built to make daily dog feeding genuinely affordable. With low-cost packs like ₹10 options, it removes the barrier of price for regular feeding. Whether it’s your pet or street dogs, consistent nutrition becomes easy and sustainable.</p>",
+            "card_bg": "#f6d48a",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        },
+        "card_ep7rxr": {
+          "type": "card",
+          "settings": {
+            "icon": "leaf",
+            "icon_image": "shopify://shop_images/plant-based.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Clean, simple ingredients",
+            "text": "<p>The recipes focus on keeping things basic and honest, no palm oil, low sugar, and no unnecessary fillers. This makes the food easier to digest and a healthier alternative to typical cheap dog food options. It’s simple food that does its job well.</p>",
+            "card_bg": "#f4b48f",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        },
+        "card_gYVECF": {
+          "type": "card",
+          "settings": {
+            "icon": "calendar",
+            "icon_image": "shopify://shop_images/Made-for-Everyday-Feeding.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Made for everyday feeding",
+            "text": "<p>Doggy Ji isn’t positioned as occasional treats, it’s designed for daily use. The portions, format, and pricing make it practical for routine feeding without overthinking. It fits seamlessly into both home care and on-the-go feeding.</p>",
+            "card_bg": "#f3c68f",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        },
+        "card_CfUe9y": {
+          "type": "card",
+          "settings": {
+            "icon": "stray",
+            "icon_image": "shopify://shop_images/dog-1.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Built for Strays & Community Feeding",
+            "text": "<p>At its core, Doggy Ji supports feeding beyond just owned pets. The packaging and affordability make it easy to feed multiple stray dogs at once. It encourages a culture where caring for street dogs becomes simple and scalable.</p>",
+            "card_bg": "#a7dde0",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        }
+      },
+      "block_order": [
+        "card_8cRCFd",
+        "card_ep7rxr",
+        "card_gYVECF",
+        "card_CfUe9y"
+      ],
+      "name": "Doggy Ji Difference",
+      "settings": {
+        "title": "The Doggy Ji Difference",
+        "title_size": 46,
+        "card_title_size": 26,
+        "card_body_size": 17,
+        "max_width": 1500,
+        "padding_top": 32,
+        "padding_bottom": 36,
+        "line_spacing_top": 36,
+        "cards_spacing_top": 16,
+        "background_color": "#f8f1e3",
+        "text_color": "#111111",
+        "line_color": "#4d4d4d",
+        "dot_color": "#111111"
+      }
+    },
+    "text_YVnyBP": {
+      "type": "text",
+      "name": "Text",
+      "settings": {
+        "subheading": "",
+        "heading": "Our Expertise",
+        "description": "<p>Our products are crafted by expert veterinarians and passionate dog lovers who understand both canine nutrition and the joy of pet parenthood. Our team includes <strong>certified animal nutritionists, veterinary professionals, and quality control experts</strong> who work together to create perfect formulations.</p>",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#f7f1e3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "image_with_text_XFVxFp": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_Eqe7eh": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify://shop_images/Untitled_Artwork-8-1-e1775737816603.webp",
+            "image_ratio": "auto",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "heading_wB6zBN": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Every recipe is thoughtfully formulated to ensure:"
+          }
+        },
+        "text_BqKx7m": {
+          "type": "text",
+          "settings": {
+            "show_icon": "none",
+            "image": "shopify://shop_images/check_11386870.png",
+            "icon_name": "",
+            "text": "<ul><li>Optimal nutritional balance for different life stages</li><li>Natural, high-quality ingredients sourced from trusted suppliers</li><li>Zero harmful additives or artificial preservatives</li><li>Irresistible taste that dogs love and crave</li><li>Essential vitamins and minerals for overall health</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "image_Eqe7eh",
+        "heading_wB6zBN",
+        "text_BqKx7m"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "image_zoom_internal": false,
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#f7f1e3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "icon_banners_yVK9V9": {
+      "type": "icon-banners",
+      "blocks": {
+        "banner_egEyhx": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/map_9389616.png",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "Expanding Our Reach To More Cities",
+            "description": "",
+            "button_name": "Learn more"
+          }
+        },
+        "banner_QXbyLc": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/heart_17295881.png",
+            "icon_name": "chat",
+            "url": "",
+            "heading": "Developing Age-Specific Nutrition Solutions for Different Life Stages",
+            "description": "",
+            "button_name": "Learn more"
+          }
+        },
+        "banner_FAzcTJ": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/rupee_17158265.png",
+            "icon_name": "money_back",
+            "url": "",
+            "heading": "Building A Community of Happy, Healthy , Pets.",
+            "description": "Short content about your store",
+            "button_name": "Learn more"
+          }
+        },
+        "banner_MXN9hQ": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/audience_10248813.png",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "Maintaining Our Promise of Affordability Without Compromising Quality",
+            "description": "",
+            "button_name": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "banner_egEyhx",
+        "banner_QXbyLc",
+        "banner_FAzcTJ",
+        "banner_MXN9hQ"
+      ],
+      "name": "t:sections.icon-banners.presets.name",
+      "settings": {
+        "subheading": "",
+        "heading": "Looking Forward As we grow, we remain committed to:",
+        "heading_aligment": "text-center",
+        "top_spacing": "none",
+        "width": "default",
+        "grid": "grid-columns-2",
+        "swipe_on_mobile": true,
+        "texts_aligment": "text-left",
+        "texts_aligment_vertical": "icon-banners-text-top",
+        "heading_tag": "h3",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_item_bg": "rgba(0,0,0,0)",
+        "color_item_border": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_heading_banner": "rgba(0,0,0,0)",
+        "color_text_banner": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
         "color_background": "#F7F1E3",
         "gradient": "",
         "image_overlay_opacity": 0,
@@ -319,6 +592,10 @@
     "image_with_text_BfB9iJ",
     "sec_2_abo_XVygpf",
     "image_with_text_MfRgGp",
-    "image_with_text_ijji6M"
+    "image_with_text_ijji6M",
+    "diff_BdLUEe",
+    "text_YVnyBP",
+    "image_with_text_XFVxFp",
+    "icon_banners_yVK9V9"
   ]
 }

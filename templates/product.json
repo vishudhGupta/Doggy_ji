@@ -15,21 +15,33 @@
         "1f5e6d17-7cef-4e03-b13d-b19240ced047": {
           "type": "title",
           "settings": {
-            "text_size": "h2"
+            "text_size": "h3"
           }
+        },
+        "judge_me_reviews_preview_badge_yRggKQ": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "36032345-aea2-4f92-821a-d5ca441bfc03": {
           "type": "price",
           "settings": {
             "show_tax": false,
             "show_shipping": false,
-            "price_size": 30
+            "price_size": 22
           }
         },
         "ae34e2b1-9301-41fa-90ba-334a896aea64": {
           "type": "inventory",
           "settings": {
             "inventory": 10
+          }
+        },
+        "description_GgBejF": {
+          "type": "description",
+          "settings": {
+            "heading": "",
+            "icon_name": "",
+            "description_property": "ungroup"
           }
         },
         "474c52ec-9315-4a99-a528-767a2d2e55c7": {
@@ -66,6 +78,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "custom_liquid_MCdM4x": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"text-align:center; padding:0px 0;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0915/2259/7168/files/Payment_icons.webp?v=1783512398\" \n    alt=\"Secure payment methods\"\n    style=\"max-width:100%; height:auto;\"\n  >\n</div>"
+          }
+        },
         "03273730-7345-42ca-900c-d5d4b561aa65": {
           "type": "share",
           "settings": {
@@ -73,31 +91,27 @@
             "share_label": "Share"
           }
         },
-        "ac2db628-888a-4658-bc4e-07bb8a99cb6f": {
-          "type": "text",
+        "collapsible_tab_DqYNBK": {
+          "type": "collapsible_tab",
           "settings": {
-            "text_size": "small",
-            "icon_name_1": "",
-            "content_1": "{{ product.description }}",
-            "icon_name_2": "",
-            "content_2": "",
-            "icon_name_3": "",
-            "content_3": "",
-            "icon_name_4": "",
-            "content_4": "",
-            "icon_name_5": "",
-            "content_5": ""
+            "heading": "Product Description",
+            "icon_name": "",
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "page": ""
           }
         }
       },
       "block_order": [
         "1f5e6d17-7cef-4e03-b13d-b19240ced047",
+        "judge_me_reviews_preview_badge_yRggKQ",
         "36032345-aea2-4f92-821a-d5ca441bfc03",
         "ae34e2b1-9301-41fa-90ba-334a896aea64",
+        "description_GgBejF",
         "474c52ec-9315-4a99-a528-767a2d2e55c7",
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
+        "custom_liquid_MCdM4x",
         "03273730-7345-42ca-900c-d5d4b561aa65",
-        "ac2db628-888a-4658-bc4e-07bb8a99cb6f"
+        "collapsible_tab_DqYNBK"
       ],
       "settings": {
         "top_spacing": "none",

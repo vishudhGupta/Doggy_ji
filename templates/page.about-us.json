@@ -130,7 +130,7 @@
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#F7F1E3",
+        "color_background": "#f7f1e3",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -233,7 +233,7 @@
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#F7F1E3",
+        "color_background": "#f7f1e3",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -299,7 +299,7 @@
         "color_text": "rgba(0,0,0,0)",
         "color_button": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#F7F1E3",
+        "color_background": "#f7f1e3",
         "gradient": "",
         "image_overlay_opacity": 0,
         "image_overlay_color": "rgba(0,0,0,0)",
@@ -311,6 +311,85 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "diff_BdLUEe": {
+      "type": "diff",
+      "blocks": {
+        "card_8cRCFd": {
+          "type": "card",
+          "settings": {
+            "icon": "heart",
+            "icon_image": "shopify://shop_images/dog_1.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Affordable nutrition for every dog",
+            "text": "<p>Doggy Ji is built to make daily dog feeding genuinely affordable. With low-cost packs like ₹10 options, it removes the barrier of price for regular feeding. Whether it’s your pet or street dogs, consistent nutrition becomes easy and sustainable.</p>",
+            "card_bg": "#f6d48a",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        },
+        "card_ep7rxr": {
+          "type": "card",
+          "settings": {
+            "icon": "leaf",
+            "icon_image": "shopify://shop_images/plant-based.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Clean, simple ingredients",
+            "text": "<p>The recipes focus on keeping things basic and honest, no palm oil, low sugar, and no unnecessary fillers. This makes the food easier to digest and a healthier alternative to typical cheap dog food options. It’s simple food that does its job well.</p>",
+            "card_bg": "#f4b48f",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        },
+        "card_gYVECF": {
+          "type": "card",
+          "settings": {
+            "icon": "calendar",
+            "icon_image": "shopify://shop_images/Made-for-Everyday-Feeding.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Made for everyday feeding",
+            "text": "<p>Doggy Ji isn’t positioned as occasional treats, it’s designed for daily use. The portions, format, and pricing make it practical for routine feeding without overthinking. It fits seamlessly into both home care and on-the-go feeding.</p>",
+            "card_bg": "#f3c68f",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        },
+        "card_CfUe9y": {
+          "type": "card",
+          "settings": {
+            "icon": "stray",
+            "icon_image": "shopify://shop_images/dog-1.webp",
+            "icon_alt": "Feature icon",
+            "heading": "Built for Strays & Community Feeding",
+            "text": "<p>At its core, Doggy Ji supports feeding beyond just owned pets. The packaging and affordability make it easy to feed multiple stray dogs at once. It encourages a culture where caring for street dogs becomes simple and scalable.</p>",
+            "card_bg": "#a7dde0",
+            "text_color": "#111111",
+            "icon_color": "#111111"
+          }
+        }
+      },
+      "block_order": [
+        "card_8cRCFd",
+        "card_ep7rxr",
+        "card_gYVECF",
+        "card_CfUe9y"
+      ],
+      "name": "Doggy Ji Difference",
+      "settings": {
+        "title": "The Doggy Ji Difference",
+        "title_size": 46,
+        "card_title_size": 26,
+        "card_body_size": 17,
+        "max_width": 1500,
+        "padding_top": 32,
+        "padding_bottom": 36,
+        "line_spacing_top": 36,
+        "cards_spacing_top": 16,
+        "background_color": "#f8f1e3",
+        "text_color": "#111111",
+        "line_color": "#4d4d4d",
+        "dot_color": "#111111"
+      }
     }
   },
   "order": [
@@ -319,6 +398,7 @@
     "image_with_text_BfB9iJ",
     "sec_2_abo_XVygpf",
     "image_with_text_MfRgGp",
-    "image_with_text_ijji6M"
+    "image_with_text_ijji6M",
+    "diff_BdLUEe"
   ]
 }

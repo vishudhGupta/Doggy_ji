@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: 30px 0;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 0;
 }
 
 .feature-icon-item {
@@ -44,7 +44,7 @@
   .product-features-icons {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    padding: 15px;
+    padding: 0;
     margin: 20px 0;
   }
 
@@ -67,7 +67,7 @@
   .product-features-icons {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 12px;
+    padding: 0;
     margin: 15px 0;
   }
 

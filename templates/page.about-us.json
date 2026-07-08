@@ -550,8 +550,8 @@
       ],
       "name": "t:sections.icon-banners.presets.name",
       "settings": {
-        "subheading": "SUBHEADING",
-        "heading": "Icon banners",
+        "subheading": "",
+        "heading": "Looking Forward As we grow, we remain committed to:",
         "heading_aligment": "text-center",
         "top_spacing": "none",
         "width": "default",

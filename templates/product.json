@@ -133,7 +133,7 @@
         "heading_aligment": "mobile-text-left",
         "use_accordion": true,
         "enable_badges": true,
-        "mobile_thumbnails": "thumbnails_images",
+        "mobile_thumbnails": "thumbnails_dots",
         "mobile_thumbnails_aligment": "justify-content-center",
         "enable_sticky_info": true,
         "enable_video_looping": false,

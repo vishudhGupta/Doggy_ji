@@ -489,6 +489,101 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "icon_banners_yVK9V9": {
+      "type": "icon-banners",
+      "blocks": {
+        "banner_egEyhx": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/map_9389616.png",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "Expanding Our Reach To More Cities",
+            "description": "",
+            "button_name": "Learn more"
+          }
+        },
+        "banner_QXbyLc": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/heart_17295881.png",
+            "icon_name": "chat",
+            "url": "",
+            "heading": "Developing Age-Specific Nutrition Solutions for Different Life Stages",
+            "description": "",
+            "button_name": "Learn more"
+          }
+        },
+        "banner_FAzcTJ": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/rupee_17158265.png",
+            "icon_name": "money_back",
+            "url": "",
+            "heading": "Building A Community of Happy, Healthy , Pets.",
+            "description": "Short content about your store",
+            "button_name": "Learn more"
+          }
+        },
+        "banner_MXN9hQ": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify://shop_images/audience_10248813.png",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "Maintaining Our Promise of Affordability Without Compromising Quality",
+            "description": "",
+            "button_name": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "banner_egEyhx",
+        "banner_QXbyLc",
+        "banner_FAzcTJ",
+        "banner_MXN9hQ"
+      ],
+      "name": "t:sections.icon-banners.presets.name",
+      "settings": {
+        "subheading": "SUBHEADING",
+        "heading": "Icon banners",
+        "heading_aligment": "text-center",
+        "top_spacing": "none",
+        "width": "default",
+        "grid": "grid-columns-2",
+        "swipe_on_mobile": true,
+        "texts_aligment": "text-left",
+        "texts_aligment_vertical": "icon-banners-text-top",
+        "heading_tag": "h3",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_item_bg": "rgba(0,0,0,0)",
+        "color_item_border": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_heading_banner": "rgba(0,0,0,0)",
+        "color_text_banner": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#F7F1E3",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -500,6 +595,7 @@
     "image_with_text_ijji6M",
     "diff_BdLUEe",
     "text_YVnyBP",
-    "image_with_text_XFVxFp"
+    "image_with_text_XFVxFp",
+    "icon_banners_yVK9V9"
   ]
 }

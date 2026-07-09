@@ -33,7 +33,7 @@
         "ae34e2b1-9301-41fa-90ba-334a896aea64": {
           "type": "inventory",
           "settings": {
-            "inventory": 10
+            "inventory": 20
           }
         },
         "description_GgBejF": {
@@ -124,6 +124,9 @@
         "feature_icons_iHrj7k",
         "03273730-7345-42ca-900c-d5d4b561aa65",
         "collapsible_tab_DqYNBK"
+      ],
+      "custom_css": [
+        ".inventory-block {margin-top: 5px !important;}"
       ],
       "settings": {
         "top_spacing": "none",

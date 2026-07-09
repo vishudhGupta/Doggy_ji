@@ -126,7 +126,8 @@
         "collapsible_tab_DqYNBK"
       ],
       "custom_css": [
-        ".inventory-block {margin-top: 5px !important;}"
+        ".inventory-block {margin-top: 5px !important;}",
+        ".ungroup-description-tab {margin-top : 5px !important;margin-bottom: 5px !important;}"
       ],
       "settings": {
         "top_spacing": "none",

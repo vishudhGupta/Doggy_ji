@@ -17,10 +17,10 @@
         "sections--16680045281521__41675861-c1d6-4647-a14b-ed11c1ba75a6-1675421434a26bd80c-0": {
           "type": "announcement",
           "settings": {
-            "text": "😺🥩 FREE SHIPPING - no code needed, just head for checkout!",
+            "text": "Fast and Easy Checkout",
             "link_name": "Learn more",
             "link_url": "",
-            "color_background": "#23C1C3",
+            "color_background": "#23c1c3",
             "color_text": "#ffffff",
             "color_link": "#4ac3b7"
           }
@@ -31,7 +31,7 @@
             "text": "💰 100% MONEY BACK guarantee if your pet doesn't like it.",
             "link_name": "",
             "link_url": "",
-            "color_background": "#FEBB4A",
+            "color_background": "#febb4a",
             "color_text": "rgba(0,0,0,0)",
             "color_link": "rgba(0,0,0,0)"
           }

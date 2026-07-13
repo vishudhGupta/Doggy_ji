@@ -83,6 +83,9 @@
     },
     "heading": {
       "type": "main-collection-banner",
+      "custom_css": [
+        "h1{font-size: 30px}"
+      ],
       "settings": {
         "top_spacing": "none",
         "width": "page-width",

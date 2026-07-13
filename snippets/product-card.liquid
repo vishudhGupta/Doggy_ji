@@ -138,11 +138,7 @@ endif
        style="--product-card-aspect-ratio: {{ image_ratio }};"
       {% endif %}>
       <span>
-        {%- if truncate_product_name -%}
-        {{ product_card_product.title | escape | truncate: 48,last_characters }}
-        {%- else -%}
         {{ product_card_product.title | escape }}
-        {%- endif -%}
       </span>
       
     </a>  
@@ -191,8 +187,8 @@ endif
 
       {%- if product_card_product.featured_media != blank -%}
       <div class="mt5 product-card__title-wrap{% if product_name_size == "body2" %} body2{% endif %}">
-        <a href="{{ product_card_product.url }}" class="product-card__heading product-card__heading--truncate{% if hover_underline %} animation-underline animation-underline--thin{% endif %}">
-          {{ product_card_product.title | escape | truncate: 48,last_characters }}
+        <a href="{{ product_card_product.url }}" class="product-card__heading{% if hover_underline %} animation-underline animation-underline--thin{% endif %}">
+          {{ product_card_product.title | escape }}
         </a>
       </div>
       {%- endif -%}
@@ -214,12 +210,8 @@ endif
 
       {%- if product_card_product.featured_media != blank -%}
       <div class="mt5 product-card__title-wrap{% if product_name_size == "body2" %} body2{% endif %}">
-        <a href="{{ product_card_product.url }}" class="product-card__heading product-card__heading--truncate{% if hover_underline %} animation-underline animation-underline--thin{% endif %}">
-          {%- if truncate_product_name -%}
-          {{ product_card_product.title | escape | truncate: 48,last_characters }}
-          {%- else -%}
+        <a href="{{ product_card_product.url }}" class="product-card__heading{% if hover_underline %} animation-underline animation-underline--thin{% endif %}">
           {{ product_card_product.title | escape }}
-          {%- endif -%}
         </a>
       </div>
       {%- endif -%}

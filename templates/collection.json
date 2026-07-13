@@ -83,9 +83,8 @@
     },
     "heading": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "page-width",
         "texts_aligment": "text-center"
       }

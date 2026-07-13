@@ -141,7 +141,7 @@
         "mobile_thumbnails_aligment": "justify-content-center",
         "enable_sticky_info": true,
         "enable_video_looping": false,
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "color_media_bg": "#ffffff",
         "color_media_bg_hover": "#ffffff",
         "color_zoom": "rgba(0,0,0,0)"

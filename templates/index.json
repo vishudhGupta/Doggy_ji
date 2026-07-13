@@ -648,8 +648,11 @@
       "block_order": [
         "judge_me_reviews_featured_carousel_PhiFcx"
       ],
+      "custom_css": [
+        ".jdgm-carousel-wrapper {padding: 0px;}"
+      ],
       "settings": {
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "default"
       }
     },

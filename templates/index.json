@@ -437,7 +437,7 @@
           "type": "pet_card",
           "settings": {
             "title": "Shop For Dogs",
-            "link": "shopify://collections/doggy-ji-biscuits",
+            "link": "shopify://collections/all-dog-products",
             "banner_image": "shopify://shop_images/Without_Text-616x220_Dog_Image.png",
             "show_arrow": true,
             "banner_overlay": "#ffffff",
@@ -452,7 +452,7 @@
           "type": "pet_card",
           "settings": {
             "title": "Shop For Cats",
-            "link": "shopify://collections/catty-ji-dry-food",
+            "link": "shopify://collections/all-cat-products",
             "banner_image": "shopify://shop_images/Without_Text-616x220_Cat_Image.jpg",
             "show_arrow": true,
             "banner_overlay": "#ffffff",

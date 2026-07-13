@@ -170,32 +170,32 @@
         "item_4wKHCf": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/smartphone_1304136.png",
-            "heading": "Ask Expert",
+            "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_04_49_19_PM.png",
+            "heading": "₹10 dog biscuits",
             "description": ""
           }
         },
         "item_tFAP86": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/virtual-assistant_17617144.png",
-            "heading": "Chat With Us",
+            "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_04_59_06_PM.png",
+            "heading": "No Palm Oil",
             "description": ""
           }
         },
         "item_BbYRNh": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/express-delivery_11153357.png",
-            "heading": "Fast Delivery",
+            "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_05_03_26_PM.png",
+            "heading": "Healthy & affordable",
             "description": ""
           }
         },
         "item_iwPn3H": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/best-product_17235077.png",
-            "heading": "Best Packaging",
+            "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_05_09_19_PM.png",
+            "heading": "Low-sugar formula",
             "description": ""
           }
         }
@@ -215,6 +215,171 @@
         "background_color": "#f4d215",
         "heading_color": "#0f0f0f",
         "text_color": "#333333"
+      }
+    },
+    "category_slider_NxtmUa": {
+      "type": "category-slider",
+      "blocks": {
+        "category_k9hwVC": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Vegan.png",
+            "label": "Vegan Biscuits",
+            "link": "shopify://collections/doggy-ji-biscuits"
+          }
+        },
+        "category_F3zRNp": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Combo.png",
+            "label": "Combos",
+            "link": "shopify://collections/combos"
+          }
+        },
+        "category_HmHmN4": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Ragi_Treats.png",
+            "label": "Ragi Shots",
+            "link": "shopify://collections/ragi-shots-limited-time-offer"
+          }
+        },
+        "category_K638qp": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Broth.png",
+            "label": "Dog Wet Food",
+            "link": "shopify://collections/doggy-ji-wet-food"
+          }
+        },
+        "category_3CtRUk": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Biscuits_95244591-faba-48b3-bad9-ae93a48dec3a.png",
+            "label": "Dog Biscuits",
+            "link": "shopify://collections/doggy-ji-biscuits"
+          }
+        },
+        "category_P3CKpd": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Accessories.png",
+            "label": "Dog Accessories",
+            "link": "shopify://collections/dog-accessories"
+          }
+        },
+        "category_zXxnei": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Accessories_94863436-3c44-4583-9f3b-fb623869cf37.png",
+            "label": "Cat Wet Food",
+            "link": "shopify://collections/catty-ji-wet-food"
+          }
+        },
+        "category_FL6Rb8": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Combo_dc8fc9cb-be6f-486c-98d9-170f76e12745.png",
+            "label": "Cat Dry Food",
+            "link": "shopify://collections/catty-ji-dry-food"
+          }
+        }
+      },
+      "block_order": [
+        "category_k9hwVC",
+        "category_F3zRNp",
+        "category_HmHmN4",
+        "category_K638qp",
+        "category_3CtRUk",
+        "category_P3CKpd",
+        "category_zXxnei",
+        "category_FL6Rb8"
+      ],
+      "name": "Category slider",
+      "settings": {
+        "heading": "Shop By Category",
+        "top_spacing": "small",
+        "width": "default",
+        "columns_desktop": 7,
+        "columns_mobile": 3,
+        "card_size_desktop": 106,
+        "card_size_mobile": 72,
+        "gap_desktop": 18,
+        "gap_mobile": 10,
+        "vertical_padding": 16,
+        "horizontal_padding": 12,
+        "border_radius": 0,
+        "heading_size_desktop": 36,
+        "heading_size_mobile": 20,
+        "label_size_desktop": 15,
+        "label_size_mobile": 12,
+        "background_color": "#ffffff",
+        "image_bg": "#f8f2e9",
+        "heading_color": "#1f1f1f",
+        "label_color": "#000000",
+        "arrow_bg": "#23c1c3",
+        "arrow_icon": "#ffffff"
+      }
+    },
+    "featured_collection_FMeRwU": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-weight: 700;}",
+        "@media (max-width: 767px) {h2 {font-size: 20px; }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "doggy-ji-biscuits",
+        "subheading": "",
+        "heading": "Best Sellers",
+        "heading_aligment": "text-center",
+        "button_name": "Show All",
+        "top_spacing": "small",
+        "width": "default",
+        "grid": "col-md-4 col-2",
+        "desktop_slider": "show_mask",
+        "desktop_slider_scroll_one": true,
+        "mobile_grid": "6",
+        "swipe_on_mobile": true,
+        "product_limit": 10,
+        "image_ratio": "1",
+        "image_zoom_internal": false,
+        "show_secondary_image": true,
+        "texts_aligment": "text-center",
+        "product_name_size": "normal",
+        "show_vendor": false,
+        "show_type": false,
+        "show_price": true,
+        "truncate_product_name": true,
+        "hover_underline": false,
+        "button_type_product": "show",
+        "show_button_quickview": true,
+        "show_badge_on_sale": true,
+        "show_badge_sold_out": true,
+        "show_badge_feature": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_meta": "rgba(0,0,0,0)",
+        "color_all_elements": "rgba(0,0,0,0)",
+        "color_price": "rgba(0,0,0,0)",
+        "color_save_price": "rgba(0,0,0,0)",
+        "color_button_quickview": "rgba(0,0,0,0)",
+        "color_button_product": "rgba(0,0,0,0)",
+        "color_border_1": "rgba(0,0,0,0)",
+        "color_border_2": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
       }
     },
     "shop_by_pet_h7Cd6x": {
@@ -309,7 +474,7 @@
       ],
       "name": "Shop by pet",
       "settings": {
-        "subheading": "Find their favorites",
+        "subheading": "",
         "heading": "Shop By Pet",
         "heading_alignment": "text-center",
         "top_spacing": "none",
@@ -329,171 +494,6 @@
         "subheading_color": "#5a5a5a",
         "show_background_icons": true,
         "icon_group_opacity": 35
-      }
-    },
-    "category_slider_NxtmUa": {
-      "type": "category-slider",
-      "blocks": {
-        "category_k9hwVC": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Vegan.png",
-            "label": "Vegan Biscuits",
-            "link": "shopify://collections/doggy-ji-biscuits"
-          }
-        },
-        "category_F3zRNp": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Combo.png",
-            "label": "Combos",
-            "link": "shopify://collections/combos"
-          }
-        },
-        "category_HmHmN4": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Ragi_Treats.png",
-            "label": "Ragi Shots",
-            "link": "shopify://collections/ragi-shots-limited-time-offer"
-          }
-        },
-        "category_K638qp": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Broth.png",
-            "label": "Dog Wet Food",
-            "link": "shopify://collections/doggy-ji-wet-food"
-          }
-        },
-        "category_3CtRUk": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Biscuits_95244591-faba-48b3-bad9-ae93a48dec3a.png",
-            "label": "Dog Biscuits",
-            "link": "shopify://collections/doggy-ji-biscuits"
-          }
-        },
-        "category_P3CKpd": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Accessories.png",
-            "label": "Dog Accessories",
-            "link": "shopify://collections/dog-accessories"
-          }
-        },
-        "category_zXxnei": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Accessories_94863436-3c44-4583-9f3b-fb623869cf37.png",
-            "label": "Cat Wet Food",
-            "link": "shopify://collections/catty-ji-wet-food"
-          }
-        },
-        "category_FL6Rb8": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Combo_dc8fc9cb-be6f-486c-98d9-170f76e12745.png",
-            "label": "Cat Dry Food",
-            "link": "shopify://collections/catty-ji-dry-food"
-          }
-        }
-      },
-      "block_order": [
-        "category_k9hwVC",
-        "category_F3zRNp",
-        "category_HmHmN4",
-        "category_K638qp",
-        "category_3CtRUk",
-        "category_P3CKpd",
-        "category_zXxnei",
-        "category_FL6Rb8"
-      ],
-      "name": "Category slider",
-      "settings": {
-        "heading": "Shop By Category",
-        "top_spacing": "none",
-        "width": "default",
-        "columns_desktop": 7,
-        "columns_mobile": 3,
-        "card_size_desktop": 106,
-        "card_size_mobile": 72,
-        "gap_desktop": 18,
-        "gap_mobile": 10,
-        "vertical_padding": 16,
-        "horizontal_padding": 12,
-        "border_radius": 0,
-        "heading_size_desktop": 36,
-        "heading_size_mobile": 20,
-        "label_size_desktop": 15,
-        "label_size_mobile": 12,
-        "background_color": "#ffffff",
-        "image_bg": "#f8f2e9",
-        "heading_color": "#1f1f1f",
-        "label_color": "#000000",
-        "arrow_bg": "#23c1c3",
-        "arrow_icon": "#ffffff"
-      }
-    },
-    "featured_collection_FMeRwU": {
-      "type": "featured-collection",
-      "custom_css": [
-        "h2 {font-weight: 700;}",
-        "@media (max-width: 767px) {h2 {font-size: 20px; }}"
-      ],
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "collection": "doggy-ji-biscuits",
-        "subheading": "",
-        "heading": "Best Sellers",
-        "heading_aligment": "text-center",
-        "button_name": "Show All",
-        "top_spacing": "small",
-        "width": "default",
-        "grid": "col-md-4 col-2",
-        "desktop_slider": "show_mask",
-        "desktop_slider_scroll_one": true,
-        "mobile_grid": "6",
-        "swipe_on_mobile": true,
-        "product_limit": 10,
-        "image_ratio": "1",
-        "image_zoom_internal": false,
-        "show_secondary_image": true,
-        "texts_aligment": "text-center",
-        "product_name_size": "normal",
-        "show_vendor": false,
-        "show_type": false,
-        "show_price": true,
-        "truncate_product_name": true,
-        "hover_underline": false,
-        "button_type_product": "show",
-        "show_button_quickview": true,
-        "show_badge_on_sale": true,
-        "show_badge_sold_out": true,
-        "show_badge_feature": true,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_swipe_buttons": "rgba(0,0,0,0)",
-        "color_meta": "rgba(0,0,0,0)",
-        "color_all_elements": "rgba(0,0,0,0)",
-        "color_price": "rgba(0,0,0,0)",
-        "color_save_price": "rgba(0,0,0,0)",
-        "color_button_quickview": "rgba(0,0,0,0)",
-        "color_button_product": "rgba(0,0,0,0)",
-        "color_border_1": "rgba(0,0,0,0)",
-        "color_border_2": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
       }
     },
     "why_us_3HX6Nw": {
@@ -784,9 +784,9 @@
   "order": [
     "slideshow_xBnHwW",
     "usp_WhB9ej",
-    "shop_by_pet_h7Cd6x",
     "category_slider_NxtmUa",
     "featured_collection_FMeRwU",
+    "shop_by_pet_h7Cd6x",
     "why_us_3HX6Nw",
     "slideshow_9qz7yW",
     "1782997279ad5d784f",

@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "Fast and Easy Checkout",
-            "link_name": "Learn more",
+            "link_name": "",
             "link_url": "",
             "color_background": "#23c1c3",
             "color_text": "#ffffff",

@@ -44,7 +44,7 @@
         "border_radius": 14,
         "text_size": 16,
         "icon_size": 25,
-        "button_bg": "#FEBB4A",
+        "button_bg": "#febb4a",
         "text_color": "#222222",
         "border_color": "#cfcfcf"
       }
@@ -539,9 +539,30 @@
     "why_us_3HX6Nw": {
       "type": "why-us",
       "blocks": {
+        "stat_FGanA4": {
+          "type": "stat",
+          "settings": {
+            "icon": "shopify://shop_images/5-love-pet_1_1.gif",
+            "stat_value": "65M+",
+            "stat_label": "Happy Pet Owners",
+            "card_bg": "#15408c",
+            "card_text_color": "#ffffff"
+          }
+        },
+        "stat_TgkDQV": {
+          "type": "stat",
+          "settings": {
+            "icon": "shopify://shop_images/Pan-India-Availability_1_1.gif",
+            "stat_value": "65M+",
+            "stat_label": "Happy Pet Owners",
+            "card_bg": "#15408c",
+            "card_text_color": "#ffffff"
+          }
+        },
         "stat_nhLWbF": {
           "type": "stat",
           "settings": {
+            "icon": "shopify://shop_images/03-Mobile_1.gif",
             "stat_value": "1M+",
             "stat_label": "Happy Pet Owners",
             "card_bg": "#febb4a",
@@ -551,6 +572,7 @@
         "stat_pEK46T": {
           "type": "stat",
           "settings": {
+            "icon": "shopify://shop_images/Comp-1_1.gif",
             "stat_value": "99%",
             "stat_label": "Pincodes Coverage",
             "card_bg": "#febb4a",
@@ -560,6 +582,7 @@
         "stat_FWj4Ni": {
           "type": "stat",
           "settings": {
+            "icon": "shopify://shop_images/27-wallet_1.gif",
             "stat_value": "4+",
             "stat_label": "Years of Experience",
             "card_bg": "#febb4a",
@@ -568,6 +591,8 @@
         }
       },
       "block_order": [
+        "stat_FGanA4",
+        "stat_TgkDQV",
         "stat_nhLWbF",
         "stat_pEK46T",
         "stat_FWj4Ni"
@@ -588,17 +613,24 @@
         "columns_mobile": 1,
         "card_gap": 16,
         "card_padding": 20,
+        "icon_size": 88,
+        "icon_size_mobile": 56,
+        "icon_row_width_desktop": 100,
+        "icon_row_offset_desktop": 0,
+        "icon_row_width_mobile": 100,
+        "icon_row_offset_mobile": 0,
+        "show_icon_labels": false,
         "card_radius": 14,
         "card_min_height": 170,
         "bg_image": "shopify://shop_images/Dog4.png",
         "bg_image_size": 420,
         "bg_image_position_x": 0,
-        "bg_image_position_y": 25,
+        "bg_image_position_y": 0,
         "bg_image_size_mobile": 160,
         "bg_image_position_x_mobile": 0,
         "bg_image_position_y_mobile": 84,
         "bg_image_opacity": 100,
-        "hide_bg_image_mobile": false,
+        "hide_bg_image_mobile": true,
         "section_bg": "#ffffff",
         "subheading_color": "#febb4a",
         "heading_color": "#0b0d12"

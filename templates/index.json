@@ -743,7 +743,7 @@
             "instafeed_margin_sides": 0,
             "show_instagram_link": true,
             "link_alignment": "center",
-            "link_color": "#20BEC4",
+            "link_color": "#FFFFFF",
             "background_color": "",
             "feed_id": "",
             "html_area": ""
@@ -755,7 +755,8 @@
       ],
       "custom_css": [
         "h2 {margin-top: 10px !important;}",
-        "@media (max-width: 767px) {h2 {font-size: 20px!important;}}"
+        "@media (max-width: 767px) {h2 {font-size: 20px !important; }}",
+        "a {background: black; padding: 15px 20px; border-radius: 10px;}"
       ],
       "settings": {
         "top_spacing": "none",

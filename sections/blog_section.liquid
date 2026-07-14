@@ -64,7 +64,7 @@
 
 #minion-section-{{ section.id }} .blog-layout__section-title {
 	margin: 0 auto;
-	font-size: clamp(28px, 3vw, 40px);
+	font-size: 30px;
 	font-weight: 700;
 	line-height: 1.1;
 	color: var(--blog-text-color);
@@ -220,6 +220,10 @@
 }
 
 @media (max-width: 767px) {
+	#minion-section-{{ section.id }} .blog-layout__section-title {
+		font-size: 20px;
+	}
+
 	#minion-section-{{ section.id }} .blog-layout {
 		grid-template-columns: 1fr;
 		gap: 22px;

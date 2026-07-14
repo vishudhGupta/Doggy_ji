@@ -369,7 +369,7 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "doggy-ji-biscuits",
+        "collection": "best-seller",
         "subheading": "",
         "heading": "Best Sellers",
         "heading_aligment": "text-center",

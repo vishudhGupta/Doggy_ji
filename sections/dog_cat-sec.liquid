@@ -1,0 +1,244 @@
+{%- liquid
+  assign section_id = 'dog-cat-sec-' | append: section.id
+  assign icon_render_width = section.settings.icon_size | times: 2
+-%}
+
+<style>
+  .{{ section_id }} {
+    display: none;
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media (max-width: 1024px) {
+    .{{ section_id }} {
+      display: block;
+    }
+  }
+
+  .{{ section_id }}__inner {
+    width: min({{ section.settings.max_width }}px, calc(100% - 20px));
+    margin: 0 auto;
+  }
+
+  .{{ section_id }}__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: {{ section.settings.button_gap }}px;
+  }
+
+  .{{ section_id }}__button {
+    min-height: {{ section.settings.button_height }}px;
+    border-radius: {{ section.settings.border_radius }}px;
+    border: 1px solid {{ section.settings.border_color }};
+    background: {{ section.settings.button_bg }};
+    color: {{ section.settings.text_color }};
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+    font-size: {{ section.settings.text_size }}px;
+    font-weight: 600;
+    line-height: 1;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .{{ section_id }}__button svg,
+  .{{ section_id }}__button .{{ section_id }}__icon-image {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    flex-shrink: 0;
+  }
+
+  .{{ section_id }}__button svg {
+    fill: currentColor;
+  }
+
+  .{{ section_id }}__button .{{ section_id }}__icon-image {
+    object-fit: contain;
+  }
+
+  .{{ section_id }}__button:active {
+    transform: translateY(1px);
+  }
+</style>
+
+<section class="{{ section_id }}" aria-label="{{ section.settings.section_label | escape }}">
+  <div class="{{ section_id }}__inner">
+    <div class="{{ section_id }}__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'mobile_button' and block.settings.label != blank -%}
+          {%- assign icon_class = section_id | append: '__icon-image' -%}
+          <a
+            href="{{ block.settings.link | default: '#' }}"
+            class="{{ section_id }}__button"
+            {{ block.shopify_attributes }}
+          >
+            {%- if block.settings.custom_icon != blank -%}
+              {{ block.settings.custom_icon | image_url: width: icon_render_width | image_tag: class: icon_class, loading: 'lazy', alt: block.settings.label }}
+            {%- endif -%}
+            <span>{{ block.settings.label }}</span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Mobile Dog Cat Buttons",
+  "tag": "section",
+  "class": "section-mobile-dog-cat-buttons",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_label",
+      "label": "Section label",
+      "default": "Pet category quick links"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Max width",
+      "min": 260,
+      "max": 900,
+      "step": 10,
+      "unit": "px",
+      "default": 480
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "button_gap",
+      "label": "Button gap",
+      "min": 4,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "button_height",
+      "label": "Button height",
+      "min": 30,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Button roundness",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 10,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 10,
+      "max": 26,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button background",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Button text color",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Button border color",
+      "default": "#cfcfcf"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mobile_button",
+      "name": "Button",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Dogs"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Upload custom icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mobile Dog Cat Buttons",
+      "blocks": [
+        {
+          "type": "mobile_button",
+          "settings": {
+            "label": "Dogs"
+          }
+        },
+        {
+          "type": "mobile_button",
+          "settings": {
+            "label": "Cats"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

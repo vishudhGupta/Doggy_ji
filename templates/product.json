@@ -274,8 +274,9 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/With_Text-Section.jpg",
+            "image": "shopify://shop_images/2.With_Text-Section_1200px_x_350px.jpg",
             "image_overlay_opacity": 0,
+            "image_mobile": "shopify://shop_images/With_Text-Section_1.jpg",
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
             "heading": "",
@@ -354,7 +355,7 @@
         "judge_me_reviews_review_widget_c7G9Df"
       ],
       "settings": {
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "default"
       }
     }

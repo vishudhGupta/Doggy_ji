@@ -9,6 +9,46 @@
  */
 {
   "sections": {
+    "dog_cat_sec_hqtzMi": {
+      "type": "dog_cat-sec",
+      "blocks": {
+        "mobile_button_rzFxpt": {
+          "type": "mobile_button",
+          "settings": {
+            "label": "Dogs",
+            "link": "shopify://collections/all-dog-products",
+            "custom_icon": "shopify://shop_images/dog.png"
+          }
+        },
+        "mobile_button_Q3niJr": {
+          "type": "mobile_button",
+          "settings": {
+            "label": "Cats",
+            "link": "shopify://collections/all-cat-products",
+            "custom_icon": "shopify://shop_images/cat-animal.png"
+          }
+        }
+      },
+      "block_order": [
+        "mobile_button_rzFxpt",
+        "mobile_button_Q3niJr"
+      ],
+      "name": "Mobile Dog Cat Buttons",
+      "settings": {
+        "section_label": "Pet category quick links",
+        "max_width": 480,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "button_gap": 10,
+        "button_height": 42,
+        "border_radius": 14,
+        "text_size": 16,
+        "icon_size": 25,
+        "button_bg": "#FEBB4A",
+        "text_color": "#222222",
+        "border_color": "#cfcfcf"
+      }
+    },
     "slideshow_xBnHwW": {
       "type": "slideshow",
       "blocks": {
@@ -788,6 +828,7 @@
     }
   },
   "order": [
+    "dog_cat_sec_hqtzMi",
     "slideshow_xBnHwW",
     "usp_WhB9ej",
     "category_slider_NxtmUa",

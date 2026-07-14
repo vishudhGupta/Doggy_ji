@@ -699,7 +699,7 @@
         "view_all_url": "shopify://blogs/news",
         "side_heading": "Latest posts",
         "side_posts_limit": 4,
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "default",
         "column_gap": 30,
         "card_radius": 0,

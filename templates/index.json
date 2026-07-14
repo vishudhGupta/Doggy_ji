@@ -754,7 +754,8 @@
         "instafeed_app_block_jPfBzt"
       ],
       "custom_css": [
-        "h2 {margin-top: 10px !important;}"
+        "h2 {margin-top: 10px !important;}",
+        "@media (max-width: 767px) {h2 {font-size: 20px!important;}}"
       ],
       "settings": {
         "top_spacing": "none",

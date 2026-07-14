@@ -110,6 +110,12 @@
             "content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}</p>",
             "page": ""
           }
+        },
+        "easy_subscriptions_subscription_widget_bXe7iy": {
+          "type": "shopify://apps/easy-subscriptions/blocks/subscription-widget/62ae0f16-e4ee-41c3-a62d-125b812e0b06",
+          "settings": {
+            "widget-feature-product": ""
+          }
         }
       },
       "block_order": [
@@ -123,7 +129,8 @@
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
         "custom_liquid_MCdM4x",
         "feature_icons_iHrj7k",
-        "collapsible_tab_DqYNBK"
+        "collapsible_tab_DqYNBK",
+        "easy_subscriptions_subscription_widget_bXe7iy"
       ],
       "custom_css": [
         ".inventory-block {margin-top: 5px !important;}",

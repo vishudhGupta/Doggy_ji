@@ -298,7 +298,7 @@
       "name": "Category slider",
       "settings": {
         "heading": "Shop By Category",
-        "top_spacing": "small",
+        "top_spacing": "none",
         "width": "default",
         "columns_desktop": 7,
         "columns_mobile": 3,
@@ -334,7 +334,7 @@
         "heading": "Best Sellers",
         "heading_aligment": "text-center",
         "button_name": "Show All",
-        "top_spacing": "small",
+        "top_spacing": "none",
         "width": "default",
         "grid": "col-md-4 col-2",
         "desktop_slider": "show_mask",
@@ -652,7 +652,7 @@
         ".jdgm-carousel-wrapper {padding: 0px;}"
       ],
       "settings": {
-        "top_spacing": "small",
+        "top_spacing": "none",
         "width": "default"
       }
     },
@@ -694,6 +694,9 @@
       "name": "Blog split latest",
       "settings": {
         "blog": "",
+        "section_heading": "Blogs",
+        "view_all_text": "View all",
+        "view_all_url": "",
         "side_heading": "Latest posts",
         "side_posts_limit": 4,
         "top_spacing": "small",

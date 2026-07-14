@@ -612,8 +612,9 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/With_text3Never_Run_out_of_Treats.jpg",
+            "image": "shopify://shop_images/2.Never_Run_out_of_Treats-1200x350.jpg",
             "image_overlay_opacity": 0,
+            "image_mobile": "shopify://shop_images/1..Never_Run_out_of_Treats-1200x650_2.jpg",
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
             "heading": "",

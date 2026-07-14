@@ -51,6 +51,12 @@
         "background": "color",
         "color_background": "#deefff",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -92,6 +98,12 @@
         "background": "hide",
         "color_background": "rgba(0,0,0,0)",
         "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
         "background_width": "fullwidth",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
@@ -103,8 +115,11 @@
         "16438283418b354d09-0": {
           "type": "banner",
           "settings": {
-            "image": "",
+            "content_type": "image",
             "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_slide_mode": "autoplay_muted",
             "subheading": "",
             "heading": "Human-grade fresh",
             "description": "Fresh meets cat-needs and preferences, in a variety of proteins and textures.",
@@ -114,6 +129,7 @@
             "button_secondary_name": "",
             "button_secondary_url": "",
             "content_aligment": "align-items-start justify-content-center",
+            "background_text_width": 76,
             "texts_aligment": "text-center",
             "texts_aligment_mobile": "text-center-mobile",
             "heading_tag": "h3",
@@ -122,19 +138,32 @@
             "show_background": false,
             "background_overlay_opacity": 90,
             "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
             "color_subheading": "rgba(0,0,0,0)",
             "color_heading": "rgba(0,0,0,0)",
             "color_description": "rgba(0,0,0,0)",
             "button_primary_bg": "#142c73",
             "button_secondary_bg": "rgba(0,0,0,0)",
-            "color_background": "rgba(0,0,0,0)"
+            "color_background": "rgba(0,0,0,0)",
+            "color_video_bg": "rgba(0,0,0,0)",
+            "color_video_bg_hover": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)",
+            "color_video_bg_mobile": "rgba(0,0,0,0)"
           }
         },
         "16438283418b354d09-1": {
           "type": "banner",
           "settings": {
-            "image": "",
+            "content_type": "image",
             "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_slide_mode": "autoplay_muted",
             "subheading": "",
             "heading": "Freeze-dried raw",
             "description": "We took raw protein and freeze-dried it for cats that like crunch.",
@@ -144,6 +173,7 @@
             "button_secondary_name": "",
             "button_secondary_url": "",
             "content_aligment": "align-items-start justify-content-center",
+            "background_text_width": 76,
             "texts_aligment": "text-center",
             "texts_aligment_mobile": "text-center-mobile",
             "heading_tag": "h3",
@@ -152,12 +182,22 @@
             "show_background": false,
             "background_overlay_opacity": 90,
             "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
             "color_subheading": "rgba(0,0,0,0)",
             "color_heading": "rgba(0,0,0,0)",
             "color_description": "rgba(0,0,0,0)",
             "button_primary_bg": "#142c73",
             "button_secondary_bg": "rgba(0,0,0,0)",
-            "color_background": "rgba(0,0,0,0)"
+            "color_background": "rgba(0,0,0,0)",
+            "color_video_bg": "rgba(0,0,0,0)",
+            "color_video_bg_hover": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)",
+            "color_video_bg_mobile": "rgba(0,0,0,0)"
           }
         }
       },
@@ -172,31 +212,26 @@
         "top_spacing": "normal",
         "width": "page-width",
         "grid": "col-6",
+        "grid_tablet": "col-st-6",
         "image_ratio": "auto",
         "image_size": "auto",
         "desktop_image_height": 440,
         "hover_type": "image-banner__normal-hover",
+        "box_roundness": 3,
+        "design_type": "image-banner__default",
         "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)"
-      }
-    },
-    "164986736537bc0a14": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "normal",
-        "ticker_time": 10,
-        "direction": "ticker-to-left",
-        "text_size": "normal",
-        "url": "",
-        "text": "<p>Let's aeed your feline friends with hearty and healthy meals!</p>",
-        "show_icon": "svg",
-        "icon_name": "cat_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "#ddf1f0",
+        "color_heading": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
         "gradient": "",
-        "background_spacing": "small",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
     }
@@ -205,7 +240,6 @@
     "main",
     "16438282733f3f5cd6",
     "1643828285b9bc2ff1",
-    "164382834123a60447",
-    "164986736537bc0a14"
+    "164382834123a60447"
   ]
 }

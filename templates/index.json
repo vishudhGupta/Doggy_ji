@@ -44,7 +44,7 @@
         "border_radius": 14,
         "text_size": 16,
         "icon_size": 25,
-        "button_bg": "#f0f0f0",
+        "button_bg": "#FEBB4A",
         "text_color": "#222222",
         "border_color": "#cfcfcf"
       }

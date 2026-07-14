@@ -696,7 +696,7 @@
         "blog": "",
         "section_heading": "Blogs",
         "view_all_text": "View all",
-        "view_all_url": "",
+        "view_all_url": "shopify://blogs/news",
         "side_heading": "Latest posts",
         "side_posts_limit": 4,
         "top_spacing": "none",

@@ -19,7 +19,8 @@
 					{% endif %}
 
 					{% if block.settings.heading != blank %}
-						<h3 class="usp-item__heading">{{ block.settings.heading }}</h3>
+						{% assign heading_mobile = block.settings.heading | escape | replace_first: ' ', '<br>' %}
+						<h3 class="usp-item__heading">{{ heading_mobile }}</h3>
 					{% endif %}
 
 					{% if block.settings.description != blank %}
@@ -77,6 +78,10 @@
 		letter-spacing: 0;
 	}
 
+	#usp-section-{{ section.id }} .usp-item__heading br {
+		display: none;
+	}
+
 	#usp-section-{{ section.id }} .usp-item__description {
 		margin: 2px 0 0;
 		color: {{ section.settings.text_color }};
@@ -111,15 +116,20 @@
 
 		#usp-section-{{ section.id }} .usp-item__heading {
 			font-size: 9px;
-			line-height: 1.1;
-			min-height: calc(9px * 1.1);
-			white-space: normal;
-			overflow-wrap: anywhere;
-			max-width: 100%;
+			line-height: 1.15;
+			max-width: 64px;
+			margin: 0 auto;
 			display: -webkit-box;
-			-webkit-line-clamp: 1;
 			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
 			overflow: hidden;
+			overflow-wrap: break-word;
+			min-height: calc(9px * 1.15 * 2);
+			max-height: calc(9px * 1.15 * 2);
+		}
+
+		#usp-section-{{ section.id }} .usp-item__heading br {
+			display: block;
 		}
 
 		#usp-section-{{ section.id }} .usp-item__description {

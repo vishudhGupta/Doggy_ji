@@ -651,7 +651,7 @@
             "description": "",
             "call_to_action": "one_link_banner",
             "button_primary_name": "",
-            "url": "",
+            "url": "shopify://collections/subscription",
             "button_secondary_name": "",
             "button_secondary_url": "",
             "content_aligment": "align-items-center justify-content-center",

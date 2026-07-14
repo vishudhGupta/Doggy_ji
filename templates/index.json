@@ -690,7 +690,8 @@
         "judge_me_reviews_featured_carousel_PhiFcx"
       ],
       "custom_css": [
-        ".jdgm-carousel-wrapper {padding: 0px;}"
+        ".jdgm-carousel-wrapper {padding: 0px;}",
+        "@media (max-width: 767px) {.jdgm-carousel-title {font-size: 20px!important;}}"
       ],
       "settings": {
         "top_spacing": "none",

@@ -732,6 +732,7 @@
     },
     "blog_section_LpYETY": {
       "type": "blog_section",
+      "custom_css": [],
       "name": "Blog split latest",
       "settings": {
         "blog": "",

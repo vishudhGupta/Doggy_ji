@@ -3,6 +3,10 @@
 	if section.settings.width != 'default'
 		assign page_width = section.settings.width
 	endif
+	assign icon_count = section.blocks.size
+	if icon_count < 1
+		assign icon_count = 1
+	endif
 -%}
 
 <style>
@@ -12,9 +16,11 @@
 		--why-bg: {{ section.settings.section_bg }};
 		--why-subheading: {{ section.settings.subheading_color }};
 		--why-heading: {{ section.settings.heading_color }};
-		--why-card-gap: {{ section.settings.card_gap }}px;
-		--why-card-radius: {{ section.settings.card_radius }}px;
-		--why-card-padding: {{ section.settings.card_padding }}px;
+		--why-icon-gap: {{ section.settings.card_gap }}px;
+		--why-icon-size: {{ section.settings.icon_size }}px;
+		--why-icon-count: {{ icon_count }};
+		--why-icon-row-width: {{ section.settings.icon_row_width_desktop }}%;
+		--why-icon-row-offset: {{ section.settings.icon_row_offset_desktop }}px;
 		--why-bg-image-opacity: {{ section.settings.bg_image_opacity | divided_by: 100.0 }};
 		--why-content-max: {{ section.settings.content_max_width }}px;
 		--why-bg-image-x: {{ section.settings.bg_image_position_x }}%;
@@ -24,7 +30,7 @@
 
 	#minion-section-{{ section.id }} .why-us {
 		position: relative;
-		padding: clamp(26px, 4vw, 48px) clamp(16px, 3vw, 34px);
+		padding: clamp(14px, 2.4vw, 26px) clamp(12px, 2vw, 20px);
 		z-index: 2;
 	}
 
@@ -57,7 +63,7 @@
 
 	#minion-section-{{ section.id }} .why-us__head {
 		text-align: {{ section.settings.text_alignment }};
-		margin-bottom: clamp(18px, 3vw, 34px);
+		margin-bottom: clamp(10px, 2vw, 16px);
 	}
 
 	#minion-section-{{ section.id }} .why-us__subheading {
@@ -72,14 +78,17 @@
 	#minion-section-{{ section.id }} .why-us__heading {
 		margin: 8px 0 0;
 		color: var(--why-heading);
-		font-size: clamp(24px, 3.2vw, 48px);
+		font-size: 30px;
 		line-height: 1.15;
 	}
 
 	#minion-section-{{ section.id }} .why-us__cards {
 		display: grid;
-		grid-template-columns: repeat({{ section.settings.columns_desktop }}, minmax(0, 1fr));
-		gap: var(--why-card-gap);
+		grid-template-columns: repeat(var(--why-icon-count), minmax(0, 1fr));
+		gap: var(--why-icon-gap);
+		width: min(100%, var(--why-icon-row-width));
+		margin-left: var(--why-icon-row-offset);
+		margin-right: auto;
 		align-items: stretch;
 	}
 
@@ -89,51 +98,53 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		min-height: {{ section.settings.card_min_height }}px;
-		padding: var(--why-card-padding);
-		border-radius: var(--why-card-radius);
-		background: var(--why-card-bg, #184293);
-		color: var(--why-card-text, #ffffff);
-		border: 1px solid rgba(255, 255, 255, 0.12);
+		min-height: auto;
+		padding: 4px 0;
+		background: transparent;
+		border: 0;
 	}
 
-	#minion-section-{{ section.id }} .why-us__value {
-		margin: 0;
-		font-weight: 800;
-		font-size: clamp(30px, 4vw, 56px);
-		line-height: 1;
-		color: inherit;
+	#minion-section-{{ section.id }} .why-us__icon {
+		display: block;
+		width: var(--why-icon-size);
+		height: var(--why-icon-size);
+		object-fit: contain;
+		margin: 0 auto;
 	}
 
 	#minion-section-{{ section.id }} .why-us__label {
-		margin: 10px 0 0;
+		margin: 8px 0 0;
 		font-weight: 600;
-		font-size: clamp(14px, 1.3vw, 22px);
+		font-size: clamp(11px, 1vw, 14px);
 		line-height: 1.25;
-		color: inherit;
+		color: {{ section.settings.heading_color }};
+		display: {% if section.settings.show_icon_labels %}block{% else %}none{% endif %};
 	}
 
 	@media (max-width: 1024px) {
-		#minion-section-{{ section.id }} .why-us__cards {
-			grid-template-columns: repeat({{ section.settings.columns_tablet }}, minmax(0, 1fr));
+		#minion-section-{{ section.id }} {
+			--why-icon-size: {{ section.settings.icon_size_mobile }}px;
+			--why-icon-row-width: {{ section.settings.icon_row_width_mobile }}%;
+			--why-icon-row-offset: {{ section.settings.icon_row_offset_mobile }}px;
 		}
 
-		#minion-section-{{ section.id }} .why-us__card {
-			min-height: max({{ section.settings.card_min_height | minus: 20 }}px, 120px);
+		#minion-section-{{ section.id }} .why-us__heading {
+			font-size: 20px !important;
 		}
 	}
 
 	@media (max-width: 767px) {
 		#minion-section-{{ section.id }} .why-us {
-			padding: 22px 12px;
+			padding: 12px 10px;
 		}
 
 		#minion-section-{{ section.id }} .why-us__cards {
-			grid-template-columns: repeat({{ section.settings.columns_mobile }}, minmax(0, 1fr));
+			grid-template-columns: repeat(var(--why-icon-count), minmax(0, 1fr));
+			gap: max(6px, calc(var(--why-icon-gap) - 6px));
 		}
 
-		#minion-section-{{ section.id }} .why-us__card {
-			min-height: max({{ section.settings.card_min_height | minus: 36 }}px, 104px);
+		#minion-section-{{ section.id }} .why-us__label {
+			font-size: 10px;
 		}
 
 		{% if section.settings.hide_bg_image_mobile %}
@@ -183,11 +194,23 @@
 						{%- for block in section.blocks -%}
 							<article
 								class="why-us__card"
-								style="--why-card-bg: {{ block.settings.card_bg }}; --why-card-text: {{ block.settings.card_text_color }};"
 								{{ block.shopify_attributes }}
 							>
-								<p class="why-us__value">{{ block.settings.stat_value }}</p>
-								<p class="why-us__label">{{ block.settings.stat_label }}</p>
+								{%- if block.settings.icon != blank -%}
+									{{
+										block.settings.icon
+										| image_url: width: 180
+										| image_tag:
+											loading: 'lazy',
+											widths: '60,90,120,180',
+											sizes: '(max-width: 767px) 20vw, 10vw',
+											class: 'why-us__icon',
+											alt: block.settings.stat_label
+									}}
+								{%- endif -%}
+								{%- if block.settings.stat_label != blank -%}
+									<p class="why-us__label">{{ block.settings.stat_label }}</p>
+								{%- endif -%}
 							</article>
 						{%- endfor -%}
 					</div>
@@ -310,6 +333,72 @@
 			"unit": "px",
 			"label": "Card padding",
 			"default": 20
+		},
+		{
+			"type": "range",
+			"id": "icon_size",
+			"min": 24,
+			"max": 140,
+			"step": 2,
+			"unit": "px",
+			"label": "Icon size (desktop)",
+			"default": 88
+		},
+		{
+			"type": "range",
+			"id": "icon_size_mobile",
+			"min": 20,
+			"max": 90,
+			"step": 2,
+			"unit": "px",
+			"label": "Icon size (mobile)",
+			"default": 56
+		},
+		{
+			"type": "range",
+			"id": "icon_row_width_desktop",
+			"min": 30,
+			"max": 100,
+			"step": 1,
+			"unit": "%",
+			"label": "Icon row width (desktop)",
+			"default": 100
+		},
+		{
+			"type": "range",
+			"id": "icon_row_offset_desktop",
+			"min": -300,
+			"max": 300,
+			"step": 6,
+			"unit": "px",
+			"label": "Icon row start offset (desktop)",
+			"default": 0
+		},
+		{
+			"type": "range",
+			"id": "icon_row_width_mobile",
+			"min": 30,
+			"max": 100,
+			"step": 1,
+			"unit": "%",
+			"label": "Icon row width (mobile)",
+			"default": 100
+		},
+		{
+			"type": "range",
+			"id": "icon_row_offset_mobile",
+			"min": -120,
+			"max": 120,
+			"step": 3,
+			"unit": "px",
+			"label": "Icon row start offset (mobile)",
+			"default": 0
+		},
+		{
+			"type": "checkbox",
+			"id": "show_icon_labels",
+			"label": "Show icon labels",
+			"default": false
 		},
 		{
 			"type": "range",
@@ -442,9 +531,14 @@
 	"blocks": [
 		{
 			"type": "stat",
-			"name": "Stat card",
-			"limit": 8,
+			"name": "Icon item",
+			"limit": 5,
 			"settings": [
+				{
+					"type": "image_picker",
+					"id": "icon",
+					"label": "Icon image"
+				},
 				{
 					"type": "text",
 					"id": "stat_value",

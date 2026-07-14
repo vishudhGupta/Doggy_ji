@@ -525,21 +525,28 @@ customElements.define('modal-dialog', ModalDialog);
 class ModalOpener extends HTMLElement {
   constructor() {
     super();
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-    const button = this.querySelector('button');
+  connectedCallback() {
+    this.addEventListener('click', this.handleClick);
 
-    if (!button) return;
-    button.addEventListener('click', () => {
-      const modal = document.querySelector(this.getAttribute('data-modal'));
-      if (modal) modal.show(button);
-    });
-
-    if(this.querySelector('.btn-quickview__text')){
-      var _this = this;
-      setTimeout(function(){
+    if (this.querySelector('.btn-quickview__text')) {
+      const _this = this;
+      setTimeout(function() {
         _this.style.setProperty('--width', (_this.querySelector('.btn-quickview__text').clientWidth + 40) + "px");
-      }, 0)
+      }, 0);
     }
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('click', this.handleClick);
+  }
+
+  handleClick() {
+    const modal = document.querySelector(this.getAttribute('data-modal'));
+    const opener = this.querySelector('button') || this;
+    if (modal) modal.show(opener);
   }
 }
 customElements.define('modal-opener', ModalOpener);

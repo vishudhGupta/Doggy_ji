@@ -734,16 +734,16 @@
         "instafeed_app_block_jPfBzt": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
-            "title_color": "#febb4a",
+            "title": "Follow Us on Instagram",
+            "title_color": "#000000",
             "title_size_v2": 30,
             "alignment": "center",
             "instafeed_margin_top": 0,
             "instafeed_margin_bottom": 0,
             "instafeed_margin_sides": 0,
-            "show_instagram_link": false,
-            "link_alignment": "left",
-            "link_color": "#000000",
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#20BEC4",
             "background_color": "",
             "feed_id": "",
             "html_area": ""

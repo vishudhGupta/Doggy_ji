@@ -536,56 +536,6 @@
         "icon_group_opacity": 35
       }
     },
-    "usp_UkVJVL": {
-      "type": "usp",
-      "blocks": {
-        "item_NJXUrE": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify://shop_images/5-love-pet_1_1.gif",
-            "heading": "",
-            "description": ""
-          }
-        },
-        "item_7j7rNU": {
-          "type": "item",
-          "settings": {
-            "heading": "Chat With Us",
-            "description": "We offer 24-hour chat support"
-          }
-        },
-        "item_aFH9Hp": {
-          "type": "item",
-          "settings": {
-            "heading": "Fast Delivery",
-            "description": "Get Fast & Free Delivery"
-          }
-        },
-        "item_H69V6n": {
-          "type": "item",
-          "settings": {
-            "heading": "Best Packaging",
-            "description": "Best Quality Packaging"
-          }
-        }
-      },
-      "block_order": [
-        "item_NJXUrE",
-        "item_7j7rNU",
-        "item_aFH9Hp",
-        "item_H69V6n"
-      ],
-      "name": "USP",
-      "settings": {
-        "top_spacing": "normal",
-        "width": "default",
-        "border_radius": 0,
-        "border_radius_mobile": 0,
-        "background_color": "#f4d215",
-        "heading_color": "#0f0f0f",
-        "text_color": "#333333"
-      }
-    },
     "why_us_3HX6Nw": {
       "type": "why-us",
       "blocks": {
@@ -887,7 +837,6 @@
     "category_slider_NxtmUa",
     "featured_collection_FMeRwU",
     "shop_by_pet_h7Cd6x",
-    "usp_UkVJVL",
     "why_us_3HX6Nw",
     "slideshow_9qz7yW",
     "1782997279ad5d784f",

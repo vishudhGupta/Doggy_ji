@@ -171,7 +171,7 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_04_49_19_PM.png",
-            "heading": "₹10 dog biscuits",
+            "heading": "₹10 Dog Biscuits",
             "description": ""
           }
         },
@@ -187,7 +187,7 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_05_03_26_PM.png",
-            "heading": "Healthy & affordable",
+            "heading": "Healthy & Affordable",
             "description": ""
           }
         },
@@ -195,7 +195,7 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/ChatGPT_Image_Jul_13_2026_05_09_19_PM.png",
-            "heading": "Low-sugar formula",
+            "heading": "Low-Sugar Formula",
             "description": ""
           }
         }
@@ -350,7 +350,7 @@
         "show_vendor": false,
         "show_type": false,
         "show_price": true,
-        "truncate_product_name": true,
+        "truncate_product_name": false,
         "hover_underline": false,
         "button_type_product": "show",
         "show_button_quickview": true,

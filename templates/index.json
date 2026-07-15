@@ -642,7 +642,7 @@
           "settings": {
             "content_type": "image",
             "image": "shopify://shop_images/Untitled_Artwork-8-1.webp",
-            "image_ratio": "1",
+            "image_ratio": "auto",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": ""
           }

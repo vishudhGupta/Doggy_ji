@@ -668,6 +668,9 @@
         "heading_7bmcVf",
         "text_HRRCAL"
       ],
+      "custom_css": [
+        "@media (max-width: 767px) {.heading {font-size: 20px !important; }}"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "url": "",

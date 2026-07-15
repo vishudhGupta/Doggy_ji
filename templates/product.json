@@ -169,7 +169,7 @@
         "heading": "😻 You may also like",
         "heading_aligment": "text-center",
         "button_name": "Show All",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "page-width",
         "grid": "col-st-6 col-3",
         "desktop_slider": "show_mask",

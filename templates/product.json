@@ -154,13 +154,6 @@
         "color_zoom": "rgba(0,0,0,0)"
       }
     },
-    "1648018242bd6448c3": {
-      "type": "apps",
-      "settings": {
-        "top_spacing": "normal",
-        "width": "page-width"
-      }
-    },
     "1650281560803e681b": {
       "type": "featured-collection",
       "settings": {
@@ -169,7 +162,7 @@
         "heading": "😻 You may also like",
         "heading_aligment": "text-center",
         "button_name": "Show All",
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "page-width",
         "grid": "col-st-6 col-3",
         "desktop_slider": "show_mask",
@@ -369,7 +362,6 @@
   },
   "order": [
     "main",
-    "1648018242bd6448c3",
     "1650281560803e681b",
     "featured_collection_WtTHxG",
     "slideshow_TzAJpV",

@@ -35,7 +35,7 @@
     "roundness_input": 8,
     "roundness_menu_submenu": 8,
     "enable_btn_with_arrow": true,
-    "page_width_main": "page-width",
+    "page_width_main": "page-wide",
     "page_width": 1300,
     "spacing_grid_horizontal": 30,
     "top_normal_desktop": 100,

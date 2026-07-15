@@ -84,10 +84,10 @@
     "heading": {
       "type": "main-collection-banner",
       "custom_css": [
-        "h1{font-size: 30px}"
+        "h1 {font-size: 30px;}"
       ],
       "settings": {
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "page-width",
         "texts_aligment": "text-center"
       }

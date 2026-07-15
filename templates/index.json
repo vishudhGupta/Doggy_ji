@@ -837,7 +837,7 @@
       "custom_css": [],
       "name": "Blog split latest",
       "settings": {
-        "blog": "",
+        "blog": "news",
         "section_heading": "Blogs",
         "view_all_text": "View all",
         "view_all_url": "shopify://blogs/news",

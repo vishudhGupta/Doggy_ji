@@ -793,7 +793,7 @@
         "@media (max-width: 767px) {.jdgm-carousel-title {font-size: 20px !important; }}"
       ],
       "settings": {
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "default"
       }
     },

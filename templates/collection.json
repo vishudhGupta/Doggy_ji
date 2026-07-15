@@ -103,6 +103,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [],
       "settings": {
         "top_spacing": "none",
         "width": "page-width",
@@ -129,12 +130,20 @@
         "show_badge_sold_out": true,
         "show_badge_feature": true
       }
+    },
+    "17841225299fe25360": {
+      "type": "apps",
+      "settings": {
+        "top_spacing": "normal",
+        "width": "default"
+      }
     }
   },
   "order": [
     "slideshow_kaNKbK",
     "heading",
     "description",
-    "product-grid"
+    "product-grid",
+    "17841225299fe25360"
   ]
 }

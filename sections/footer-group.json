@@ -41,8 +41,8 @@
         "menu_column_HgDkib": {
           "type": "menu_column",
           "settings": {
-            "heading": "Products",
-            "menu": "products"
+            "heading": "Company",
+            "menu": "footer-menu-2"
           }
         },
         "menu_column_943qAp": {
@@ -55,8 +55,8 @@
         "menu_column_ztEKP9": {
           "type": "menu_column",
           "settings": {
-            "heading": "Company",
-            "menu": "footer-menu-2"
+            "heading": "Products",
+            "menu": "products"
           }
         },
         "contact_item_XQPCyw": {

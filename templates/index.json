@@ -634,75 +634,6 @@
         "heading_color": "#0b0d12"
       }
     },
-    "image_with_text_RjLFic": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_tj6jT3": {
-          "type": "image",
-          "settings": {
-            "content_type": "image",
-            "image": "shopify://shop_images/Untitled_Artwork-8-1.webp",
-            "image_ratio": "auto",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "heading_7bmcVf": {
-          "type": "heading",
-          "settings": {
-            "subheading": "",
-            "heading": "Why Glucose Biscuits Are Harmful for Dogs?"
-          }
-        },
-        "text_HRRCAL": {
-          "type": "text",
-          "settings": {
-            "show_icon": "none",
-            "icon_name": "check",
-            "text": "<p>Glucose biscuits may seem like a simple treat, but they’re not suitable for dogs. Unlike humans, dogs struggle to process sugar, and these high-sugar snacks can harm their health:</p><ul><li><strong>Liver Strain:</strong> Sugar overload stresses the liver over time.</li><li><strong>Skin Issues: </strong>High sugar increases the risk of skin infections.</li><li><strong>Weight Gain:</strong> Loaded with empty calories, they lead to obesity.</li><li><strong>Digestive Problems:</strong> Artificial additives can upset their stomach.</li></ul><p>Though dogs may enjoy the taste, the risks outweigh the benefits. Choose healthy, dog-friendly biscuits instead—because their well-being comes first!</p>"
-          }
-        }
-      },
-      "block_order": [
-        "image_tj6jT3",
-        "heading_7bmcVf",
-        "text_HRRCAL"
-      ],
-      "custom_css": [
-        "@media (max-width: 767px) {.heading {font-size: 20px !important; }}"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "url": "",
-        "top_spacing": "none",
-        "width": "default",
-        "row_reverse": false,
-        "heading_aligment": "text-center",
-        "content_aligment": "align-self-center",
-        "texts_aligment": "text-left",
-        "heading_tag": "h1",
-        "text_size": "normal",
-        "image_zoom_internal": false,
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
     "slideshow_9qz7yW": {
       "type": "slideshow",
       "blocks": {
@@ -773,6 +704,75 @@
         "color_media_bg_hover": "rgba(0,0,0,0)",
         "color_swatches": "rgba(0,0,0,0)",
         "color_swatches_m": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_RjLFic": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_tj6jT3": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify://shop_images/Untitled_Artwork-8-1.webp",
+            "image_ratio": "auto",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "heading_7bmcVf": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Why Glucose Biscuits Are Harmful for Dogs?"
+          }
+        },
+        "text_HRRCAL": {
+          "type": "text",
+          "settings": {
+            "show_icon": "none",
+            "icon_name": "check",
+            "text": "<p>Glucose biscuits may seem like a simple treat, but they’re not suitable for dogs. Unlike humans, dogs struggle to process sugar, and these high-sugar snacks can harm their health:</p><ul><li><strong>Liver Strain:</strong> Sugar overload stresses the liver over time.</li><li><strong>Skin Issues: </strong>High sugar increases the risk of skin infections.</li><li><strong>Weight Gain:</strong> Loaded with empty calories, they lead to obesity.</li><li><strong>Digestive Problems:</strong> Artificial additives can upset their stomach.</li></ul><p>Though dogs may enjoy the taste, the risks outweigh the benefits. Choose healthy, dog-friendly biscuits instead—because their well-being comes first!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_tj6jT3",
+        "heading_7bmcVf",
+        "text_HRRCAL"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.heading {font-size: 20px !important; }}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "default",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "normal",
+        "image_zoom_internal": false,
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
       }
     },
     "1782997279ad5d784f": {
@@ -939,8 +939,8 @@
     "featured_collection_FMeRwU",
     "shop_by_pet_h7Cd6x",
     "why_us_3HX6Nw",
-    "image_with_text_RjLFic",
     "slideshow_9qz7yW",
+    "image_with_text_RjLFic",
     "1782997279ad5d784f",
     "1783074432faf5357d",
     "blog_section_LpYETY",

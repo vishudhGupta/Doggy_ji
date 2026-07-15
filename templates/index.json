@@ -57,9 +57,9 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/With_Text-Web_Banner-Desktop-Doggyji_5198489e-af78-4522-bb67-9fcb3ddb9b7a.jpg",
+            "image": "shopify://shop_images/2.2Web_Banner-Desktop-Doggyji.jpg",
             "image_overlay_opacity": 0,
-            "image_mobile": "shopify://shop_images/With_Text-Website_Banner-Mobile-Doggyji_6139d47f-5323-4659-923d-5a29a292fdd1.jpg",
+            "image_mobile": "shopify://shop_images/2.2Website_Banner-Mobile-Doggyji.jpg",
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
             "heading": "",
@@ -98,9 +98,9 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/With_Text-Web_Banner-Desktop-Cattyji_ddb5ee49-62c4-4bdc-8d08-b21c42067d60.jpg",
+            "image": "shopify://shop_images/1.2Web_Banner-Desktop-Cattyji.jpg",
             "image_overlay_opacity": 0,
-            "image_mobile": "shopify://shop_images/With_Text-Website_Banner-Mobile-Cattyji_3ebe15b9-f35f-47cb-8574-cd842b812b80.jpg",
+            "image_mobile": "shopify://shop_images/1.2Website_Banner-Mobile-Cattyji.jpg",
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
             "heading": "",

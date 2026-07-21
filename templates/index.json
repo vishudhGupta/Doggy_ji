@@ -597,7 +597,9 @@
         "stat_pEK46T",
         "stat_FWj4Ni"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".why-us__heading {font-size: 16px !important; }"
+      ],
       "name": "Why Us",
       "settings": {
         "subheading": "WHY doggy ji?",

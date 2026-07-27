@@ -110,11 +110,319 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "accordion_7ttmqT": {
+      "type": "accordion",
+      "blocks": {
+        "text_cgNMY9": {
+          "type": "text",
+          "settings": {
+            "heading": "Do you offer cash-on-delivery (COD)?",
+            "description": "<p>Yes, COD is available for our <a href=\"https://www.doggyji.com/shop/doggy-ji-biscuits/doggy-ji-v-bitevegan-biscuits-48-packets/\">pack of 48 Doggyji Chicken Biscuits</a> for an additional ₹60. You can check its availability at checkout.</p>"
+          }
+        },
+        "text_TfTDqA": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I return or exchange a product?",
+            "description": "<p>We accept returns or exchanges for defective or damaged products. However, due to hygiene reasons, opened or used products cannot be returned unless there’s a quality issue. Contact our support team for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cgNMY9",
+        "text_TfTDqA"
+      ],
+      "name": "t:sections.accordion.presets.name",
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Payment & Refund",
+        "heading_aligment": "text-center",
+        "top_spacing": "small",
+        "width": "default",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "accordion_7nMrf7": {
+      "type": "accordion",
+      "blocks": {
+        "text_zWJzBm": {
+          "type": "text",
+          "settings": {
+            "heading": "Do you offer free shipping?",
+            "description": "<p>We often run special promotions with free shipping. Check <a href=\"https://www.doggyji.com/\">our website</a> or Amazon page for the latest deals.</p>"
+          }
+        },
+        "text_gYfYg9": {
+          "type": "text",
+          "settings": {
+            "heading": "Why are shipping charges applied to orders?",
+            "description": "<p>Our biscuits are affordably priced, and shipping heavy packages adds significant costs. We charge a nominal shipping fee to ensure our products remain budget-friendly while balancing delivery expenses.</p>"
+          }
+        },
+        "text_QTwQFW": {
+          "type": "text",
+          "settings": {
+            "heading": "Where can I buy Doggyji products?",
+            "description": "<p>You can purchase Doggyji treats directly from our website at <a href=\"http://www.doggyji.com/\">www.doggyji.com</a> or through Amazon India . We’re also working to make our products available on platforms like Blinkit and BigBasket.</p>"
+          }
+        },
+        "text_B76fJT": {
+          "type": "text",
+          "settings": {
+            "heading": "Do you deliver across India?",
+            "description": "<p>Yes! We deliver nationwide through our website and Amazon logistics, ensuring timely and reliable service to every corner of India.</p>"
+          }
+        },
+        "text_qfxqnw": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I update my shipping address after ordering?",
+            "description": "<p>Yes, you can update your shipping address if the order hasn’t shipped yet. <a href=\"https://www.doggyji.com/contact-us/\">Contact us</a> immediately to make the change.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_zWJzBm",
+        "text_gYfYg9",
+        "text_QTwQFW",
+        "text_B76fJT",
+        "text_qfxqnw"
+      ],
+      "name": "t:sections.accordion.presets.name",
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Shipping, Cancellation & Delivery",
+        "heading_aligment": "text-center",
+        "top_spacing": "small",
+        "width": "default",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "accordion_jgGXWn": {
+      "type": "accordion",
+      "blocks": {
+        "text_pFfWNz": {
+          "type": "text",
+          "settings": {
+            "heading": "What should I do if I receive the wrong or damaged product?",
+            "description": "<p>If you receive an incorrect or damaged item, email us at info@doggyji.com or call us at +91 8660808858 with your order number and a photo of the product. We’ll arrange a replacement or refund.</p>"
+          }
+        },
+        "text_FLbB89": {
+          "type": "text",
+          "settings": {
+            "heading": "How can I contact Doggyji?",
+            "description": "<p>You can reach us via email at info@doggyji.com, call us at +91 8660808858, or use the <a href=\"https://www.doggyji.com/contact-us/\">contact form</a> on our website. We’re here to help!</p>"
+          }
+        },
+        "text_FLeGwm": {
+          "type": "text",
+          "settings": {
+            "heading": "Can I share feedback?",
+            "description": "<p>We’d love to hear from you! Share your feedback or suggestions through our website or connect with us on social media.</p>"
+          }
+        },
+        "text_P8FCmE": {
+          "type": "text",
+          "settings": {
+            "heading": "How can I place bulk or special orders with Doggyji?",
+            "description": "<p>For bulk or special orders, <a href=\"https://www.doggyji.com/contact-us/\">contact us</a> through the form on our website, email us at info@doggyji.com, or call us at +91 8660808858. We’d be happy to help!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_pFfWNz",
+        "text_FLbB89",
+        "text_FLeGwm",
+        "text_P8FCmE"
+      ],
+      "name": "t:sections.accordion.presets.name",
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Returns, Policies & Support",
+        "heading_aligment": "text-center",
+        "top_spacing": "small",
+        "width": "default",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "accordion_eyUJfJ": {
+      "type": "accordion",
+      "blocks": {
+        "text_BQma8b": {
+          "type": "text",
+          "settings": {
+            "heading": "What is Doggyji?",
+            "description": "<p>Doggyji is a reputed brand offering nutritious and <a href=\"https://www.doggyji.com/\">affordable food for dogs</a>. Since our launch in January 2023, we’ve been on a mission to serve pet owners and stray dog feeders with healthy alternatives to glucose biscuits.</p>"
+          }
+        },
+        "text_LxPFF4": {
+          "type": "text",
+          "settings": {
+            "heading": "What makes Doggyji products unique?",
+            "description": "<p>Doggyji stands out by offering high-quality, nutritious, and affordable dog food. Every recipe is developed after extensive research and in consultation with veterinary experts across India, ensuring our treats are safe and healthy for all dogs.</p>"
+          }
+        },
+        "text_RjjKmT": {
+          "type": "text",
+          "settings": {
+            "heading": "Are Doggyji products suitable for stray dogs?",
+            "description": "<p>Absolutely! <a href=\"https://www.doggyji.com/all-products/\">Doggyji products</a> are crafted for all dogs, including strays. Our affordable pricing ensures dog lovers can feed stray dogs without compromising on quality.</p>"
+          }
+        },
+        "text_TdYqwY": {
+          "type": "text",
+          "settings": {
+            "heading": "What is V-Bite?",
+            "description": "<p>V-Bite is our <a href=\"https://www.doggyji.com/shop/doggy-ji-biscuits/doggy-ji-v-bite-vegan-biscuits-48-packs/\">100% vegan biscuit for dogs</a>, made from plant-based ingredients. It’s a nutritious treat designed to keep your dogs healthy and happy.</p>"
+          }
+        },
+        "text_h9QhQh": {
+          "type": "text",
+          "settings": {
+            "heading": "Are Doggyji products suitable for all breeds?",
+            "description": "<p>Yes, Doggyji products are specially formulated to meet the nutritional needs of dogs of all breeds and sizes</p>"
+          }
+        },
+        "text_zBTzHY": {
+          "type": "text",
+          "settings": {
+            "heading": "Do Doggyji products contain preservatives or artificial additives?",
+            "description": "<p>No, our products are free from harmful preservatives and artificial additives. We focus on natural, high-quality ingredients to keep your dog healthy.</p>"
+          }
+        },
+        "text_pC8MA9": {
+          "type": "text",
+          "settings": {
+            "heading": "Are Doggyji products safe for puppies?",
+            "description": "<p>Yes, Doggyji treats are suitable for dogs of all ages, including puppies. Just ensure you follow the feeding guidelines based on your puppy’s age and size.</p>"
+          }
+        },
+        "text_AfEDTq": {
+          "type": "text",
+          "settings": {
+            "heading": "Is there a subscription service for regular deliveries?",
+            "description": "<p>Not yet, but we’re working on it! Stay tuned for updates on our upcoming subscription service.</p>"
+          }
+        },
+        "text_WT4Xde": {
+          "type": "text",
+          "settings": {
+            "heading": "Does Doggyji support any social initiatives?",
+            "description": "<p>Yes, Doggyji is deeply committed to helping stray dogs. We promote feeding strays and make it easier with our affordable, nutritious products.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_BQma8b",
+        "text_LxPFF4",
+        "text_RjjKmT",
+        "text_TdYqwY",
+        "text_h9QhQh",
+        "text_zBTzHY",
+        "text_pC8MA9",
+        "text_AfEDTq",
+        "text_WT4Xde"
+      ],
+      "name": "t:sections.accordion.presets.name",
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Product Information",
+        "heading_aligment": "text-center",
+        "top_spacing": "small",
+        "width": "default",
+        "disable_accordion": false,
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
     "main",
     "about_us_EhWBUG",
-    "accordion_WJYDqm"
+    "accordion_WJYDqm",
+    "accordion_7ttmqT",
+    "accordion_7nMrf7",
+    "accordion_jgGXWn",
+    "accordion_eyUJfJ"
   ]
 }

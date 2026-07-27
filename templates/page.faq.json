@@ -19,41 +19,73 @@
         "heading_aligment": "text-center"
       }
     },
-    "accordion_HjLWLB": {
+    "about_us_EhWBUG": {
+      "type": "about-us",
+      "name": "About Us",
+      "settings": {
+        "eyebrow_text": "FAQs",
+        "heading_text": "How can we help you today?",
+        "body_text": "<p>Find quick answers to common questions about ordering, delivery, payments, and more—all in one place.</p>",
+        "body_max_width": 1280,
+        "eyebrow_size": 16,
+        "heading_size": 50,
+        "body_size": 17,
+        "body_line_height": 1.3,
+        "founder_alt": "",
+        "photo_max_width": 980,
+        "photo_overlap": 0,
+        "photo_radius": 0,
+        "connect_text": "",
+        "connect_link": "",
+        "open_connect_new_tab": true,
+        "connect_icon": "linkedin",
+        "connect_icon_label": "",
+        "connect_size": 12,
+        "hero_bg_color": "#FEBB4A",
+        "lower_bg_color": "#FFFFFF",
+        "background_image_opacity": 20,
+        "max_width": 1500,
+        "hero_padding_top": 64,
+        "hero_padding_bottom": 120,
+        "text_color": "#181818",
+        "muted_color": "#2a2a2a"
+      }
+    },
+    "accordion_WJYDqm": {
       "type": "accordion",
       "blocks": {
-        "text_cDakFk": {
+        "text_TTg8QB": {
           "type": "text",
           "settings": {
-            "heading": "Frequently asked question",
-            "description": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+            "heading": "How can I track my order?",
+            "description": "<p>Once your order ships, we’ll send you an email or message with a tracking link. Use this link to check your order status anytime.<br/><br/></p>"
           }
         },
-        "text_ztNNCQ": {
+        "text_C8wtiR": {
           "type": "text",
           "settings": {
-            "heading": "Frequently asked question",
-            "description": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+            "heading": "How long does delivery take?",
+            "description": "<p>Delivery times depend on your location:<br/>* Metro cities: 3–5 business days<br/>* Non-metro areas: 5–7 business days</p>"
           }
         },
-        "text_eCJyKh": {
+        "text_qJiRCp": {
           "type": "text",
           "settings": {
-            "heading": "Frequently asked question",
-            "description": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+            "heading": "What should I do if my order is delayed?",
+            "description": "<p>If your order hasn’t arrived on time,<a href=\"https://www.doggyji.com/contact-us/\"><span style=\"text-decoration:underline\">contact us</span></a>at info@doggyji.com, call us at +91 8660808858, or message us on Instagram at @doggyji_official. We’ll resolve it promptly.</p>"
           }
         }
       },
       "block_order": [
-        "text_cDakFk",
-        "text_ztNNCQ",
-        "text_eCJyKh"
+        "text_TTg8QB",
+        "text_C8wtiR",
+        "text_qJiRCp"
       ],
       "name": "t:sections.accordion.presets.name",
       "settings": {
         "show_all_text_in_admin": true,
         "subheading": "",
-        "heading": "Accordion",
+        "heading": "Orders & Tracking",
         "heading_aligment": "text-center",
         "top_spacing": "none",
         "width": "default",
@@ -82,6 +114,7 @@
   },
   "order": [
     "main",
-    "accordion_HjLWLB"
+    "about_us_EhWBUG",
+    "accordion_WJYDqm"
   ]
 }

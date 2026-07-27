@@ -41,8 +41,8 @@
         "connect_icon": "linkedin",
         "connect_icon_label": "",
         "connect_size": 12,
-        "hero_bg_color": "#FEBB4A",
-        "lower_bg_color": "#FFFFFF",
+        "hero_bg_color": "#febb4a",
+        "lower_bg_color": "#ffffff",
         "background_image_opacity": 20,
         "max_width": 1500,
         "hero_padding_top": 64,
@@ -386,7 +386,7 @@
         "text_WT4Xde"
       ],
       "custom_css": [
-        "#minion-section-template--22505175613693__accordion_AaYLa9 {margin-bottom: 30px !important;}"
+        "#minion-section-template--22656067764477__accordion_eyUJfJ {margin-bottom: 30px !important;}"
       ],
       "name": "t:sections.accordion.presets.name",
       "settings": {

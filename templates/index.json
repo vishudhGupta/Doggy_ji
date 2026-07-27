@@ -598,7 +598,7 @@
         "stat_FWj4Ni"
       ],
       "custom_css": [
-        ".why-us__heading {font-size: 16px !important; }"
+        ".why-us__heading {font-size: 16px !important;}"
       ],
       "name": "Why Us",
       "settings": {
@@ -644,9 +644,9 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/2.Never_Run_out_of_Treats-1200x350.jpg",
+            "image": "shopify://shop_images/1200x300_jpg.jpg",
             "image_overlay_opacity": 0,
-            "image_mobile": "shopify://shop_images/1..Never_Run_out_of_Treats-1200x650_2.jpg",
+            "image_mobile": "shopify://shop_images/1200x628_jpg.jpg",
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
             "heading": "",
@@ -687,7 +687,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "top_spacing": "none",
-        "bottom_spacing": "normal",
+        "bottom_spacing": "small",
         "width": "page-fullwidth",
         "image_size": "auto",
         "desktop_image_height": 440,

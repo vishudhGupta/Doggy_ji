@@ -302,20 +302,20 @@
     "category_slider_NxtmUa": {
       "type": "category-slider",
       "blocks": {
+        "category_3CtRUk": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Shop_by_Categories-Biscuits_95244591-faba-48b3-bad9-ae93a48dec3a.png",
+            "label": "Dog Biscuits",
+            "link": "shopify://collections/doggy-ji-biscuits"
+          }
+        },
         "category_k9hwVC": {
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/Shop_by_Categories-Vegan.png",
             "label": "Vegan Biscuits",
             "link": "shopify://collections/doggy-ji-biscuits"
-          }
-        },
-        "category_F3zRNp": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Combo.png",
-            "label": "Combos",
-            "link": "shopify://collections/combos"
           }
         },
         "category_HmHmN4": {
@@ -334,20 +334,20 @@
             "link": "shopify://collections/doggy-ji-wet-food"
           }
         },
-        "category_3CtRUk": {
+        "category_F3zRNp": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Biscuits_95244591-faba-48b3-bad9-ae93a48dec3a.png",
-            "label": "Dog Biscuits",
-            "link": "shopify://collections/doggy-ji-biscuits"
+            "image": "shopify://shop_images/Shop_by_Categories-Combo.png",
+            "label": "Combos",
+            "link": "shopify://collections/combos"
           }
         },
-        "category_P3CKpd": {
+        "category_FL6Rb8": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Accessories.png",
-            "label": "Dog Accessories",
-            "link": "shopify://collections/dog-accessories"
+            "image": "shopify://shop_images/Shop_by_Categories-Combo_dc8fc9cb-be6f-486c-98d9-170f76e12745.png",
+            "label": "Cat Dry Food",
+            "link": "shopify://collections/catty-ji-dry-food"
           }
         },
         "category_zXxnei": {
@@ -358,24 +358,24 @@
             "link": "shopify://collections/catty-ji-wet-food"
           }
         },
-        "category_FL6Rb8": {
+        "category_P3CKpd": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Shop_by_Categories-Combo_dc8fc9cb-be6f-486c-98d9-170f76e12745.png",
-            "label": "Cat Dry Food",
-            "link": "shopify://collections/catty-ji-dry-food"
+            "image": "shopify://shop_images/Shop_by_Categories-Accessories.png",
+            "label": "Dog Accessories",
+            "link": "shopify://collections/dog-accessories"
           }
         }
       },
       "block_order": [
+        "category_3CtRUk",
         "category_k9hwVC",
-        "category_F3zRNp",
         "category_HmHmN4",
         "category_K638qp",
-        "category_3CtRUk",
-        "category_P3CKpd",
+        "category_F3zRNp",
+        "category_FL6Rb8",
         "category_zXxnei",
-        "category_FL6Rb8"
+        "category_P3CKpd"
       ],
       "name": "Category slider",
       "settings": {

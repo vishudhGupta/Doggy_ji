@@ -485,5 +485,7 @@
     {%- if settings.show_add_discount_code -%}
     <script src="{{ 'cart-discount.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  
+{% render 'razorpay-magic-checkout' %}
+</body>
 </html>

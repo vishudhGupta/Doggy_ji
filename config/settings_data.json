@@ -88,29 +88,9 @@
         "disabled": false,
         "settings": {}
       },
-      "17844675666580048712": {
-        "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/sso-script/c13c688d-5c45-4054-b95f-1edd63faa705",
-        "disabled": false,
-        "settings": {}
-      },
-      "3557650678667880288": {
-        "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/magicx-script/c13c688d-5c45-4054-b95f-1edd63faa705",
-        "disabled": false,
-        "settings": {}
-      },
-      "2166187066657961218": {
-        "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/review-widget-embed/c13c688d-5c45-4054-b95f-1edd63faa705",
-        "disabled": false,
-        "settings": {
-          "enable_reviews": true,
-          "enable_star_rating": true,
-          "primary_color": "",
-          "star_color": ""
-        }
-      },
       "18155451270687726080": {
         "type": "shopify://apps/snap-cart-drawer/blocks/sticky_button/749c3d78-31de-41bb-a321-492d569e1a37",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
